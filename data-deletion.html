@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Deletion — Unifractal</title>
+<meta name="description" content="Request deletion of your Unifractal / Life Assistant account and data.">
+<meta property="og:title" content="Data Deletion — Unifractal">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0A0E1A;--bg-alt:#0D1220;--slate:#6B8BA4;--teal:#4ECDC4;--white:#F8F9FA;--gray:#8892A4;--card:#111827;--card-border:#1E293B}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--white);line-height:1.7}
+h1,h2,h3{font-family:'Syne',sans-serif;font-weight:700;line-height:1.3}
+a{color:var(--teal);text-decoration:none}
+a:hover{opacity:.85}
+.header{position:sticky;top:0;z-index:100;background:rgba(10,14,26,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--card-border);padding:16px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
+.header-logo{display:flex;align-items:center;gap:10px;color:var(--white);text-decoration:none}
+.header-logo svg{width:28px;height:28px}
+.header-logo span{font-family:'Syne',sans-serif;font-weight:700;font-size:18px}
+.header-right{display:flex;align-items:center;gap:12px}
+.lang-toggle{display:flex;gap:4px;background:var(--card);border-radius:8px;padding:3px}
+.lang-btn{background:none;border:none;color:var(--gray);font-size:13px;font-weight:600;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.lang-btn.active{background:var(--teal);color:var(--bg)}
+.btn-sm{display:inline-flex;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;background:var(--teal);color:var(--bg)}
+.content{max-width:800px;margin:0 auto;padding:60px 24px 100px}
+.content h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:8px}
+.content .updated{color:var(--gray);font-size:14px;margin-bottom:40px}
+.content h2{font-size:1.3rem;color:var(--teal);margin-top:40px;margin-bottom:12px}
+.content p,.content li{color:var(--gray);font-size:15px;margin-bottom:12px}
+.content ul,.content ol{padding-left:20px;margin-bottom:16px}
+.content li{margin-bottom:8px}
+.content strong{color:var(--white)}
+.steps{list-style:none;counter-reset:step;padding:0;margin:24px 0}
+.steps li{counter-increment:step;display:flex;gap:16px;align-items:flex-start;padding:16px;background:var(--card);border:1px solid var(--card-border);border-radius:12px;margin-bottom:12px;color:var(--gray);font-size:15px}
+.steps li::before{content:counter(step);display:flex;align-items:center;justify-content:center;width:32px;height:32px;min-width:32px;background:rgba(78,205,196,.12);color:var(--teal);border-radius:8px;font-weight:700;font-size:14px}
+.deletion-form{background:var(--card);border:1px solid var(--card-border);border-radius:16px;padding:32px;margin-top:32px}
+.deletion-form h3{font-size:1.1rem;margin-bottom:16px}
+.form-input{width:100%;background:var(--bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 16px;color:var(--white);font-size:14px;font-family:'DM Sans',sans-serif;transition:border-color .2s;outline:none;margin-bottom:16px}
+.form-input::placeholder{color:var(--gray)}
+.form-input:focus{border-color:var(--teal)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all .25s;font-family:'DM Sans',sans-serif;background:var(--teal);color:var(--bg);width:100%;justify-content:center}
+.btn:hover{background:#44B89C}
+.timeline-note{display:flex;align-items:center;gap:12px;padding:16px;background:rgba(78,205,196,.06);border:1px solid rgba(78,205,196,.15);border-radius:12px;margin-top:24px;font-size:14px;color:var(--gray)}
+.timeline-note strong{color:var(--teal)}
+.footer{border-top:1px solid var(--card-border);padding:40px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-left{display:flex;align-items:center;gap:10px}
+.footer-left svg{width:24px;height:24px}
+.footer-left span{font-family:'Syne',sans-serif;font-weight:700;font-size:16px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{color:var(--gray);font-size:13px}
+.footer-links a:hover{color:var(--white)}
+.footer-copy{color:var(--gray);font-size:13px}
+@media(max-width:768px){.footer-inner{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="header-inner">
+  <a href="/" class="header-logo">
+    <svg viewBox="0 0 32 32" fill="none"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+    <span>Unifractal</span>
+  </a>
+  <div class="header-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('es')" id="lang-es">ES</button>
+      <button class="lang-btn" onclick="setLang('en')" id="lang-en">EN</button>
+    </div>
+    <a href="https://app.unifractal.ai" class="btn-sm" data-es="Empieza gratis" data-en="Start free">Empieza gratis</a>
+  </div>
+</div>
+</header>
+
+<main class="content">
+<h1 data-es="Eliminación de Datos" data-en="Data Deletion">Eliminación de Datos</h1>
+<p class="updated" data-es="Última actualización: 24 de marzo de 2026" data-en="Last updated: March 24, 2026">Última actualización: 24 de marzo de 2026</p>
+
+<p data-es="Tienes derecho a solicitar la eliminación completa de tu cuenta y todos los datos asociados en Life Assistant y CoMind. Aquí te explicamos cómo hacerlo."
+   data-en="You have the right to request the complete deletion of your account and all associated data in Life Assistant and CoMind. Here's how to do it.">
+  Tienes derecho a solicitar la eliminación completa de tu cuenta y todos los datos asociados en Life Assistant y CoMind.</p>
+
+<h2 data-es="¿Qué datos se eliminan?" data-en="What data gets deleted?">¿Qué datos se eliminan?</h2>
+<p data-es="Al solicitar la eliminación, se borran permanentemente:" data-en="When you request deletion, the following are permanently erased:">Al solicitar la eliminación, se borran permanentemente:</p>
+<ul>
+  <li data-es="Tu perfil de usuario (nombre, email, preferencias)" data-en="Your user profile (name, email, preferences)">Tu perfil de usuario (nombre, email, preferencias)</li>
+  <li data-es="Todo tu historial de conversaciones" data-en="Your entire conversation history">Todo tu historial de conversaciones</li>
+  <li data-es="Documentos generados y archivos almacenados" data-en="Generated documents and stored files">Documentos generados y archivos almacenados</li>
+  <li data-es="Memoria persistente del asistente asociada a tu cuenta" data-en="Persistent assistant memory associated with your account">Memoria persistente del asistente asociada a tu cuenta</li>
+  <li data-es="Datos de integraciones (Google Calendar, Gmail, Drive)" data-en="Integration data (Google Calendar, Gmail, Drive)">Datos de integraciones (Google Calendar, Gmail, Drive)</li>
+  <li data-es="Datos de wearables y salud" data-en="Wearable and health data">Datos de wearables y salud</li>
+  <li data-es="Datos de pago (los registros del procesador de pago se retienen según sus políticas)" data-en="Payment data (payment processor records are retained per their policies)">Datos de pago (los registros del procesador de pago se retienen según sus políticas)</li>
+</ul>
+
+<h2 data-es="Cómo solicitar la eliminación" data-en="How to request deletion">Cómo solicitar la eliminación</h2>
+<ol class="steps">
+  <li data-es="Ingresa el email asociado a tu cuenta en el formulario de abajo" data-en="Enter the email associated with your account in the form below">Ingresa el email asociado a tu cuenta en el formulario de abajo</li>
+  <li data-es="Haz clic en \"Solicitar eliminación\" — se abrirá tu cliente de correo con un email pre-llenado" data-en="Click \"Request deletion\" — your email client will open with a pre-filled email">Haz clic en "Solicitar eliminación" — se abrirá tu cliente de correo con un email pre-llenado</li>
+  <li data-es="Envía el email. Recibirás una confirmación en un plazo de 48 horas" data-en="Send the email. You'll receive a confirmation within 48 hours">Envía el email. Recibirás una confirmación en un plazo de 48 horas</li>
+  <li data-es="Tu cuenta y datos se eliminarán completamente en un plazo de 30 días hábiles" data-en="Your account and data will be completely deleted within 30 business days">Tu cuenta y datos se eliminarán completamente en un plazo de 30 días hábiles</li>
+</ol>
+
+<div class="deletion-form">
+  <h3 data-es="Solicitar eliminación de datos" data-en="Request data deletion">Solicitar eliminación de datos</h3>
+  <input type="email" class="form-input" id="delEmail" required
+         data-es-placeholder="Tu email de cuenta" data-en-placeholder="Your account email" placeholder="Tu email de cuenta">
+  <button class="btn" onclick="requestDeletion()" data-es="Solicitar eliminación" data-en="Request deletion">Solicitar eliminación</button>
+</div>
+
+<div class="timeline-note">
+  <span>⏱️</span>
+  <span data-es="<strong>Tiempo de respuesta:</strong> confirmación en 48 horas, eliminación completa en 30 días hábiles." data-en="<strong>Response time:</strong> confirmation within 48 hours, complete deletion within 30 business days."><strong>Tiempo de respuesta:</strong> confirmación en 48 horas, eliminación completa en 30 días hábiles.</span>
+</div>
+
+<h2 data-es="También puedes contactarnos directamente" data-en="You can also contact us directly">También puedes contactarnos directamente</h2>
+<p data-es='Envía un email a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> con el asunto "Solicitud de eliminación de datos" e incluye el email de tu cuenta.'
+   data-en='Send an email to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> with the subject "Data deletion request" and include your account email.'>
+  Envía un email a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> con el asunto "Solicitud de eliminación de datos" e incluye el email de tu cuenta.</p>
+
+<p style="margin-top:32px">
+  <strong>Unifractal</strong><br>
+  Guadalajara, Jalisco, México<br>
+  <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
+</p>
+</main>
+
+<footer class="footer">
+<div class="footer-inner">
+  <div class="footer-left">
+    <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+    <span>Unifractal</span>
+  </div>
+  <div class="footer-links">
+    <a href="/privacy" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</a>
+    <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
+    <a href="/data-deletion" data-es="Eliminar Datos" data-en="Data Deletion">Eliminar Datos</a>
+    <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
+  </div>
+  <div class="footer-copy" data-es="Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal" data-en="Made in Guadalajara, Mexico 🇲🇽 · © 2026 Unifractal">Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal</div>
+</div>
+</footer>
+
+<script>
+function setLang(lang) {
+  document.querySelectorAll('[data-es]').forEach(el => { const v = el.getAttribute('data-'+lang); if(v!==null) el.innerHTML=v; });
+  document.querySelectorAll('[data-es-placeholder]').forEach(el => { const v = el.getAttribute('data-'+lang+'-placeholder'); if(v!==null) el.placeholder=v; });
+  document.getElementById('lang-es').classList.toggle('active', lang==='es');
+  document.getElementById('lang-en').classList.toggle('active', lang==='en');
+  localStorage.setItem('lang', lang);
+}
+
+function requestDeletion() {
+  const email = document.getElementById('delEmail').value;
+  if (!email) return;
+  const lang = localStorage.getItem('lang') || 'es';
+  const subject = lang === 'es'
+    ? encodeURIComponent('Solicitud de eliminación de datos')
+    : encodeURIComponent('Data deletion request');
+  const body = lang === 'es'
+    ? encodeURIComponent('Hola,\n\nSolicito la eliminación completa de mi cuenta y datos asociados.\n\nEmail de mi cuenta: ' + email + '\n\nGracias.')
+    : encodeURIComponent('Hello,\n\nI request the complete deletion of my account and associated data.\n\nMy account email: ' + email + '\n\nThank you.');
+  window.location.href = 'mailto:hi@unifractal.ai?subject=' + subject + '&body=' + body;
+}
+
+document.addEventListener('DOMContentLoaded', () => setLang(localStorage.getItem('lang') || 'es'));
+</script>
+</body>
+</html>
