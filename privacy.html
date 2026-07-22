@@ -7,6 +7,7 @@
 <meta name="description" content="Aviso de Privacidad Integral de Unifractal. Qué datos recabamos, para qué, y cómo ejercer tus derechos.">
 <meta property="og:title" content="Aviso de Privacidad — Unifractal">
 <meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
@@ -166,7 +167,8 @@ a:hover{opacity:.85}
 <p>Documentos, imágenes, audios y otros archivos que usted cargue voluntariamente para que el asistente los procese. Estos archivos se almacenan asociados a su cuenta y se procesan únicamente para responder a la solicitud concreta que usted formuló.</p>
 
 <h3>Datos de uso y registros técnicos</h3>
-<p>Registros de fallos de la aplicación, modelo del dispositivo, versión del sistema operativo, versión de la aplicación, dirección IP, marcas de tiempo de las peticiones y telemetría de rendimiento. Estos datos permiten detectar errores, medir la estabilidad del servicio y proteger la infraestructura frente a abusos.</p>
+<p>Esta categoría comprende dos tipos de información. Por una parte, <strong>datos de fallos (crash)</strong>: el registro que genera la aplicación cuando se interrumpe de forma inesperada, incluidos el momento del fallo, el componente afectado y la traza técnica del error. Por otra parte, <strong>datos de rendimiento</strong>: tiempos de respuesta, latencia de las peticiones, consumo de recursos y estabilidad de la sesión. Junto con ellos se recaban el modelo del dispositivo, la versión del sistema operativo, la versión de la aplicación, la dirección IP y las marcas de tiempo de las peticiones.</p>
+<p>Estos datos permiten detectar errores, medir la estabilidad del servicio y proteger la infraestructura frente a abusos. No se emplean para elaborar perfiles comerciales ni para publicidad.</p>
 
 <h3>Datos de salud y actividad de wearables</h3>
 <p>Cuando usted decide conectar un dispositivo o plataforma de bienestar, recabamos métricas como pasos, frecuencia cardíaca, horas y calidad del sueño, calorías y sesiones de actividad física. Esta conexión es opcional, se inicia siempre por acción del usuario y puede revocarse en cualquier momento. El detalle de este tratamiento se describe en la sección 6.</p>
@@ -242,18 +244,31 @@ a:hover{opacity:.85}
 <tr><th>Proveedor</th><th>Finalidad</th><th>País</th></tr>
 </thead>
 <tbody>
-<tr><td>Anthropic</td><td>Modelos de lenguaje</td><td>EE.UU.</td></tr>
-<tr><td>OpenAI</td><td>Transcripción y voz</td><td>EE.UU.</td></tr>
-<tr><td>ElevenLabs</td><td>Síntesis de voz</td><td>EE.UU.</td></tr>
-<tr><td>Groq</td><td>Inferencia</td><td>EE.UU.</td></tr>
-<tr><td>Cloudflare</td><td>Red y entrega</td><td>Global</td></tr>
-<tr><td>LiveKit</td><td>Videollamadas</td><td>EE.UU.</td></tr>
-<tr><td>Spike API</td><td>Wearables</td><td>EE.UU.</td></tr>
-<tr><td>Google Cloud</td><td>Mapas y servicios de ubicación</td><td>EE.UU.</td></tr>
+<tr><td>Anthropic</td><td>Modelos de lenguaje que generan las respuestas del asistente, y búsqueda web ejecutada del lado del proveedor</td><td>EE.UU.</td></tr>
+<tr><td>OpenAI</td><td>Generación y edición de imágenes, transcripción de audio y voz sintetizada</td><td>EE.UU.</td></tr>
+<tr><td>ElevenLabs</td><td>Síntesis de voz de las respuestas habladas</td><td>EE.UU.</td></tr>
+<tr><td>Groq</td><td>Transcripción de notas de voz y del modo de voz</td><td>EE.UU.</td></tr>
+<tr><td>Google (Gemini y Veo)</td><td>Modelo de lenguaje secundario, consolidación de memoria, clasificación de correo y generación de video</td><td>EE.UU.</td></tr>
+<tr><td>Google (Firebase Cloud Messaging)</td><td>Envío de notificaciones push; procesa el identificador del dispositivo</td><td>EE.UU.</td></tr>
+<tr><td>Google Workspace (Gmail, Calendar, Drive, Fotos)</td><td>Acceso a los servicios que usted conecte, únicamente con su autorización</td><td>EE.UU.</td></tr>
+<tr><td>Google (Maps, Places, Rutas y datos del entorno)</td><td>Búsqueda de lugares, cálculo de rutas y datos ambientales de su zona</td><td>EE.UU.</td></tr>
+<tr><td>Google (envío de correo transaccional)</td><td>Entrega de los correos que le enviamos: alta, credenciales y notificaciones de cuenta</td><td>EE.UU.</td></tr>
+<tr><td>Google Fonts</td><td>Entrega de las tipografías de la interfaz; recibe la dirección IP del dispositivo</td><td>EE.UU.</td></tr>
+<tr><td>Cloudflare</td><td>Red, entrega y cifrado TLS de la totalidad del tráfico hacia la plataforma</td><td>Global</td></tr>
+<tr><td>Cloudflare R2</td><td>Almacenamiento de las grabaciones de videollamada</td><td>Global</td></tr>
+<tr><td>LiveKit</td><td>Infraestructura de videollamadas y grabación</td><td>EE.UU.</td></tr>
+<tr><td>Spike API</td><td>Agregación de datos de wearables (actividad, sueño, ritmo cardiaco)</td><td>EE.UU.</td></tr>
+<tr><td>Microsoft</td><td>Acceso a correo, calendario y archivos de Microsoft que usted conecte, únicamente con su autorización</td><td>EE.UU.</td></tr>
+<tr><td>Telegram</td><td>Canal de mensajería opcional: si usted conversa con el asistente por Telegram, los mensajes transitan por sus servidores</td><td>Por confirmar</td></tr>
+<tr><td>Mercado Pago</td><td>Procesamiento del pago de las suscripciones</td><td>Por confirmar</td></tr>
+<tr><td>2Captcha</td><td>Resolución de CAPTCHA cuando el asistente navega por la web a petición suya; recibe la imagen del CAPTCHA y la dirección del sitio</td><td>Por confirmar</td></tr>
+<tr><td>PostHog</td><td>Telemetría de producto del motor de memoria semántica; no recibe el contenido de sus conversaciones</td><td>Por confirmar</td></tr>
+<tr><td>unpkg</td><td>Red de entrega de la biblioteca de videollamadas en la página de invitado; recibe la dirección IP del visitante</td><td>Por confirmar</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>Alojamiento principal.</strong> La infraestructura principal de Unifractal y las bases de datos que contienen su información se encuentran alojadas en <strong>Guadalajara, Jalisco, México</strong>.</p>
+<p>Las entradas marcadas como «Por confirmar» corresponden a proveedores cuya jurisdicción de tratamiento se encuentra en proceso de verificación documental; esta tabla se actualizará en cuanto quede determinada.</p>
 <p><strong>Transferencias internacionales.</strong> Existen transferencias internacionales de datos personales hacia los subprocesadores listados en la tabla anterior, ubicados fuera del territorio nacional. Dichas transferencias se realizan conforme al <strong>artículo 37 de la LFPDPPP</strong>, al ser necesarias para el mantenimiento y cumplimiento de la relación jurídica entre usted y el responsable, y se encuentran amparadas por instrumentos contractuales que obligan a los receptores a observar los mismos principios y deberes de protección previstos en este aviso. Al aceptar el presente aviso, usted queda informado de dichas transferencias.</p>
 
 <h2 id="s10">10. No venta de datos personales</h2>
@@ -300,6 +315,7 @@ a:hover{opacity:.85}
 <li>Cualquier otro elemento o documento que facilite la localización de los datos personales.</li>
 </ol>
 <p><strong>Plazo de respuesta.</strong> Comunicaremos la determinación adoptada en un plazo máximo de <strong>20 días hábiles</strong> contados desde la recepción de la solicitud. De resultar procedente, se hará efectiva dentro de los 15 días hábiles siguientes a la comunicación. Los plazos podrán ampliarse una sola vez por un periodo igual cuando las circunstancias del caso lo justifiquen, lo cual le será notificado.</p>
+<p><strong>Distinción entre los dos plazos.</strong> Conviene no confundir los dos plazos que aparecen en este aviso, porque miden cosas distintas. El plazo de <strong>20 días hábiles</strong> es el máximo del que disponemos para <em>comunicarle la determinación</em> que adoptamos sobre su solicitud, es decir, para decirle si procede y en qué términos. El plazo de <strong>30 días naturales</strong> es el máximo para que el <em>borrado sea efectivo y permanente</em> en nuestros sistemas una vez que la eliminación resulta procedente, contado desde la solicitud. El primero mide nuestra respuesta; el segundo mide la supresión material de los datos, incluidas las copias de respaldo.</p>
 <p>El ejercicio de estos derechos es gratuito; únicamente deberán cubrirse, en su caso, los gastos justificados de envío o reproducción en medios distintos al correo electrónico. Si considera que su derecho a la protección de datos personales ha sido vulnerado, puede acudir ante la autoridad competente en materia de protección de datos personales en México.</p>
 
 <h2 id="s14">14. Menores de edad</h2>
@@ -332,8 +348,9 @@ a:hover{opacity:.85}
 <p><strong>Health Connect.</strong> Los datos obtenidos a través de Health Connect no se transfieren a terceros con fines publicitarios, no se venden bajo ninguna circunstancia, y su uso se limita estrictamente a las funciones que el usuario solicita dentro de la aplicación. Al desconectar Health Connect o revocar los permisos desde el sistema operativo, dejamos de acceder a dichos datos de inmediato.</p>
 
 <h2 id="anexo-meta">Anexo B: Plataformas de Meta</h2>
-<p>Unifractal puede operar como canal de mensajería a través de <strong>WhatsApp Business Platform</strong>, <strong>Instagram</strong> y <strong>Messenger</strong>, cuando el usuario decide comunicarse con el asistente por esos medios.</p>
-<p><strong>Datos tratados en esos canales:</strong></p>
+<p><strong>Estado actual.</strong> A la fecha de esta versión, los canales de mensajería de Meta <strong>no están habilitados</strong> en la app Unifractal ni en app.unifractal.ai, por lo que hoy no se tratan datos personales a través de ellos. Este anexo describe el tratamiento que aplicaría si dichos canales se habilitaran, y se publica por transparencia y para efectos de revisión de la plataforma.</p>
+<p>De habilitarse, Unifractal podría operar como canal de mensajería a través de <strong>WhatsApp Business Platform</strong>, <strong>Instagram</strong> y <strong>Messenger</strong>, cuando el usuario decidiera comunicarse con el asistente por esos medios.</p>
+<p><strong>Datos que se tratarían en esos canales:</strong></p>
 <ul>
 <li>El número de teléfono o el identificador de usuario que la plataforma correspondiente nos transmite.</li>
 <li>El contenido de los mensajes que usted envía y recibe, incluidos archivos adjuntos y notas de voz.</li>
@@ -412,7 +429,8 @@ a:hover{opacity:.85}
 <p>Documents, images, audio and other files you voluntarily upload for the assistant to process. These files are stored in association with your account and are processed solely to answer the specific request you made.</p>
 
 <h3>Usage and technical logs</h3>
-<p>Crash logs, device model, operating system version, application version, IP address, request timestamps and performance telemetry. This data allows us to detect errors, measure service stability and protect the infrastructure against abuse.</p>
+<p>This category comprises two kinds of information. First, <strong>crash data</strong>: the record the application generates when it stops unexpectedly, including the moment of the failure, the affected component and the technical stack trace of the error. Second, <strong>performance data</strong>: response times, request latency, resource consumption and session stability. Alongside these we collect the device model, the operating system version, the application version, the IP address and request timestamps.</p>
+<p>This data allows us to detect errors, measure service stability and protect the infrastructure against abuse. It is not used to build commercial profiles or for advertising.</p>
 
 <h3>Health and wearable activity data</h3>
 <p>When you choose to connect a wellness device or platform, we collect metrics such as steps, heart rate, sleep duration and quality, calories and physical activity sessions. This connection is optional, is always initiated by the user, and can be revoked at any time. Details of this processing are described in section 6.</p>
@@ -488,18 +506,31 @@ a:hover{opacity:.85}
 <tr><th>Provider</th><th>Purpose</th><th>Country</th></tr>
 </thead>
 <tbody>
-<tr><td>Anthropic</td><td>Language models</td><td>USA</td></tr>
-<tr><td>OpenAI</td><td>Transcription and voice</td><td>USA</td></tr>
-<tr><td>ElevenLabs</td><td>Voice synthesis</td><td>USA</td></tr>
-<tr><td>Groq</td><td>Inference</td><td>USA</td></tr>
-<tr><td>Cloudflare</td><td>Network and delivery</td><td>Global</td></tr>
-<tr><td>LiveKit</td><td>Video calls</td><td>USA</td></tr>
-<tr><td>Spike API</td><td>Wearables</td><td>USA</td></tr>
-<tr><td>Google Cloud</td><td>Maps and location services</td><td>USA</td></tr>
+<tr><td>Anthropic</td><td>Language models that generate the assistant's replies, and web search executed on the provider's side</td><td>USA</td></tr>
+<tr><td>OpenAI</td><td>Image generation and editing, audio transcription and synthesized voice</td><td>USA</td></tr>
+<tr><td>ElevenLabs</td><td>Voice synthesis for spoken replies</td><td>USA</td></tr>
+<tr><td>Groq</td><td>Transcription of voice notes and voice mode</td><td>USA</td></tr>
+<tr><td>Google (Gemini and Veo)</td><td>Secondary language model, memory consolidation, email classification and video generation</td><td>USA</td></tr>
+<tr><td>Google (Firebase Cloud Messaging)</td><td>Delivery of push notifications; processes the device identifier</td><td>USA</td></tr>
+<tr><td>Google Workspace (Gmail, Calendar, Drive, Photos)</td><td>Access to the services you connect, solely with your authorization</td><td>USA</td></tr>
+<tr><td>Google (Maps, Places, Routes and environmental data)</td><td>Place search, route calculation and environmental data for your area</td><td>USA</td></tr>
+<tr><td>Google (transactional email delivery)</td><td>Delivery of the emails we send you: sign-up, credentials and account notifications</td><td>USA</td></tr>
+<tr><td>Google Fonts</td><td>Delivery of the interface typefaces; receives the device's IP address</td><td>USA</td></tr>
+<tr><td>Cloudflare</td><td>Network, delivery and TLS encryption for all traffic to the platform</td><td>Global</td></tr>
+<tr><td>Cloudflare R2</td><td>Storage of video call recordings</td><td>Global</td></tr>
+<tr><td>LiveKit</td><td>Video call and recording infrastructure</td><td>USA</td></tr>
+<tr><td>Spike API</td><td>Wearable data aggregation (activity, sleep, heart rate)</td><td>USA</td></tr>
+<tr><td>Microsoft</td><td>Access to the Microsoft mail, calendar and files you connect, solely with your authorization</td><td>USA</td></tr>
+<tr><td>Telegram</td><td>Optional messaging channel: if you talk to the assistant over Telegram, the messages transit their servers</td><td>To be confirmed</td></tr>
+<tr><td>Mercado Pago</td><td>Processing of subscription payments</td><td>To be confirmed</td></tr>
+<tr><td>2Captcha</td><td>CAPTCHA solving when the assistant browses the web at your request; receives the CAPTCHA image and the site address</td><td>To be confirmed</td></tr>
+<tr><td>PostHog</td><td>Product telemetry for the semantic memory engine; does not receive the content of your conversations</td><td>To be confirmed</td></tr>
+<tr><td>unpkg</td><td>Delivery network for the video call library on the guest page; receives the visitor's IP address</td><td>To be confirmed</td></tr>
 </tbody>
 </table>
 </div>
 <p><strong>Primary hosting.</strong> Unifractal's primary infrastructure and the databases holding your information are hosted in <strong>Guadalajara, Jalisco, Mexico</strong>.</p>
+<p>Entries marked "To be confirmed" correspond to providers whose processing jurisdiction is undergoing documentary verification; this table will be updated as soon as it is determined.</p>
 <p><strong>International transfers.</strong> International transfers of personal data do take place towards the subprocessors listed in the table above, which are located outside Mexican territory. Such transfers are carried out in accordance with <strong>article 37 of the LFPDPPP</strong>, as they are necessary for the maintenance and performance of the legal relationship between you and the controller, and are covered by contractual instruments requiring recipients to observe the same protection principles and duties set out in this policy. By accepting this policy, you are informed of such transfers.</p>
 
 <h2 id="s10-en">10. No sale of personal data</h2>
@@ -546,6 +577,7 @@ a:hover{opacity:.85}
 <li>Any other element or document that helps locate the personal data.</li>
 </ol>
 <p><strong>Response time.</strong> We will communicate our determination within a maximum of <strong>20 business days</strong> from receipt of the request. Where the request is well founded, it will be given effect within the following 15 business days after that communication. These periods may be extended once for an equal period when the circumstances of the case justify it, which will be notified to you.</p>
+<p><strong>Distinguishing the two periods.</strong> The two periods stated in this notice should not be confused, because they measure different things. The <strong>20 business days</strong> is the maximum time we have to <em>communicate our determination</em> regarding your request — that is, to tell you whether it is well founded and on what terms. The <strong>30 calendar days</strong> is the maximum time for the <em>erasure to become effective and permanent</em> in our systems once deletion is well founded, counted from the request. The first measures our answer; the second measures the actual destruction of the data, including backup copies.</p>
 <p>Exercising these rights is free of charge; only justified shipping or reproduction costs in media other than email must be covered, where applicable. If you consider that your right to personal data protection has been infringed, you may turn to the competent personal data protection authority in Mexico.</p>
 
 <h2 id="s14-en">14. Minors</h2>
@@ -576,8 +608,9 @@ a:hover{opacity:.85}
 <p><strong>Health Connect.</strong> Data obtained through Health Connect is not transferred to third parties for advertising purposes, is not sold under any circumstances, and its use is strictly limited to the features the user requests within the app. When you disconnect Health Connect or revoke permissions from the operating system, we immediately cease accessing that data.</p>
 
 <h2 id="anexo-meta-en">Annex B: Meta Platforms</h2>
-<p>Unifractal may operate as a messaging channel through <strong>WhatsApp Business Platform</strong>, <strong>Instagram</strong> and <strong>Messenger</strong>, when the user chooses to communicate with the assistant through those means.</p>
-<p><strong>Data processed on those channels:</strong></p>
+<p><strong>Current status.</strong> As of this version, Meta's messaging channels are <strong>not enabled</strong> in the Unifractal app or on app.unifractal.ai, so no personal data is processed through them today. This annex describes the processing that would apply if those channels were enabled, and is published for transparency and for platform review purposes.</p>
+<p>If enabled, Unifractal could operate as a messaging channel through <strong>WhatsApp Business Platform</strong>, <strong>Instagram</strong> and <strong>Messenger</strong>, when the user chose to communicate with the assistant through those means.</p>
+<p><strong>Data that would be processed on those channels:</strong></p>
 <ul>
 <li>The phone number or platform user identifier that the corresponding platform transmits to us.</li>
 <li>The content of the messages you send and receive, including attachments and voice notes.</li>
