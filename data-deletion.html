@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Deletion — Unifractal</title>
-<meta name="description" content="Request deletion of your Unifractal / Life Assistant account and data.">
-<meta property="og:title" content="Data Deletion — Unifractal">
+<title>Eliminación de datos — Unifractal</title>
+<meta name="description" content="Cómo solicitar la eliminación de tu cuenta y tus datos en Unifractal.">
+<meta property="og:title" content="Eliminación de datos — Unifractal">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--white);li
 h1,h2,h3{font-family:'Syne',sans-serif;font-weight:700;line-height:1.3}
 a{color:var(--teal);text-decoration:none}
 a:hover{opacity:.85}
+
+/* Header */
 .header{position:sticky;top:0;z-index:100;background:rgba(10,14,26,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--card-border);padding:16px 0}
 .header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
 .header-logo{display:flex;align-items:center;gap:10px;color:var(--white);text-decoration:none}
@@ -28,36 +30,61 @@ a:hover{opacity:.85}
 .lang-btn{background:none;border:none;color:var(--gray);font-size:13px;font-weight:600;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
 .lang-btn.active{background:var(--teal);color:var(--bg)}
 .btn-sm{display:inline-flex;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;background:var(--teal);color:var(--bg)}
-.content{max-width:800px;margin:0 auto;padding:60px 24px 100px}
+
+/* Content — documento largo */
+.content{max-width:760px;margin:0 auto;padding:60px 24px 100px}
 .content h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:8px}
-.content .updated{color:var(--gray);font-size:14px;margin-bottom:40px}
-.content h2{font-size:1.3rem;color:var(--teal);margin-top:40px;margin-bottom:12px}
+.content .updated{color:var(--gray);font-size:14px;margin-bottom:8px}
+.content .entity{color:var(--gray);font-size:14px;margin-bottom:36px}
+.content h2{font-size:1.25rem;color:var(--teal);margin-top:48px;margin-bottom:14px;scroll-margin-top:88px}
+.content h3{font-size:1.02rem;color:var(--white);margin-top:28px;margin-bottom:10px;scroll-margin-top:88px}
 .content p,.content li{color:var(--gray);font-size:15px;margin-bottom:12px}
-.content ul,.content ol{padding-left:20px;margin-bottom:16px}
-.content li{margin-bottom:8px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{margin-bottom:7px}
 .content strong{color:var(--white)}
-.steps{list-style:none;counter-reset:step;padding:0;margin:24px 0}
-.steps li{counter-increment:step;display:flex;gap:16px;align-items:flex-start;padding:16px;background:var(--card);border:1px solid var(--card-border);border-radius:12px;margin-bottom:12px;color:var(--gray);font-size:15px}
-.steps li::before{content:counter(step);display:flex;align-items:center;justify-content:center;width:32px;height:32px;min-width:32px;background:rgba(78,205,196,.12);color:var(--teal);border-radius:8px;font-weight:700;font-size:14px}
-.deletion-form{background:var(--card);border:1px solid var(--card-border);border-radius:16px;padding:32px;margin-top:32px}
-.deletion-form h3{font-size:1.1rem;margin-bottom:16px}
-.form-input{width:100%;background:var(--bg);border:1px solid var(--card-border);border-radius:10px;padding:14px 16px;color:var(--white);font-size:14px;font-family:'DM Sans',sans-serif;transition:border-color .2s;outline:none;margin-bottom:16px}
-.form-input::placeholder{color:var(--gray)}
-.form-input:focus{border-color:var(--teal)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:600;border:none;cursor:pointer;transition:all .25s;font-family:'DM Sans',sans-serif;background:var(--teal);color:var(--bg);width:100%;justify-content:center}
-.btn:hover{background:#44B89C}
-.timeline-note{display:flex;align-items:center;gap:12px;padding:16px;background:rgba(78,205,196,.06);border:1px solid rgba(78,205,196,.15);border-radius:12px;margin-top:24px;font-size:14px;color:var(--gray)}
-.timeline-note strong{color:var(--teal)}
+.content hr{border:none;border-top:1px solid var(--card-border);margin:56px 0 8px}
+
+/* Índice */
+.toc{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:22px 26px;margin-bottom:44px}
+.toc h2{font-size:.78rem;color:var(--gray);text-transform:uppercase;letter-spacing:.09em;margin:0 0 14px;font-family:'DM Sans',sans-serif;font-weight:700}
+.toc ol{list-style:none;padding:0;margin:0;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;font-size:14px;break-inside:avoid}
+.toc a{color:var(--slate)}
+.toc a:hover{color:var(--teal)}
+@media(max-width:640px){.toc ol{columns:1}}
+
+/* Tabla de subprocesadores */
+.table-wrap{overflow-x:auto;margin-bottom:20px;-webkit-overflow-scrolling:touch}
+.content table{border-collapse:collapse;width:100%;min-width:480px;font-size:14px}
+.content th,.content td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--card-border);color:var(--gray);vertical-align:top}
+.content th{color:var(--white);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.content tbody tr:last-child td{border-bottom:none}
+
+/* Aviso destacado */
+.notice{background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--teal);border-radius:10px;padding:20px 24px;margin:20px 0 24px}
+.notice p:last-child,.notice ul:last-child{margin-bottom:0}
+.notice h3{margin-top:0}
+
+/* Bloques de idioma */
+.legal-body{display:none}
+
+/* Formulario */
+.form-input{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--card-border);background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;font-size:15px;margin-bottom:12px}
+.form-input:focus{outline:none;border-color:var(--teal)}
+.btn{display:inline-flex;padding:12px 22px;border-radius:8px;font-size:14px;font-weight:600;background:var(--teal);color:var(--bg);border:none;cursor:pointer;font-family:'DM Sans',sans-serif}
+
+/* Footer */
 .footer{border-top:1px solid var(--card-border);padding:40px 0}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .footer-left{display:flex;align-items:center;gap:10px}
 .footer-left svg{width:24px;height:24px}
 .footer-left span{font-family:'Syne',sans-serif;font-weight:700;font-size:16px}
 .footer-links{display:flex;gap:20px;flex-wrap:wrap}
-.footer-links a{color:var(--gray);font-size:13px}
+.footer-links a{color:var(--gray);font-size:13px;transition:color .2s}
 .footer-links a:hover{color:var(--white)}
-.footer-copy{color:var(--gray);font-size:13px}
-@media(max-width:768px){.footer-inner{flex-direction:column;text-align:center}}
+.footer-copy{color:var(--gray);font-size:13px;margin-top:20px;line-height:1.6}
+@media(max-width:768px){.footer-top{flex-direction:column;text-align:center}.footer-copy{text-align:center}}
 </style>
 </head>
 <body>
@@ -79,96 +106,300 @@ a:hover{opacity:.85}
 </header>
 
 <main class="content">
-<h1 data-es="Eliminación de Datos" data-en="Data Deletion">Eliminación de Datos</h1>
-<p class="updated" data-es="Última actualización: 24 de marzo de 2026" data-en="Last updated: March 24, 2026">Última actualización: 24 de marzo de 2026</p>
 
-<p data-es="Tienes derecho a solicitar la eliminación completa de tu cuenta y todos los datos asociados en Life Assistant y CoMind. Aquí te explicamos cómo hacerlo."
-   data-en="You have the right to request the complete deletion of your account and all associated data in Life Assistant and CoMind. Here's how to do it.">
-  Tienes derecho a solicitar la eliminación completa de tu cuenta y todos los datos asociados en Life Assistant y CoMind.</p>
+<div class="legal-body" id="body-es">
+<h1>Eliminación de datos</h1>
+<p class="updated">Última actualización: 22 de julio de 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México</p>
 
-<h2 data-es="¿Qué datos se eliminan?" data-en="What data gets deleted?">¿Qué datos se eliminan?</h2>
-<p data-es="Al solicitar la eliminación, se borran permanentemente:" data-en="When you request deletion, the following are permanently erased:">Al solicitar la eliminación, se borran permanentemente:</p>
-<ul>
-  <li data-es="Tu perfil de usuario (nombre, email, preferencias)" data-en="Your user profile (name, email, preferences)">Tu perfil de usuario (nombre, email, preferencias)</li>
-  <li data-es="Todo tu historial de conversaciones" data-en="Your entire conversation history">Todo tu historial de conversaciones</li>
-  <li data-es="Documentos generados y archivos almacenados" data-en="Generated documents and stored files">Documentos generados y archivos almacenados</li>
-  <li data-es="Memoria persistente del asistente asociada a tu cuenta" data-en="Persistent assistant memory associated with your account">Memoria persistente del asistente asociada a tu cuenta</li>
-  <li data-es="Datos de integraciones (Google Calendar, Gmail, Drive)" data-en="Integration data (Google Calendar, Gmail, Drive)">Datos de integraciones (Google Calendar, Gmail, Drive)</li>
-  <li data-es="Datos de wearables y salud" data-en="Wearable and health data">Datos de wearables y salud</li>
-  <li data-es="Datos de pago (los registros del procesador de pago se retienen según sus políticas)" data-en="Payment data (payment processor records are retained per their policies)">Datos de pago (los registros del procesador de pago se retienen según sus políticas)</li>
-</ul>
+<nav class="toc">
+  <h2>Contenido</h2>
+  <ol>
+    <li><a href="#s1">1. Cómo solicitar la eliminación</a></li>
+    <li><a href="#s2">2. Qué se elimina</a></li>
+    <li><a href="#s3">3. Qué se conserva y por qué</a></li>
+    <li><a href="#s4">4. Plazo</a></li>
+    <li><a href="#s5">5. Cómo revocar accesos a servicios conectados</a></li>
+    <li><a href="#s6">6. Contacto para dudas</a></li>
+    <li><a href="#s7">7. Fecha de última actualización</a></li>
+  </ol>
+</nav>
 
-<h2 data-es="Cómo solicitar la eliminación" data-en="How to request deletion">Cómo solicitar la eliminación</h2>
-<ol class="steps">
-  <li data-es="Ingresa el email asociado a tu cuenta en el formulario de abajo" data-en="Enter the email associated with your account in the form below">Ingresa el email asociado a tu cuenta en el formulario de abajo</li>
-  <li data-es="Haz clic en \"Solicitar eliminación\" — se abrirá tu cliente de correo con un email pre-llenado" data-en="Click \"Request deletion\" — your email client will open with a pre-filled email">Haz clic en "Solicitar eliminación" — se abrirá tu cliente de correo con un email pre-llenado</li>
-  <li data-es="Envía el email. Recibirás una confirmación en un plazo de 48 horas" data-en="Send the email. You'll receive a confirmation within 48 hours">Envía el email. Recibirás una confirmación en un plazo de 48 horas</li>
-  <li data-es="Tu cuenta y datos se eliminarán completamente en un plazo de 30 días hábiles" data-en="Your account and data will be completely deleted within 30 business days">Tu cuenta y datos se eliminarán completamente en un plazo de 30 días hábiles</li>
+<p>Esta página explica cómo eliminar tu cuenta y tus datos personales de <strong>Unifractal</strong>, la aplicación disponible en <a href="https://app.unifractal.ai">app.unifractal.ai</a> y en sus aplicaciones móviles, donde opera <strong>Bonifacio</strong>, nuestro asistente de inteligencia artificial.</p>
+
+<p>No necesitas iniciar sesión ni tener una cuenta activa para leer y usar estas instrucciones. Si ya perdiste el acceso a tu cuenta, puedes solicitar la eliminación por correo electrónico como se describe abajo.</p>
+
+<h2 id="s1">1. Cómo solicitar la eliminación</h2>
+
+<p>Existen dos formas de solicitar la eliminación de tu cuenta y de tus datos. Ambas producen exactamente el mismo resultado.</p>
+
+<h3>Opción A — Desde la app (recomendada)</h3>
+<p>Es la vía más rápida, porque tu identidad ya está verificada por tu sesión activa:</p>
+<ol>
+  <li>Abre la app de Unifractal (o entra a <a href="https://app.unifractal.ai">app.unifractal.ai</a>) e inicia sesión.</li>
+  <li>Ve a <strong>Ajustes</strong>.</li>
+  <li>Entra a la sección <strong>Cuenta</strong>.</li>
+  <li>Selecciona <strong>Eliminar cuenta</strong>.</li>
+  <li>Lee el resumen de lo que se va a eliminar y confirma la operación.</li>
 </ol>
+<p>Al confirmar, tu cuenta queda inmediatamente inhabilitada y entra al proceso de borrado permanente descrito en la sección 4.</p>
 
-<div class="deletion-form">
-  <h3 data-es="Solicitar eliminación de datos" data-en="Request data deletion">Solicitar eliminación de datos</h3>
-  <input type="email" class="form-input" id="delEmail" required
-         data-es-placeholder="Tu email de cuenta" data-en-placeholder="Your account email" placeholder="Tu email de cuenta">
-  <button class="btn" onclick="requestDeletion()" data-es="Solicitar eliminación" data-en="Request deletion">Solicitar eliminación</button>
+<h3>Opción B — Por correo electrónico</h3>
+<p>Si ya no puedes entrar a la app, escríbenos a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> <strong>desde el mismo correo electrónico con el que registraste tu cuenta</strong>, con el asunto <strong>«Solicitud de eliminación de datos»</strong>.</p>
+<p>Usar el correo registrado es la manera en que verificamos que la solicitud proviene de la persona titular de la cuenta. Si escribes desde otra dirección, te pediremos información adicional para confirmar tu identidad antes de proceder, y eso puede retrasar la solicitud.</p>
+
+<div class="notice">
+  <h3>Generar la solicitud por correo</h3>
+  <p>Escribe el correo electrónico de tu cuenta y presiona el botón. Se abrirá tu cliente de correo con un mensaje ya redactado y dirigido a hi@unifractal.ai; solo tienes que enviarlo.</p>
+  <input type="email" class="form-input" id="delEmail-es" required placeholder="Tu correo de la cuenta">
+  <button class="btn" onclick="requestDeletion()">Solicitar eliminación</button>
+  <p>Este botón no envía nada por sí solo ni comparte tu correo con nosotros: únicamente prepara el mensaje en tu propia aplicación de correo. La solicitud se registra cuando tú envías ese mensaje. Si tu dispositivo no tiene configurado un cliente de correo, escríbenos directamente a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
 </div>
 
-<div class="timeline-note">
-  <span>⏱️</span>
-  <span data-es="<strong>Tiempo de respuesta:</strong> confirmación en 48 horas, eliminación completa en 30 días hábiles." data-en="<strong>Response time:</strong> confirmation within 48 hours, complete deletion within 30 business days."><strong>Tiempo de respuesta:</strong> confirmación en 48 horas, eliminación completa en 30 días hábiles.</span>
+<h2 id="s2">2. Qué se elimina</h2>
+<p>Cuando se completa una solicitud de eliminación, borramos de forma permanente de nuestros sistemas de producción y de nuestros respaldos:</p>
+<ul>
+  <li><strong>La cuenta y el perfil:</strong> tu nombre, correo electrónico, teléfono, foto, idioma, zona horaria y cualquier otro dato de identificación asociado a la cuenta.</li>
+  <li><strong>El historial de conversaciones:</strong> todos los mensajes que intercambiaste con Bonifacio, incluidos los adjuntos enviados dentro del chat.</li>
+  <li><strong>Los archivos que hayas subido:</strong> documentos, imágenes, audios y cualquier otro archivo almacenado por ti en la plataforma, así como los documentos generados a partir de ellos.</li>
+  <li><strong>La memoria del asistente:</strong> las notas, hechos, recordatorios y preferencias que Bonifacio hubiera guardado sobre ti para personalizar sus respuestas.</li>
+  <li><strong>Los datos de wearables sincronizados:</strong> la información de actividad, sueño, ritmo cardiaco y demás métricas de salud y bienestar recibidas a través de Health Connect, HealthKit o Spike API.</li>
+  <li><strong>Las credenciales y tokens de los servicios conectados:</strong> los tokens de acceso y actualización de las integraciones que hubieras autorizado (por ejemplo, calendario, correo o almacenamiento en la nube) se revocan y se destruyen.</li>
+  <li><strong>Las preferencias y configuraciones:</strong> ajustes de notificaciones, automatizaciones, recordatorios programados y cualquier otra configuración de tu cuenta.</li>
+</ul>
+<p>La eliminación es definitiva: una vez completada no podemos restaurar tu cuenta ni recuperar su contenido, ni siquiera si vuelves a registrarte con el mismo correo electrónico. Si quieres conservar una copia de tu información, expórtala antes de solicitar la eliminación.</p>
+
+<h2 id="s3">3. Qué se conserva y por qué</h2>
+<p>Solo conservamos aquello que estamos obligados a conservar por ley o aquello que ya no permite identificarte. En concreto:</p>
+<ul>
+  <li><strong>Registros mínimos exigidos por obligaciones fiscales o legales.</strong> Si realizaste pagos, la legislación fiscal mexicana nos obliga a conservar los comprobantes fiscales digitales y los registros contables asociados durante los plazos legales aplicables. Estos registros contienen los datos mínimos de facturación (razón social o nombre, importe, fecha y concepto) y se guardan de forma segregada, sin usarse para ningún otro fin. También podemos conservar la evidencia documental estrictamente necesaria para atender un requerimiento de una autoridad competente o para acreditar el cumplimiento de una solicitud de eliminación.</li>
+  <li><strong>Datos agregados e irreversiblemente anonimizados.</strong> Métricas de uso del producto (por ejemplo, número total de conversaciones por día o tasas de error del sistema) que se calculan de manera agregada y que ya no contienen identificadores ni pueden vincularse de vuelta contigo. Al no ser datos personales, no se eliminan; su conservación no afecta tu privacidad porque no permiten reconstruir quién eras ni qué escribiste.</li>
+</ul>
+<p>Nada de lo anterior se utiliza para volver a contactarte, para marketing ni para entrenar modelos de inteligencia artificial.</p>
+
+<h2 id="s4">4. Plazo</h2>
+
+<div class="notice">
+  <p><strong>Tus datos se eliminan de forma permanente dentro de los 30 días naturales siguientes a la solicitud.</strong></p>
 </div>
 
-<h2 data-es="También puedes contactarnos directamente" data-en="You can also contact us directly">También puedes contactarnos directamente</h2>
-<p data-es='Envía un email a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> con el asunto "Solicitud de eliminación de datos" e incluye el email de tu cuenta.'
-   data-en='Send an email to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> with the subject "Data deletion request" and include your account email.'>
-  Envía un email a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> con el asunto "Solicitud de eliminación de datos" e incluye el email de tu cuenta.</p>
+<p>El acceso a la cuenta se cancela de inmediato al confirmar la solicitud. El borrado material de los sistemas de producción ocurre en los días siguientes, y la purga de los respaldos cifrados se completa dentro de la misma ventana de 30 días naturales, conforme al ciclo de rotación de respaldos.</p>
+<p>Cuando el proceso termina te enviamos una <strong>confirmación por correo electrónico</strong> a la dirección desde la que solicitaste la eliminación, indicando que el borrado se completó. Si no recibes esa confirmación dentro del plazo, escríbenos a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> y le daremos seguimiento.</p>
 
-<p style="margin-top:32px">
-  <strong>Unifractal</strong><br>
-  Guadalajara, Jalisco, México<br>
-  <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
-</p>
+<h2 id="s5">5. Cómo revocar accesos a servicios conectados</h2>
+<p>Si conectaste tu cuenta de Unifractal con un proveedor externo (por ejemplo, para iniciar sesión o para sincronizar tu calendario o tu correo), también puedes retirar ese permiso directamente desde el proveedor:</p>
+<ul>
+  <li><strong>Google:</strong> <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a></li>
+  <li><strong>Meta (Facebook / Instagram):</strong> <a href="https://www.facebook.com/settings?tab=applications" target="_blank" rel="noopener">https://www.facebook.com/settings?tab=applications</a></li>
+  <li><strong>Microsoft:</strong> <a href="https://account.live.com/consent/Manage" target="_blank" rel="noopener">https://account.live.com/consent/Manage</a></li>
+  <li><strong>Apple (Iniciar sesión con Apple):</strong> en tu dispositivo, entra a <strong>Ajustes → [tu nombre] → Inicio de sesión y seguridad → Iniciar sesión con Apple</strong>, selecciona Unifractal y elige dejar de usar la cuenta con Apple.</li>
+</ul>
+<p>Ten en cuenta que revocar el acceso en el proveedor <strong>impide accesos futuros, pero por sí solo no elimina los datos que Unifractal ya tenga almacenados</strong>. Para eliminarlos, utiliza la solicitud de eliminación descrita en la sección 1.</p>
+
+<h2 id="s6">6. Contacto para dudas</h2>
+<p>Si tienes preguntas sobre esta página, sobre el estado de una solicitud o sobre el ejercicio de tus derechos de acceso, rectificación, cancelación u oposición, contáctanos:</p>
+<ul>
+  <li><strong>Correo:</strong> <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a></li>
+  <li><strong>Responsable legal:</strong> Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+  <li><strong>Marca comercial:</strong> Unifractal</li>
+  <li><strong>Domicilio:</strong> Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, México</li>
+</ul>
+<p>Puedes consultar el detalle completo sobre qué datos tratamos, con qué finalidades y con qué fundamento en nuestro <a href="/privacy">aviso de privacidad</a>.</p>
+
+<h2 id="s7">7. Fecha de última actualización</h2>
+<p>Esta página fue actualizada por última vez el <strong>22 de julio de 2026</strong>. Si modificamos el procedimiento o los plazos de eliminación, publicaremos aquí la versión vigente con su nueva fecha.</p>
+</div>
+
+<div class="legal-body" id="body-en">
+<h1>Data Deletion</h1>
+<p class="updated">Last updated: July 22, 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, Mexico</p>
+
+<nav class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#s1-en">1. How to request deletion</a></li>
+    <li><a href="#s2-en">2. What gets deleted</a></li>
+    <li><a href="#s3-en">3. What is retained and why</a></li>
+    <li><a href="#s4-en">4. Timeline</a></li>
+    <li><a href="#s5-en">5. How to revoke access for connected services</a></li>
+    <li><a href="#s6-en">6. Contact for questions</a></li>
+    <li><a href="#s7-en">7. Last updated</a></li>
+  </ol>
+</nav>
+
+<p>This page explains how to delete your account and your personal data from <strong>Unifractal</strong>, the application available at <a href="https://app.unifractal.ai">app.unifractal.ai</a> and through its mobile apps, where <strong>Bonifacio</strong>, our AI assistant, runs.</p>
+
+<p>You do not need to sign in or hold an active account to read and use these instructions. If you have already lost access to your account, you can request deletion by email as described below.</p>
+
+<h2 id="s1-en">1. How to request deletion</h2>
+
+<p>There are two ways to request deletion of your account and your data. Both lead to exactly the same result.</p>
+
+<h3>Option A — From inside the app (recommended)</h3>
+<p>This is the fastest route, because your identity is already verified by your active session:</p>
+<ol>
+  <li>Open the Unifractal app (or go to <a href="https://app.unifractal.ai">app.unifractal.ai</a>) and sign in.</li>
+  <li>Go to <strong>Settings</strong>.</li>
+  <li>Open the <strong>Account</strong> section.</li>
+  <li>Select <strong>Delete account</strong>.</li>
+  <li>Review the summary of what will be deleted and confirm.</li>
+</ol>
+<p>Once you confirm, your account is disabled immediately and enters the permanent deletion process described in section 4.</p>
+
+<h3>Option B — By email</h3>
+<p>If you can no longer sign in, write to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> <strong>from the same email address you used to register the account</strong>, with the subject <strong>"Data deletion request"</strong>.</p>
+<p>Using the registered address is how we verify that the request comes from the account holder. If you write from a different address, we will ask for additional information to confirm your identity before proceeding, which may delay the request.</p>
+
+<div class="notice">
+  <h3>Generate the request by email</h3>
+  <p>Enter your account email address and press the button. Your mail client will open with a message already written and addressed to hi@unifractal.ai; all you have to do is send it.</p>
+  <input type="email" class="form-input" id="delEmail-en" required placeholder="Your account email">
+  <button class="btn" onclick="requestDeletion()">Request deletion</button>
+  <p>The button does not send anything on its own and does not share your address with us: it only drafts the message inside your own mail application. The request is recorded when you send that message. If your device has no mail client configured, write to us directly at <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+</div>
+
+<h2 id="s2-en">2. What gets deleted</h2>
+<p>When a deletion request is completed, we permanently erase the following from our production systems and from our backups:</p>
+<ul>
+  <li><strong>The account and profile:</strong> your name, email address, phone number, photo, language, time zone and any other identifying data tied to the account.</li>
+  <li><strong>The conversation history:</strong> every message you exchanged with Bonifacio, including attachments sent inside the chat.</li>
+  <li><strong>Files you uploaded:</strong> documents, images, audio and any other file you stored on the platform, together with documents generated from them.</li>
+  <li><strong>The assistant's memory:</strong> the notes, facts, reminders and preferences Bonifacio had saved about you in order to personalize its answers.</li>
+  <li><strong>Synced wearable data:</strong> activity, sleep, heart rate and other health and wellbeing metrics received through Health Connect, HealthKit or Spike API.</li>
+  <li><strong>Credentials and tokens for connected services:</strong> access and refresh tokens for the integrations you had authorized (for example calendar, email or cloud storage) are revoked and destroyed.</li>
+  <li><strong>Preferences and settings:</strong> notification settings, automations, scheduled reminders and any other configuration of your account.</li>
+</ul>
+<p>Deletion is final: once completed we cannot restore your account or recover its contents, not even if you sign up again with the same email address. If you want to keep a copy of your information, export it before requesting deletion.</p>
+
+<h2 id="s3-en">3. What is retained and why</h2>
+<p>We only keep what we are legally required to keep, or what can no longer identify you. Specifically:</p>
+<ul>
+  <li><strong>Minimum records required by tax or legal obligations.</strong> If you made payments, Mexican tax law requires us to retain the corresponding digital tax receipts and related accounting records for the applicable statutory periods. Those records contain only the minimum billing data (name or legal name, amount, date and description) and are stored separately, without being used for any other purpose. We may also retain the documentary evidence strictly necessary to respond to a request from a competent authority or to demonstrate that a deletion request was carried out.</li>
+  <li><strong>Aggregated, irreversibly anonymized data.</strong> Product usage metrics (for example, the total number of conversations per day or system error rates) that are computed in aggregate and no longer contain identifiers or any way to link back to you. Because these are not personal data, they are not deleted; keeping them does not affect your privacy, since they cannot be used to reconstruct who you were or what you wrote.</li>
+</ul>
+<p>None of the above is used to contact you again, for marketing, or to train artificial intelligence models.</p>
+
+<h2 id="s4-en">4. Timeline</h2>
+
+<div class="notice">
+  <p><strong>Your data is permanently deleted within 30 calendar days of the request.</strong></p>
+</div>
+
+<p>Access to the account is revoked immediately once the request is confirmed. The actual erasure from production systems happens over the following days, and the purge of encrypted backups completes within the same 30 calendar day window, in line with our backup rotation cycle.</p>
+<p>When the process finishes we send a <strong>confirmation email</strong> to the address you used to request deletion, stating that the erasure is complete. If you do not receive that confirmation within the stated period, write to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> and we will follow up.</p>
+
+<h2 id="s5-en">5. How to revoke access for connected services</h2>
+<p>If you connected your Unifractal account to an external provider (for example, to sign in or to sync your calendar or your email), you can also withdraw that permission directly at the provider:</p>
+<ul>
+  <li><strong>Google:</strong> <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">https://myaccount.google.com/permissions</a></li>
+  <li><strong>Meta (Facebook / Instagram):</strong> <a href="https://www.facebook.com/settings?tab=applications" target="_blank" rel="noopener">https://www.facebook.com/settings?tab=applications</a></li>
+  <li><strong>Microsoft:</strong> <a href="https://account.live.com/consent/Manage" target="_blank" rel="noopener">https://account.live.com/consent/Manage</a></li>
+  <li><strong>Apple (Sign in with Apple):</strong> on your device, go to <strong>Settings → [your name] → Sign-In &amp; Security → Sign in with Apple</strong>, select Unifractal and choose to stop using the account with Apple.</li>
+</ul>
+<p>Please note that revoking access at the provider <strong>prevents future access but does not by itself delete data Unifractal has already stored</strong>. To delete that data, use the deletion request described in section 1.</p>
+
+<h2 id="s6-en">6. Contact for questions</h2>
+<p>If you have questions about this page, about the status of a request, or about exercising your rights of access, rectification, cancellation or objection, contact us:</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a></li>
+  <li><strong>Legal entity:</strong> Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+  <li><strong>Trade name:</strong> Unifractal</li>
+  <li><strong>Address:</strong> Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, Mexico</li>
+</ul>
+<p>You can find full details about what data we process, for what purposes and on what legal basis in our <a href="/privacy">privacy notice</a>.</p>
+
+<h2 id="s7-en">7. Last updated</h2>
+<p>This page was last updated on <strong>July 22, 2026</strong>. If we change the deletion procedure or its timelines, we will publish the current version here with its new date.</p>
+</div>
+
 </main>
 
 <footer class="footer">
 <div class="footer-inner">
-  <div class="footer-left">
-    <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
-    <span>Unifractal</span>
+  <div class="footer-top">
+    <div class="footer-left">
+      <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+      <span>Unifractal</span>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy" data-es="Aviso de Privacidad" data-en="Privacy Policy">Aviso de Privacidad</a>
+      <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
+      <a href="/data-deletion" data-es="Eliminación de datos" data-en="Data Deletion">Eliminación de datos</a>
+      <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
+      <a href="https://app.unifractal.ai">app.unifractal.ai</a>
+    </div>
   </div>
-  <div class="footer-links">
-    <a href="/privacy" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</a>
-    <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
-    <a href="/data-deletion" data-es="Eliminar Datos" data-en="Data Deletion">Eliminar Datos</a>
-    <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
-  </div>
-  <div class="footer-copy" data-es="Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal" data-en="Made in Guadalajara, Mexico 🇲🇽 · © 2026 Unifractal">Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal</div>
+  <div class="footer-copy">© 2026 Unifractal — Operado por Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México.</div>
 </div>
 </footer>
 
 <script>
+/* ═══ LANGUAGE ═══ */
+let currentLang = 'es';
 function setLang(lang) {
-  document.querySelectorAll('[data-es]').forEach(el => { const v = el.getAttribute('data-'+lang); if(v!==null) el.innerHTML=v; });
-  document.querySelectorAll('[data-es-placeholder]').forEach(el => { const v = el.getAttribute('data-'+lang+'-placeholder'); if(v!==null) el.placeholder=v; });
-  document.getElementById('lang-es').classList.toggle('active', lang==='es');
-  document.getElementById('lang-en').classList.toggle('active', lang==='en');
+  currentLang = lang;
+  document.querySelectorAll('[data-es]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val !== null) el.innerHTML = val;
+  });
+  document.querySelectorAll('[data-es-placeholder]').forEach(el => {
+    const val = el.getAttribute('data-' + lang + '-placeholder');
+    if (val !== null) el.placeholder = val;
+  });
+  const bodyEs = document.getElementById('body-es');
+  const bodyEn = document.getElementById('body-en');
+  if (bodyEs && bodyEn) {
+    bodyEs.style.display = (lang === 'es') ? 'block' : 'none';
+    bodyEn.style.display = (lang === 'en') ? 'block' : 'none';
+  }
+  document.documentElement.lang = lang;
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
   localStorage.setItem('lang', lang);
+  syncHash();
 }
 
+/* Las anclas canónicas viven en el bloque ES; el bloque EN usa el sufijo -en.
+   Esto mantiene vivo un enlace externo como /privacy#anexo-google en ambos idiomas. */
+let hashTimer = null;
+function syncHash() {
+  if (!location.hash) return;
+  // Coalesce: un cambio de hash y un cambio de idioma pueden dispararse juntos.
+  // Se resuelve el destino al EJECUTAR, no al programar, y despues del scroll
+  // nativo del navegador, para que gane siempre el idioma vigente.
+  clearTimeout(hashTimer);
+  hashTimer = setTimeout(() => {
+    const raw = location.hash.slice(1);
+    if (!raw) return;
+    const base = raw.endsWith('-en') ? raw.slice(0, -3) : raw;
+    const target = (currentLang === 'en') ? base + '-en' : base;
+    const el = document.getElementById(target);
+    if (el) el.scrollIntoView({ behavior: 'auto' });
+  }, 0);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setLang(localStorage.getItem('lang') || 'es');
+});
+window.addEventListener('hashchange', syncHash);
+
+/* ═══ SOLICITUD DE ELIMINACIÓN ═══
+   El formulario existe en ambos bloques de idioma (delEmail-es / delEmail-en);
+   leemos el del bloque visible según currentLang. */
 function requestDeletion() {
-  const email = document.getElementById('delEmail').value;
-  if (!email) return;
-  const lang = localStorage.getItem('lang') || 'es';
-  const subject = lang === 'es'
+  const input = document.getElementById('delEmail-' + currentLang);
+  if (!input) return;
+  const email = input.value.trim();
+  if (!email) { input.focus(); return; }
+  const subject = (currentLang === 'es')
     ? encodeURIComponent('Solicitud de eliminación de datos')
     : encodeURIComponent('Data deletion request');
-  const body = lang === 'es'
-    ? encodeURIComponent('Hola,\n\nSolicito la eliminación completa de mi cuenta y datos asociados.\n\nEmail de mi cuenta: ' + email + '\n\nGracias.')
-    : encodeURIComponent('Hello,\n\nI request the complete deletion of my account and associated data.\n\nMy account email: ' + email + '\n\nThank you.');
+  const body = (currentLang === 'es')
+    ? encodeURIComponent('Hola,\n\nSolicito la eliminación completa de mi cuenta y de los datos asociados en Unifractal.\n\nCorreo de mi cuenta: ' + email + '\n\nGracias.')
+    : encodeURIComponent('Hello,\n\nI request the complete deletion of my Unifractal account and all associated data.\n\nMy account email: ' + email + '\n\nThank you.');
   window.location.href = 'mailto:hi@unifractal.ai?subject=' + subject + '&body=' + body;
 }
-
-document.addEventListener('DOMContentLoaded', () => setLang(localStorage.getItem('lang') || 'es'));
 </script>
 </body>
 </html>

@@ -161,15 +161,16 @@ img,svg{display:block;max-width:100%}
 
 /* ─── Footer ─── */
 .footer{border-top:1px solid var(--card-border);padding:40px 0}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .footer-left{display:flex;align-items:center;gap:10px}
 .footer-left svg{width:24px;height:24px}
 .footer-left span{font-family:'Syne',sans-serif;font-weight:700;font-size:16px}
 .footer-links{display:flex;gap:20px;flex-wrap:wrap}
 .footer-links a{color:var(--gray);font-size:13px;transition:color .2s}
 .footer-links a:hover{color:var(--white)}
-.footer-copy{color:var(--gray);font-size:13px}
-@media(max-width:768px){.footer-inner{flex-direction:column;text-align:center}}
+.footer-copy{color:var(--gray);font-size:13px;margin-top:20px;line-height:1.6}
+@media(max-width:768px){.footer-top{flex-direction:column;text-align:center}.footer-copy{text-align:center}}
 </style>
 </head>
 <body>
@@ -412,24 +413,21 @@ img,svg{display:block;max-width:100%}
 
 <!-- ═══ FOOTER ═══ -->
 <footer class="footer">
-<div class="container footer-inner">
-  <div class="footer-left">
-    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-      <path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/>
-      <path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/>
-      <path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/>
-      <path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/>
-    </svg>
-    <span>Unifractal</span>
+<div class="footer-inner">
+  <div class="footer-top">
+    <div class="footer-left">
+      <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+      <span>Unifractal</span>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy" data-es="Aviso de Privacidad" data-en="Privacy Policy">Aviso de Privacidad</a>
+      <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
+      <a href="/data-deletion" data-es="Eliminación de datos" data-en="Data Deletion">Eliminación de datos</a>
+      <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
+      <a href="https://app.unifractal.ai">app.unifractal.ai</a>
+    </div>
   </div>
-  <div class="footer-links">
-    <a href="/privacy" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</a>
-    <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
-    <a href="/data-deletion" data-es="Eliminar Datos" data-en="Data Deletion">Eliminar Datos</a>
-    <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
-    <a href="https://app.unifractal.ai">app.unifractal.ai</a>
-  </div>
-  <div class="footer-copy" data-es="Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal" data-en="Made in Guadalajara, Mexico 🇲🇽 · © 2026 Unifractal">Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal</div>
+  <div class="footer-copy">© 2026 Unifractal — Operado por Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México.</div>
 </div>
 </footer>
 
@@ -497,7 +495,8 @@ function renderPrices(prices) {
   window._pricesData = prices;
   const grid = document.getElementById('pricingGrid');
   grid.innerHTML = prices.map(p => {
-    const features = (p.features || []).map(f => '<li>' + f + '</li>').join('');
+    const rawFeatures = typeof p.features === 'string' ? JSON.parse(p.features) : (p.features || []);
+    const features = rawFeatures.map(f => '<li>' + f + '</li>').join('');
     const popularClass = p.is_popular ? ' popular' : '';
     const badge = p.is_popular ? '<div class="popular-badge">' + (currentLang === 'es' ? '★ Más popular' : '★ Most popular') + '</div>' : '';
     const perMonth = currentLang === 'es' ? '/mes' : '/mo';
@@ -518,7 +517,7 @@ function renderPrices(prices) {
 function renderPricesFallback() {
   const fallback = [
     { tier:'free', display_name:'Free', price_mxn:0, messages_per_day:20, features:['TTS 5/' + (currentLang==='es'?'día':'day'), 'Research 1/' + (currentLang==='es'?'semana':'week')], is_popular:false },
-    { tier:'pro', display_name:'Pro', price_mxn:399, messages_per_day:120, features:['TTS 30/' + (currentLang==='es'?'día':'day'), 'Wearables', '50 docs RAG'], is_popular:true },
+    { tier:'pro', display_name:'Pro', price_mxn:499, messages_per_day:120, features:['TTS 30/' + (currentLang==='es'?'día':'day'), 'Wearables', '50 docs RAG'], is_popular:true },
     { tier:'max', display_name:'Max', price_mxn:799, messages_per_day:350, features:[currentLang==='es'?'Todo sin restricciones':'Unlimited', 'Research 20/' + (currentLang==='es'?'día':'day')], is_popular:false },
     { tier:'max_x2', display_name:'Max x2', price_mxn:1499, messages_per_day:700, features:['700 ' + (currentLang==='es'?'mensajes/día':'messages/day')], is_popular:false },
   ];

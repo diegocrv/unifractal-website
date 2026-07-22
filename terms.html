@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service — Unifractal</title>
-<meta name="description" content="Unifractal Terms of Service for Life Assistant and CoMind platform.">
-<meta property="og:title" content="Terms of Service — Unifractal">
+<title>Términos de Servicio — Unifractal</title>
+<meta name="description" content="Términos de Servicio de Unifractal. Condiciones de uso del asistente de IA Bonifacio.">
+<meta property="og:title" content="Términos de Servicio — Unifractal">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +18,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--white);li
 h1,h2,h3{font-family:'Syne',sans-serif;font-weight:700;line-height:1.3}
 a{color:var(--teal);text-decoration:none}
 a:hover{opacity:.85}
+
+/* Header */
 .header{position:sticky;top:0;z-index:100;background:rgba(10,14,26,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--card-border);padding:16px 0}
 .header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
 .header-logo{display:flex;align-items:center;gap:10px;color:var(--white);text-decoration:none}
@@ -28,24 +30,61 @@ a:hover{opacity:.85}
 .lang-btn{background:none;border:none;color:var(--gray);font-size:13px;font-weight:600;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
 .lang-btn.active{background:var(--teal);color:var(--bg)}
 .btn-sm{display:inline-flex;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;background:var(--teal);color:var(--bg)}
-.content{max-width:800px;margin:0 auto;padding:60px 24px 100px}
+
+/* Content — documento largo */
+.content{max-width:760px;margin:0 auto;padding:60px 24px 100px}
 .content h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:8px}
-.content .updated{color:var(--gray);font-size:14px;margin-bottom:40px}
-.content h2{font-size:1.3rem;color:var(--teal);margin-top:40px;margin-bottom:12px}
+.content .updated{color:var(--gray);font-size:14px;margin-bottom:8px}
+.content .entity{color:var(--gray);font-size:14px;margin-bottom:36px}
+.content h2{font-size:1.25rem;color:var(--teal);margin-top:48px;margin-bottom:14px;scroll-margin-top:88px}
+.content h3{font-size:1.02rem;color:var(--white);margin-top:28px;margin-bottom:10px;scroll-margin-top:88px}
 .content p,.content li{color:var(--gray);font-size:15px;margin-bottom:12px}
-.content ul{padding-left:20px;margin-bottom:16px}
-.content li{margin-bottom:6px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{margin-bottom:7px}
 .content strong{color:var(--white)}
+.content hr{border:none;border-top:1px solid var(--card-border);margin:56px 0 8px}
+
+/* Índice */
+.toc{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:22px 26px;margin-bottom:44px}
+.toc h2{font-size:.78rem;color:var(--gray);text-transform:uppercase;letter-spacing:.09em;margin:0 0 14px;font-family:'DM Sans',sans-serif;font-weight:700}
+.toc ol{list-style:none;padding:0;margin:0;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;font-size:14px;break-inside:avoid}
+.toc a{color:var(--slate)}
+.toc a:hover{color:var(--teal)}
+@media(max-width:640px){.toc ol{columns:1}}
+
+/* Tabla de subprocesadores */
+.table-wrap{overflow-x:auto;margin-bottom:20px;-webkit-overflow-scrolling:touch}
+.content table{border-collapse:collapse;width:100%;min-width:480px;font-size:14px}
+.content th,.content td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--card-border);color:var(--gray);vertical-align:top}
+.content th{color:var(--white);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.content tbody tr:last-child td{border-bottom:none}
+
+/* Aviso destacado */
+.notice{background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--teal);border-radius:10px;padding:20px 24px;margin:20px 0 24px}
+.notice p:last-child,.notice ul:last-child{margin-bottom:0}
+.notice h3{margin-top:0}
+
+/* Bloques de idioma */
+.legal-body{display:none}
+
+/* Formulario */
+.form-input{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--card-border);background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;font-size:15px;margin-bottom:12px}
+.form-input:focus{outline:none;border-color:var(--teal)}
+.btn{display:inline-flex;padding:12px 22px;border-radius:8px;font-size:14px;font-weight:600;background:var(--teal);color:var(--bg);border:none;cursor:pointer;font-family:'DM Sans',sans-serif}
+
+/* Footer */
 .footer{border-top:1px solid var(--card-border);padding:40px 0}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .footer-left{display:flex;align-items:center;gap:10px}
 .footer-left svg{width:24px;height:24px}
 .footer-left span{font-family:'Syne',sans-serif;font-weight:700;font-size:16px}
 .footer-links{display:flex;gap:20px;flex-wrap:wrap}
-.footer-links a{color:var(--gray);font-size:13px}
+.footer-links a{color:var(--gray);font-size:13px;transition:color .2s}
 .footer-links a:hover{color:var(--white)}
-.footer-copy{color:var(--gray);font-size:13px}
-@media(max-width:768px){.footer-inner{flex-direction:column;text-align:center}}
+.footer-copy{color:var(--gray);font-size:13px;margin-top:20px;line-height:1.6}
+@media(max-width:768px){.footer-top{flex-direction:column;text-align:center}.footer-copy{text-align:center}}
 </style>
 </head>
 <body>
@@ -67,105 +106,415 @@ a:hover{opacity:.85}
 </header>
 
 <main class="content">
-<h1 data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</h1>
-<p class="updated" data-es="Última actualización: 24 de marzo de 2026" data-en="Last updated: March 24, 2026">Última actualización: 24 de marzo de 2026</p>
 
-<p data-es="Estos Términos de Servicio (\"Términos\") rigen tu uso de Life Assistant y CoMind, operados por Unifractal (\"nosotros\", \"nuestro\"). Al usar nuestros servicios, aceptas estos Términos."
-   data-en="These Terms of Service (\"Terms\") govern your use of Life Assistant and CoMind, operated by Unifractal (\"we\", \"our\"). By using our services, you accept these Terms.">
-  Estos Términos de Servicio ("Términos") rigen tu uso de Life Assistant y CoMind, operados por Unifractal ("nosotros", "nuestro"). Al usar nuestros servicios, aceptas estos Términos.</p>
+<div class="legal-body" id="body-es">
+<h1>Términos de Servicio</h1>
+<p class="updated">Última actualización: 22 de julio de 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México</p>
 
-<h2 data-es="1. Descripción del servicio" data-en="1. Service Description">1. Descripción del servicio</h2>
-<p data-es="Unifractal provee una plataforma de asistente de inteligencia artificial disponible a través de aplicaciones móviles, web, WhatsApp, Telegram y otros canales de mensajería. El servicio incluye procesamiento de lenguaje natural, generación de documentos, navegación web, integración con servicios de terceros (Google Workspace, wearables), y funcionalidades enterprise."
-   data-en="Unifractal provides an AI assistant platform available through mobile apps, web, WhatsApp, Telegram and other messaging channels. The service includes natural language processing, document generation, web browsing, integration with third-party services (Google Workspace, wearables), and enterprise functionality.">
-  Unifractal provee una plataforma de asistente de inteligencia artificial disponible a través de aplicaciones móviles, web, WhatsApp, Telegram y otros canales de mensajería.</p>
+<nav class="toc">
+<h2>Contenido</h2>
+<ol>
+<li><a href="#s1">1. Identidad del proveedor</a></li>
+<li><a href="#s2">2. Aceptación de los términos</a></li>
+<li><a href="#s3">3. Descripción del servicio</a></li>
+<li><a href="#s4">4. Elegibilidad</a></li>
+<li><a href="#s5">5. Cuenta, credenciales y responsabilidad del usuario</a></li>
+<li><a href="#s6">6. Uso aceptable y conductas prohibidas</a></li>
+<li><a href="#s7">7. Aviso sobre resultados de IA</a></li>
+<li><a href="#s8">8. Contenido del usuario</a></li>
+<li><a href="#s9">9. Propiedad intelectual de Unifractal</a></li>
+<li><a href="#s10">10. Servicios de terceros</a></li>
+<li><a href="#s11">11. Planes, suscripciones y pagos</a></li>
+<li><a href="#s12">12. Cancelación y terminación</a></li>
+<li><a href="#s13">13. Disponibilidad del servicio</a></li>
+<li><a href="#s14">14. Limitación de responsabilidad</a></li>
+<li><a href="#s15">15. Indemnización</a></li>
+<li><a href="#s16">16. Cláusula Apple</a></li>
+<li><a href="#s17">17. Modificaciones a los términos</a></li>
+<li><a href="#s18">18. Ley aplicable y jurisdicción</a></li>
+<li><a href="#s19">19. Contacto</a></li>
+</ol>
+</nav>
 
-<h2 data-es="2. Cuentas" data-en="2. Accounts">2. Cuentas</h2>
-<p data-es="Debes proporcionar información veraz al crear tu cuenta. Eres responsable de mantener la confidencialidad de tus credenciales. Notifícanos inmediatamente si sospechas de acceso no autorizado."
-   data-en="You must provide truthful information when creating your account. You are responsible for maintaining the confidentiality of your credentials. Notify us immediately if you suspect unauthorized access.">
-  Debes proporcionar información veraz al crear tu cuenta. Eres responsable de mantener la confidencialidad de tus credenciales.</p>
+<h2 id="s1">1. Identidad del proveedor</h2>
+<p>El servicio descrito en este documento es prestado por <strong>Centro de Innovación en Biotecnología Aplicada, S.C.</strong>, sociedad civil constituida conforme a las leyes de los Estados Unidos Mexicanos, que opera comercialmente bajo la marca <strong>Unifractal</strong> (en adelante, «Unifractal», «nosotros» o «el proveedor»).</p>
+<p>Nuestro domicilio para efectos de estos términos es <strong>Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, México</strong>, y nuestro correo electrónico de contacto es <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>Estos Términos de Servicio (los «Términos») regulan el acceso y el uso de la aplicación Unifractal y del sitio <a href="https://app.unifractal.ai">app.unifractal.ai</a> por parte de personas físicas que crean una cuenta personal (en adelante, «el usuario» o «usted»).</p>
 
-<h2 data-es="3. Planes y pagos" data-en="3. Plans & Payments">3. Planes y pagos</h2>
-<p data-es="Ofrecemos planes gratuitos y de pago. Los precios se muestran en pesos mexicanos (MXN) e incluyen IVA. Las suscripciones se cobran mensualmente. Puedes cancelar en cualquier momento; tu acceso continuará hasta el final del período de facturación."
-   data-en="We offer free and paid plans. Prices are displayed in Mexican pesos (MXN) and include VAT. Subscriptions are billed monthly. You may cancel at any time; your access will continue until the end of the billing period.">
-  Ofrecemos planes gratuitos y de pago. Los precios se muestran en pesos mexicanos (MXN) e incluyen IVA. Las suscripciones se cobran mensualmente. Puedes cancelar en cualquier momento; tu acceso continuará hasta el final del período de facturación.</p>
+<h2 id="s2">2. Aceptación de los términos</h2>
+<p>Al crear una cuenta, acceder al servicio o utilizarlo de cualquier forma, usted manifiesta que ha leído, entendido y aceptado íntegramente estos Términos, así como el <a href="/privacy">Aviso de Privacidad</a>, que forma parte integrante de los mismos. Esta aceptación constituye un acuerdo vinculante entre usted y el proveedor.</p>
+<p><strong>Si no está de acuerdo con alguna parte de estos Términos, debe abstenerse de usar el servicio</strong> y, en su caso, cancelar su cuenta conforme a la sección 12. El uso continuado del servicio se entiende como aceptación de la versión vigente de estos Términos publicada en esta dirección.</p>
+<p>Si usted acepta estos Términos en nombre de otra persona, declara contar con facultades suficientes para obligarla.</p>
 
-<h2 data-es="4. Uso aceptable" data-en="4. Acceptable Use">4. Uso aceptable</h2>
-<p data-es="Te comprometes a no:" data-en="You agree not to:">Te comprometes a no:</p>
+<h2 id="s3">3. Descripción del servicio</h2>
+<p>Unifractal pone a disposición del usuario a <strong>Bonifacio</strong>, un asistente de inteligencia artificial de propósito general. A través de la aplicación, el usuario puede, entre otras funciones:</p>
 <ul>
-  <li data-es="Usar el servicio para actividades ilegales" data-en="Use the service for illegal activities">Usar el servicio para actividades ilegales</li>
-  <li data-es="Intentar acceder a cuentas de otros usuarios" data-en="Attempt to access other users' accounts">Intentar acceder a cuentas de otros usuarios</li>
-  <li data-es="Enviar contenido malicioso, spam o phishing a través del servicio" data-en="Send malicious content, spam, or phishing through the service">Enviar contenido malicioso, spam o phishing a través del servicio</li>
-  <li data-es="Realizar ingeniería inversa del servicio o sus APIs" data-en="Reverse-engineer the service or its APIs">Realizar ingeniería inversa del servicio o sus APIs</li>
-  <li data-es="Exceder los límites de uso de tu plan de forma abusiva" data-en="Abusively exceed the usage limits of your plan">Exceder los límites de uso de tu plan de forma abusiva</li>
+<li>Mantener conversaciones en lenguaje natural, por texto y por voz, con el asistente.</li>
+<li>Organizar, redactar, resumir, traducir y consultar información propia.</li>
+<li>Utilizar una <strong>memoria persistente</strong> que conserva contexto entre conversaciones para ofrecer respuestas más pertinentes con el tiempo.</li>
+<li>Conectar <strong>integraciones con servicios de terceros</strong> que el propio usuario autorice expresamente, para que el asistente pueda leer o escribir información en dichos servicios en su nombre.</li>
 </ul>
+<p>El servicio es una herramienta de productividad y asistencia de propósito general. Sus funciones pueden cambiar, ampliarse o descontinuarse con el tiempo, conforme a la sección 13. Las instancias enterprise contratadas por organizaciones se rigen por un contrato de prestación de servicios independiente y no están cubiertas por estos términos.</p>
 
-<h2 data-es="5. Propiedad intelectual" data-en="5. Intellectual Property">5. Propiedad intelectual</h2>
-<p data-es="El contenido que generas a través de Life Assistant te pertenece. Unifractal retiene los derechos sobre la plataforma, su código, diseño e infraestructura. No adquieres derechos sobre nuestros modelos de IA ni tecnología subyacente."
-   data-en="Content you generate through Life Assistant belongs to you. Unifractal retains rights to the platform, its code, design, and infrastructure. You do not acquire rights to our AI models or underlying technology.">
-  El contenido que generas a través de Life Assistant te pertenece. Unifractal retiene los derechos sobre la plataforma, su código, diseño e infraestructura.</p>
+<h2 id="s4">4. Elegibilidad</h2>
+<p>Para usar el servicio, el usuario debe tener <strong>al menos 13 años de edad</strong>. El servicio no está dirigido a menores de 13 años y no recabamos deliberadamente información de personas por debajo de esa edad; si detectamos una cuenta perteneciente a un menor de 13 años, la cancelaremos y eliminaremos la información asociada.</p>
+<p>Los usuarios <strong>mayores de 13 y menores de 18 años requieren la autorización previa de su padre, madre o tutor</strong>, quien deberá revisar y aceptar estos Términos y quien <strong>asume la responsabilidad del uso que el menor haga del servicio</strong>, incluido el contenido que envíe, las integraciones que conecte y cualquier cargo que se genere.</p>
+<p>El usuario declara que no se encuentra impedido para contratar conforme a la legislación aplicable ni figura en listas de personas o entidades sujetas a sanciones que prohíban la prestación de estos servicios.</p>
 
-<h2 data-es="6. Limitación de responsabilidad" data-en="6. Limitation of Liability">6. Limitación de responsabilidad</h2>
-<p data-es="El servicio se provee \"tal cual\". Las respuestas del asistente de IA son orientativas y no constituyen asesoría profesional (legal, médica, financiera). No garantizamos la exactitud de la información generada por IA. Unifractal no será responsable por daños indirectos, incidentales o consecuenciales derivados del uso del servicio."
-   data-en="The service is provided \"as is\". AI assistant responses are informational and do not constitute professional advice (legal, medical, financial). We do not guarantee the accuracy of AI-generated information. Unifractal shall not be liable for indirect, incidental, or consequential damages arising from use of the service.">
-  El servicio se provee "tal cual". Las respuestas del asistente de IA son orientativas y no constituyen asesoría profesional.</p>
+<h2 id="s5">5. Cuenta, credenciales y responsabilidad del usuario</h2>
+<p>Para acceder al servicio es necesario crear una cuenta. Al hacerlo, el usuario se obliga a:</p>
+<ul>
+<li><strong>Proporcionar datos veraces, exactos y actualizados</strong>, y mantenerlos así durante toda la vigencia de la relación.</li>
+<li><strong>Mantener la confidencialidad de sus credenciales</strong> de acceso (contraseña, códigos de verificación y tokens de sesión) y no compartirlas con terceros.</li>
+<li><strong>Notificarnos de inmediato</strong> a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> cualquier uso no autorizado de su cuenta o cualquier vulneración de seguridad de la que tenga conocimiento.</li>
+<li>No ceder ni transferir su cuenta, ni permitir que terceros la utilicen.</li>
+</ul>
+<p>El usuario es <strong>responsable de toda la actividad que se realice a través de su cuenta</strong>, salvo que dicha actividad derive de una falla de seguridad atribuible al proveedor. Podremos suspender temporalmente el acceso a una cuenta cuando existan indicios razonables de acceso no autorizado, con el fin de proteger al propio usuario.</p>
 
-<h2 data-es="7. Disponibilidad" data-en="7. Availability">7. Disponibilidad</h2>
-<p data-es="Nos esforzamos por mantener el servicio disponible 24/7, pero no garantizamos disponibilidad ininterrumpida. Pueden ocurrir interrupciones planificadas para mantenimiento. En caso de interrupciones significativas, te notificaremos cuando sea posible."
-   data-en="We strive to maintain the service available 24/7, but we do not guarantee uninterrupted availability. Planned maintenance interruptions may occur. For significant outages, we will notify you when possible.">
-  Nos esforzamos por mantener el servicio disponible 24/7, pero no garantizamos disponibilidad ininterrumpida.</p>
+<h2 id="s6">6. Uso aceptable y conductas prohibidas</h2>
+<p>El usuario se obliga a utilizar el servicio de forma lícita, responsable y conforme a estos Términos. Queda expresamente prohibido:</p>
+<ul>
+<li>Emplear el servicio para realizar, planear o facilitar <strong>actividades ilícitas</strong> de cualquier naturaleza.</li>
+<li><strong>Vulnerar o intentar vulnerar la seguridad</strong> del servicio, de su infraestructura o de las cuentas de otros usuarios, incluyendo pruebas de intrusión no autorizadas, ataques de denegación de servicio o explotación de vulnerabilidades.</li>
+<li>Realizar <strong>ingeniería inversa</strong>, descompilar, desensamblar o intentar de cualquier otro modo obtener el código fuente, los modelos, las instrucciones internas o los componentes del servicio.</li>
+<li>Efectuar <strong>scraping, minería de datos o cualquier uso automatizado no autorizado</strong>, así como acceder al servicio mediante medios distintos a las interfaces que ponemos a disposición.</li>
+<li><strong>Revender, sublicenciar, arrendar o comercializar</strong> el servicio, o exponerlo a terceros como si fuera un producto propio.</li>
+<li><strong>Suplantar la identidad</strong> de cualquier persona física o moral, o declarar falsamente una relación con ella.</li>
+<li>Cargar, generar o difundir <strong>contenido que infrinja derechos de terceros</strong>, incluidos derechos de autor, marcas, secretos industriales, privacidad o derechos de la personalidad.</li>
+<li>Generar, solicitar o distribuir <strong>contenido que explote o ponga en riesgo a menores de edad</strong>, que incite a la violencia, al odio o a la discriminación, o que promueva el terrorismo o la autolesión.</li>
+<li>Utilizar el servicio para <strong>vigilancia no consentida</strong>, rastreo, elaboración de perfiles o recopilación de información sobre personas sin su consentimiento o sin base legal para ello.</li>
+<li>Interferir con el funcionamiento normal del servicio, eludir límites de uso o cuotas, o sobrecargar deliberadamente la infraestructura.</li>
+</ul>
+<p>El incumplimiento de esta sección constituye una causa grave de terminación conforme a la sección 12 y podrá dar lugar a las acciones legales que correspondan.</p>
 
-<h2 data-es="8. Instancias Enterprise" data-en="8. Enterprise Instances">8. Instancias Enterprise</h2>
-<p data-es="Los clientes enterprise reciben una instancia dedicada con base de datos aislada. Los Términos enterprise específicos se negocian por separado y complementan estos Términos generales. En caso de conflicto, los términos enterprise prevalecen."
-   data-en="Enterprise customers receive a dedicated instance with an isolated database. Specific enterprise Terms are negotiated separately and complement these general Terms. In case of conflict, enterprise terms prevail.">
-  Los clientes enterprise reciben una instancia dedicada con base de datos aislada. Los Términos enterprise específicos se negocian por separado.</p>
+<h2 id="s7">7. Aviso sobre resultados de IA</h2>
+<div class="notice">
+<p><strong>Lea este aviso con atención antes de utilizar el servicio.</strong></p>
+<p>Las respuestas de Bonifacio <strong>se generan automáticamente mediante modelos de lenguaje</strong>. Por su propia naturaleza estadística, estas respuestas <strong>pueden contener errores, imprecisiones, omisiones o afirmaciones incorrectas</strong>, e incluso presentar información inexacta con apariencia de certeza. No garantizamos la exactitud, integridad, vigencia ni idoneidad de ningún resultado generado.</p>
+<p>Los resultados del servicio son de carácter meramente informativo y <strong>no constituyen asesoría médica, legal, financiera ni profesional de ningún tipo</strong>, ni sustituyen la consulta con una persona profesional debidamente calificada. Ninguna respuesta del asistente crea una relación profesional entre el usuario y Unifractal.</p>
+<p><strong>El usuario debe verificar de forma independiente cualquier información antes de actuar con base en ella</strong>, especialmente cuando se trate de decisiones con consecuencias sobre su salud, su patrimonio, sus obligaciones legales o la seguridad de terceros. La decisión de actuar y sus consecuencias son responsabilidad exclusiva del usuario.</p>
+<p><strong>En situaciones de emergencia, el usuario debe contactar de inmediato a los servicios de emergencia locales — en México, el 911 — y nunca depender del servicio.</strong> Bonifacio no es un servicio de emergencia, no está supervisado en tiempo real por personas y no debe utilizarse en situaciones que impliquen riesgo para la vida o la integridad de alguien.</p>
+</div>
 
-<h2 data-es="9. Terminación" data-en="9. Termination">9. Terminación</h2>
-<p data-es="Puedes cerrar tu cuenta en cualquier momento. Nos reservamos el derecho de suspender o terminar cuentas que violen estos Términos. En caso de terminación, tus datos se eliminarán según nuestra <a href='/privacy'>Política de Privacidad</a>."
-   data-en="You may close your account at any time. We reserve the right to suspend or terminate accounts that violate these Terms. Upon termination, your data will be deleted according to our <a href='/privacy'>Privacy Policy</a>.">
-  Puedes cerrar tu cuenta en cualquier momento. Nos reservamos el derecho de suspender o terminar cuentas que violen estos Términos.</p>
+<h2 id="s8">8. Contenido del usuario</h2>
+<p>Se entiende por «contenido del usuario» toda la información que usted envía, carga o genera a través del servicio: mensajes, archivos, notas, grabaciones de voz, recordatorios, memorias y datos provenientes de las integraciones que conecte.</p>
+<p><strong>El usuario conserva en todo momento la titularidad de su contenido.</strong> Unifractal no reclama propiedad alguna sobre él.</p>
+<p>Para poder prestar el servicio, el usuario otorga a Unifractal <strong>únicamente la licencia limitada, no exclusiva, revocable, mundial y libre de regalías necesaria para alojar, almacenar, reproducir, procesar, transmitir y mostrar dicho contenido</strong>, así como para transmitirlo a los proveedores de modelos e infraestructura indicados en el <a href="/privacy">Aviso de Privacidad</a>, con la única finalidad de operar y prestar el servicio al propio usuario.</p>
+<p>Esta licencia <strong>termina cuando el contenido se elimina</strong>, sin perjuicio de las copias de respaldo que se depuran en los plazos técnicos ordinarios y de la información que debamos conservar por obligación legal. El usuario declara contar con los derechos necesarios sobre el contenido que carga y es responsable de su licitud.</p>
 
-<h2 data-es="10. Ley aplicable" data-en="10. Governing Law">10. Ley aplicable</h2>
-<p data-es="Estos Términos se rigen por las leyes de México. Cualquier disputa se resolverá en los tribunales competentes de Guadalajara, Jalisco, México."
-   data-en="These Terms are governed by the laws of Mexico. Any dispute shall be resolved in the competent courts of Guadalajara, Jalisco, Mexico.">
-  Estos Términos se rigen por las leyes de México. Cualquier disputa se resolverá en los tribunales competentes de Guadalajara, Jalisco, México.</p>
+<h2 id="s9">9. Propiedad intelectual de Unifractal</h2>
+<p>La plataforma Unifractal, la aplicación, el asistente Bonifacio, el software, el código fuente, las interfaces gráficas, los diseños, la documentación, las bases de datos, las marcas, los nombres comerciales, los logotipos y demás signos distintivos son propiedad de Centro de Innovación en Biotecnología Aplicada, S.C. o de sus licenciantes, y se encuentran protegidos por la legislación mexicana e internacional en materia de propiedad intelectual.</p>
+<p>Estos Términos <strong>no transfieren ninguna licencia ni derecho de propiedad intelectual al usuario</strong>, salvo un derecho personal, limitado, revocable, no exclusivo e intransferible de usar el servicio conforme a lo aquí pactado y durante la vigencia de su cuenta.</p>
+<p>Queda prohibido copiar, modificar, distribuir, crear obras derivadas o utilizar las marcas de Unifractal sin autorización previa y por escrito. Si el usuario nos envía comentarios o sugerencias de mejora, podremos utilizarlos libremente y sin obligación de compensación o confidencialidad.</p>
 
-<h2 data-es="11. Cambios" data-en="11. Changes">11. Cambios</h2>
-<p data-es="Podemos modificar estos Términos. Los cambios entran en vigor al publicarse. El uso continuado del servicio implica aceptación de los Términos modificados."
-   data-en="We may modify these Terms. Changes take effect upon publication. Continued use of the service implies acceptance of the modified Terms.">
-  Podemos modificar estos Términos. Los cambios entran en vigor al publicarse.</p>
+<h2 id="s10">10. Servicios de terceros</h2>
+<p>El servicio permite conectar integraciones con plataformas de terceros que el usuario elija y autorice expresamente, como servicios de correo, calendario, almacenamiento, mensajería o dispositivos conectados.</p>
+<p>Dichas integraciones <strong>se rigen adicionalmente por los términos, condiciones y políticas de privacidad de cada proveedor</strong>, que el usuario debe conocer y aceptar por separado. La conexión de una integración implica que el usuario autoriza el intercambio de información entre Unifractal y ese proveedor en el alcance que él mismo determine.</p>
+<p><strong>Unifractal no controla ni responde por los actos u omisiones de dichos terceros</strong>, ni por la disponibilidad, exactitud, seguridad o legalidad de sus servicios. Si un proveedor modifica o suspende su interfaz, la integración correspondiente puede dejar de funcionar sin responsabilidad para nosotros. El usuario puede revocar en cualquier momento los permisos otorgados a una integración desde la aplicación o desde el propio proveedor.</p>
 
-<h2 data-es="12. Contacto" data-en="12. Contact">12. Contacto</h2>
-<p>
-  <strong>Unifractal</strong><br>
-  Guadalajara, Jalisco, México<br>
-  <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
-</p>
+<h2 id="s11">11. Planes, suscripciones y pagos</h2>
+<p>El servicio puede ofrecerse en un plan gratuito con límites de uso y en uno o varios <strong>planes de suscripción de pago</strong>. Las características, límites y precios vigentes de cada plan se muestran en la aplicación y en el sitio web antes de la contratación.</p>
+<ul>
+<li><strong>Renovación.</strong> Salvo que se indique lo contrario, las suscripciones se renuevan automáticamente por periodos iguales al contratado, hasta que el usuario las cancele antes del inicio del siguiente periodo.</li>
+<li><strong>Precios e impuestos.</strong> Los precios se expresan en <strong>pesos mexicanos (MXN)</strong> e incluyen o adicionan los impuestos aplicables, según se indique en el momento de la compra. Podremos modificar los precios con aviso previo; los cambios aplican a partir del siguiente periodo de renovación.</li>
+<li><strong>Falta de pago.</strong> Si un cargo no puede procesarse, podremos suspender el acceso a las funciones de pago hasta que se regularice el adeudo.</li>
+</ul>
+<p><strong>Las compras realizadas dentro de la app se procesan y se rigen adicionalmente por los términos de App Store o Google Play, según corresponda, incluidas sus políticas de reembolso; en ese caso, los reembolsos se solicitan directamente a la tienda correspondiente</strong> y no a Unifractal. Para las compras contratadas directamente con nosotros, el usuario puede escribir a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>. Lo anterior no limita los derechos que la legislación mexicana de protección al consumidor reconozca al usuario.</p>
+
+<h2 id="s12">12. Cancelación y terminación</h2>
+<p><strong>Por parte del usuario.</strong> El usuario puede cancelar su suscripción o eliminar su cuenta <strong>en cualquier momento y sin expresión de causa</strong> desde la configuración de la aplicación. La cancelación de una suscripción surte efectos al término del periodo ya pagado, durante el cual conservará el acceso a las funciones contratadas.</p>
+<p><strong>Por parte de Unifractal.</strong> Podremos suspender o terminar el acceso de un usuario en caso de <strong>incumplimiento de estos Términos</strong>, en particular de la sección 6. Salvo cuando exista un riesgo de seguridad, un daño inminente a terceros o un requerimiento legal o de autoridad competente que exija actuación inmediata, daremos aviso previo al usuario y, cuando sea razonable, una oportunidad de subsanar el incumplimiento.</p>
+<p><strong>Efectos de la terminación.</strong> Al terminar la relación cesa de inmediato el derecho de uso del servicio y se desactivan las integraciones conectadas. El contenido del usuario se elimina o se anonimiza conforme a los plazos y al procedimiento descritos en <a href="/data-deletion">/data-deletion</a> y en el <a href="/privacy">Aviso de Privacidad</a>. Sobreviven a la terminación las secciones 8 (en lo relativo a titularidad), 9, 14, 15, 16 y 18.</p>
+
+<h2 id="s13">13. Disponibilidad del servicio</h2>
+<p>El servicio se presta <strong>«tal cual» y «según disponibilidad»</strong>. En la máxima medida permitida por la ley, no otorgamos garantías expresas o implícitas de comerciabilidad, idoneidad para un fin particular, exactitud de los resultados o no infracción.</p>
+<p><strong>No garantizamos que el servicio esté disponible de forma ininterrumpida, oportuna, segura ni libre de errores.</strong> Pueden presentarse ventanas de mantenimiento programado, actualizaciones, interrupciones no planeadas, fallas de proveedores de infraestructura o de modelos, cortes de red y eventos de fuerza mayor. Procuraremos avisar con antelación razonable de los mantenimientos programados que impliquen indisponibilidad relevante.</p>
+<p>Podremos modificar, ampliar, limitar o descontinuar funciones del servicio. Cuando una modificación implique una reducción sustancial de las funciones contratadas en un plan de pago, lo notificaremos con antelación razonable y el usuario podrá cancelar conforme a la sección 12.</p>
+
+<h2 id="s14">14. Limitación de responsabilidad</h2>
+<p><strong>En la máxima medida permitida por la ley aplicable</strong>, Unifractal, sus socios, administradores, empleados y proveedores no serán responsables por daños indirectos, incidentales, especiales, punitivos o consecuenciales, ni por pérdida de beneficios, de oportunidades de negocio, de datos, de reputación o de ahorros previstos, derivados del uso o de la imposibilidad de uso del servicio, aun cuando se hubiera advertido de la posibilidad de dichos daños.</p>
+<p>En todo caso, la responsabilidad total y acumulada de Unifractal frente al usuario por cualquier concepto relacionado con el servicio se limita al monto efectivamente pagado por el usuario durante los <strong>doce (12) meses</strong> anteriores al hecho que origine la reclamación o, si el usuario utiliza el plan gratuito, a la cantidad de <strong>mil pesos mexicanos (MXN $1,000.00)</strong>.</p>
+<p><strong>Nada de lo dispuesto en esta sección limita o excluye los derechos irrenunciables que la legislación mexicana de protección al consumidor reconoce al usuario</strong>, ni la responsabilidad por dolo, fraude, negligencia grave o daños a la vida o a la integridad de las personas. Si alguna limitación resultara inválida conforme a la ley aplicable, se aplicará el límite máximo permitido por ésta.</p>
+
+<h2 id="s15">15. Indemnización</h2>
+<p>El usuario se obliga a <strong>mantener en paz y a salvo, defender e indemnizar</strong> a Centro de Innovación en Biotecnología Aplicada, S.C., a sus socios, administradores, empleados, representantes y proveedores, frente a cualquier reclamación, demanda, procedimiento, sanción, daño, pérdida, gasto o costa razonable (incluidos honorarios de abogados) presentada por un tercero y que derive de:</p>
+<ul>
+<li>El uso que el usuario haga del servicio o del contenido que envíe, cargue o genere a través de él.</li>
+<li>El incumplimiento de estos Términos o de cualquier ley o reglamento aplicable.</li>
+<li>La infracción de derechos de terceros, incluidos derechos de propiedad intelectual, de privacidad o de la personalidad.</li>
+</ul>
+<p>Unifractal notificará oportunamente al usuario de cualquier reclamación cubierta por esta cláusula y podrá participar en su defensa con abogados de su elección y a su costa. El usuario no podrá celebrar convenios que impongan obligaciones a Unifractal sin su consentimiento previo por escrito.</p>
+
+<h2 id="s16">16. Cláusula Apple</h2>
+<p>Esta sección aplica únicamente cuando el usuario obtiene la aplicación de Unifractal a través de la App Store de Apple, y prevalece sobre cualquier disposición contraria de estos Términos en lo que respecta a esa vía de distribución:</p>
+<ul>
+<li><strong>Apple no es parte de estos Términos y no tiene responsabilidad alguna respecto de la aplicación</strong> ni de su contenido. Estos Términos se celebran exclusivamente entre el usuario y Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+<li><strong>Apple no tiene obligación alguna de prestar servicios de mantenimiento o soporte respecto de la aplicación.</strong> Cualquier necesidad de mantenimiento o soporte corresponde exclusivamente a Unifractal.</li>
+<li><strong>Apple y sus subsidiarias son terceros beneficiarios de estos Términos y podrán hacerlos valer frente al usuario</strong>, quien reconoce que Apple tendrá el derecho (y se considerará que lo ha aceptado) de exigir su cumplimiento en calidad de tercero beneficiario.</li>
+</ul>
+<p>En consecuencia, <strong>cualquier reclamación, queja o solicitud relacionada con la aplicación —incluida la responsabilidad por productos, la falta de conformidad con la normativa aplicable o las reclamaciones por infracción de propiedad intelectual— se dirige a Unifractal y no a Apple</strong>, al correo <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>. El usuario declara además que no se encuentra en un país sujeto a embargo por parte del gobierno de los Estados Unidos ni figura en listas de partes restringidas de dicho país.</p>
+
+<h2 id="s17">17. Modificaciones a los términos</h2>
+<p>Podremos modificar estos Términos para reflejar cambios en el servicio, en nuestras prácticas o en la legislación aplicable. La versión vigente estará siempre publicada en esta misma dirección, con su fecha de «Última actualización» al inicio del documento.</p>
+<p>Cuando los cambios sean <strong>sustanciales</strong> —por ejemplo, si afectan los derechos del usuario, el alcance de las licencias otorgadas o las condiciones económicas—, lo notificaremos además <strong>mediante un aviso dentro de la aplicación</strong> y, cuando corresponda, por correo electrónico, con una antelación razonable a su entrada en vigor.</p>
+<p><strong>El uso continuado del servicio después de la entrada en vigor de los cambios implica su aceptación.</strong> Si el usuario no está de acuerdo con la nueva versión, puede cancelar su cuenta conforme a la sección 12 antes de esa fecha.</p>
+
+<h2 id="s18">18. Ley aplicable y jurisdicción</h2>
+<p>Estos Términos, así como cualquier controversia derivada de su interpretación, cumplimiento o ejecución, se rigen por las <strong>leyes de los Estados Unidos Mexicanos</strong>.</p>
+<p>Para la resolución de cualquier controversia, las partes se someten expresamente a la jurisdicción de los <strong>tribunales competentes de la ciudad de Guadalajara, Jalisco, México</strong>, renunciando a cualquier otro fuero que pudiera corresponderles por razón de su domicilio presente o futuro o por cualquier otra causa.</p>
+<p>Lo anterior se establece <strong>sin perjuicio de los derechos irrenunciables que la legislación de protección al consumidor reconoce al usuario</strong>, incluida la facultad de acudir a la Procuraduría Federal del Consumidor (PROFECO) o a la autoridad de protección al consumidor de su lugar de residencia. Antes de iniciar cualquier procedimiento, invitamos al usuario a contactarnos para buscar una solución de buena fe.</p>
+
+<h2 id="s19">19. Contacto</h2>
+<p>Para dudas, aclaraciones, solicitudes o notificaciones relacionadas con estos Términos, puede contactarnos en:</p>
+<ul>
+<li><strong>Razón social:</strong> Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+<li><strong>Marca comercial:</strong> Unifractal</li>
+<li><strong>Domicilio:</strong> Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, México</li>
+<li><strong>Correo electrónico:</strong> <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a></li>
+</ul>
+<p>Atenderemos su comunicación en un plazo razonable. Para solicitudes de eliminación de datos, consulte además <a href="/data-deletion">/data-deletion</a>.</p>
+</div>
+
+<div class="legal-body" id="body-en">
+<h1>Terms of Service</h1>
+<p class="updated">Last updated: July 22, 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, Mexico</p>
+
+<nav class="toc">
+<h2>Contents</h2>
+<ol>
+<li><a href="#s1-en">1. Provider identity</a></li>
+<li><a href="#s2-en">2. Acceptance of these terms</a></li>
+<li><a href="#s3-en">3. Description of the service</a></li>
+<li><a href="#s4-en">4. Eligibility</a></li>
+<li><a href="#s5-en">5. Account, credentials and user responsibility</a></li>
+<li><a href="#s6-en">6. Acceptable use and prohibited conduct</a></li>
+<li><a href="#s7-en">7. Notice regarding AI output</a></li>
+<li><a href="#s8-en">8. User content</a></li>
+<li><a href="#s9-en">9. Unifractal intellectual property</a></li>
+<li><a href="#s10-en">10. Third-party services</a></li>
+<li><a href="#s11-en">11. Plans, subscriptions and payments</a></li>
+<li><a href="#s12-en">12. Cancellation and termination</a></li>
+<li><a href="#s13-en">13. Service availability</a></li>
+<li><a href="#s14-en">14. Limitation of liability</a></li>
+<li><a href="#s15-en">15. Indemnification</a></li>
+<li><a href="#s16-en">16. Apple clause</a></li>
+<li><a href="#s17-en">17. Changes to these terms</a></li>
+<li><a href="#s18-en">18. Governing law and jurisdiction</a></li>
+<li><a href="#s19-en">19. Contact</a></li>
+</ol>
+</nav>
+
+<h2 id="s1-en">1. Provider identity</h2>
+<p>The service described in this document is provided by <strong>Centro de Innovación en Biotecnología Aplicada, S.C.</strong>, a civil partnership incorporated under the laws of the United Mexican States, operating commercially under the brand <strong>Unifractal</strong> (hereinafter "Unifractal", "we" or "the provider").</p>
+<p>Our address for the purposes of these terms is <strong>Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, Mexico</strong>, and our contact email address is <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>These Terms of Service (the "Terms") govern access to and use of the Unifractal application and of <a href="https://app.unifractal.ai">app.unifractal.ai</a> by individuals who create a personal account (hereinafter "the user" or "you").</p>
+
+<h2 id="s2-en">2. Acceptance of these terms</h2>
+<p>By creating an account, accessing the service or using it in any way, you represent that you have read, understood and fully accepted these Terms, as well as the <a href="/privacy">Privacy Policy</a>, which forms an integral part of them. This acceptance constitutes a binding agreement between you and the provider.</p>
+<p><strong>If you do not agree with any part of these Terms, you must refrain from using the service</strong> and, where applicable, cancel your account as set out in section 12. Continued use of the service is deemed acceptance of the version of these Terms published at this address at that time.</p>
+<p>If you accept these Terms on behalf of another person, you represent that you have sufficient authority to bind them.</p>
+
+<h2 id="s3-en">3. Description of the service</h2>
+<p>Unifractal makes available to the user <strong>Bonifacio</strong>, a general-purpose artificial intelligence assistant. Through the application, the user may, among other functions:</p>
+<ul>
+<li>Hold natural-language conversations with the assistant, by text and by voice.</li>
+<li>Organize, draft, summarize, translate and retrieve their own information.</li>
+<li>Use a <strong>persistent memory</strong> that retains context across conversations in order to deliver more relevant answers over time.</li>
+<li>Connect <strong>integrations with third-party services</strong> that the user expressly authorizes, so that the assistant can read from or write to those services on their behalf.</li>
+</ul>
+<p>The service is a general-purpose productivity and assistance tool. Its features may change, expand or be discontinued over time, as described in section 13. Enterprise instances contracted by organizations are governed by a separate services agreement and are not covered by these terms.</p>
+
+<h2 id="s4-en">4. Eligibility</h2>
+<p>To use the service, the user must be <strong>at least 13 years of age</strong>. The service is not directed at children under 13 and we do not knowingly collect information from individuals below that age; if we identify an account belonging to a child under 13, we will cancel it and delete the associated information.</p>
+<p>Users <strong>over 13 and under 18 years of age require the prior authorization of a parent or legal guardian</strong>, who must review and accept these Terms and who <strong>assumes responsibility for the minor's use of the service</strong>, including the content submitted, the integrations connected and any charges incurred.</p>
+<p>The user represents that they are not legally barred from contracting under applicable law and that they do not appear on any list of sanctioned persons or entities that would prohibit the provision of these services.</p>
+
+<h2 id="s5-en">5. Account, credentials and user responsibility</h2>
+<p>An account is required in order to access the service. In creating one, the user undertakes to:</p>
+<ul>
+<li><strong>Provide truthful, accurate and up-to-date information</strong>, and keep it that way throughout the relationship.</li>
+<li><strong>Keep their access credentials confidential</strong> (password, verification codes and session tokens) and not share them with third parties.</li>
+<li><strong>Notify us immediately</strong> at <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> of any unauthorized use of their account or any security breach they become aware of.</li>
+<li>Not assign or transfer their account, or allow third parties to use it.</li>
+</ul>
+<p>The user is <strong>responsible for all activity carried out through their account</strong>, unless such activity results from a security failure attributable to the provider. We may temporarily suspend access to an account where there are reasonable indications of unauthorized access, in order to protect the user themselves.</p>
+
+<h2 id="s6-en">6. Acceptable use and prohibited conduct</h2>
+<p>The user undertakes to use the service lawfully, responsibly and in accordance with these Terms. The following is expressly prohibited:</p>
+<ul>
+<li>Using the service to carry out, plan or facilitate <strong>unlawful activities</strong> of any kind.</li>
+<li><strong>Breaching or attempting to breach the security</strong> of the service, its infrastructure or other users' accounts, including unauthorized penetration testing, denial-of-service attacks or exploitation of vulnerabilities.</li>
+<li><strong>Reverse engineering</strong>, decompiling, disassembling or otherwise attempting to obtain the source code, models, internal instructions or components of the service.</li>
+<li>Carrying out <strong>scraping, data mining or any unauthorized automated use</strong>, or accessing the service through means other than the interfaces we make available.</li>
+<li><strong>Reselling, sublicensing, leasing or commercializing</strong> the service, or presenting it to third parties as if it were the user's own product.</li>
+<li><strong>Impersonating</strong> any individual or legal entity, or falsely stating an affiliation with one.</li>
+<li>Uploading, generating or distributing <strong>content that infringes third-party rights</strong>, including copyright, trademarks, trade secrets, privacy or personality rights.</li>
+<li>Generating, soliciting or distributing <strong>content that exploits or endangers minors</strong>, that incites violence, hatred or discrimination, or that promotes terrorism or self-harm.</li>
+<li>Using the service for <strong>non-consensual surveillance</strong>, tracking, profiling or collection of information about individuals without their consent or without a lawful basis.</li>
+<li>Interfering with the normal operation of the service, circumventing usage limits or quotas, or deliberately overloading the infrastructure.</li>
+</ul>
+<p>Breach of this section constitutes serious grounds for termination under section 12 and may give rise to any applicable legal action.</p>
+
+<h2 id="s7-en">7. Notice regarding AI output</h2>
+<div class="notice">
+<p><strong>Please read this notice carefully before using the service.</strong></p>
+<p>Bonifacio's responses are <strong>generated automatically by language models</strong>. By their statistical nature, these responses <strong>may contain errors, inaccuracies, omissions or incorrect statements</strong>, and may even present inaccurate information with an appearance of certainty. We do not warrant the accuracy, completeness, currency or suitability of any generated output.</p>
+<p>Output from the service is provided for informational purposes only and <strong>does not constitute medical, legal, financial or professional advice of any kind</strong>, nor does it replace consultation with a duly qualified professional. No response from the assistant creates a professional relationship between the user and Unifractal.</p>
+<p><strong>The user must independently verify any information before acting upon it</strong>, particularly where decisions may affect their health, their finances, their legal obligations or the safety of others. The decision to act and its consequences are the sole responsibility of the user.</p>
+<p><strong>In an emergency, the user must immediately contact local emergency services — in Mexico, 911 — and must never rely on the service.</strong> Bonifacio is not an emergency service, is not monitored in real time by people, and must not be used in situations involving risk to anyone's life or physical safety.</p>
+</div>
+
+<h2 id="s8-en">8. User content</h2>
+<p>"User content" means all information you submit, upload or generate through the service: messages, files, notes, voice recordings, reminders, memories and data coming from the integrations you connect.</p>
+<p><strong>The user retains ownership of their content at all times.</strong> Unifractal claims no ownership over it.</p>
+<p>In order to provide the service, the user grants Unifractal <strong>only the limited, non-exclusive, revocable, worldwide and royalty-free license necessary to host, store, reproduce, process, transmit and display that content</strong>, and to transmit it to the model and infrastructure providers listed in the <a href="/privacy">Privacy Policy</a>, for the sole purpose of operating and delivering the service to the user themselves.</p>
+<p>This license <strong>terminates when the content is deleted</strong>, without prejudice to backup copies that are purged within ordinary technical retention periods and to information we are legally required to retain. The user represents that they hold the necessary rights over the content they upload and is responsible for its lawfulness.</p>
+
+<h2 id="s9-en">9. Unifractal intellectual property</h2>
+<p>The Unifractal platform, the application, the Bonifacio assistant, the software, source code, graphical interfaces, designs, documentation, databases, trademarks, trade names, logos and other distinctive signs are the property of Centro de Innovación en Biotecnología Aplicada, S.C. or its licensors, and are protected by Mexican and international intellectual property law.</p>
+<p>These Terms <strong>transfer no license or intellectual property right to the user</strong>, other than a personal, limited, revocable, non-exclusive and non-transferable right to use the service as agreed herein and for the duration of their account.</p>
+<p>Copying, modifying, distributing, creating derivative works or using Unifractal's trademarks without prior written authorization is prohibited. If the user sends us feedback or improvement suggestions, we may use them freely and without any obligation of compensation or confidentiality.</p>
+
+<h2 id="s10-en">10. Third-party services</h2>
+<p>The service allows the user to connect integrations with third-party platforms of their choosing and with their express authorization, such as email, calendar, storage, messaging or connected-device services.</p>
+<p>Those integrations are <strong>additionally governed by the terms, conditions and privacy policies of each provider</strong>, which the user must review and accept separately. Connecting an integration means the user authorizes the exchange of information between Unifractal and that provider within the scope the user themselves defines.</p>
+<p><strong>Unifractal neither controls nor is liable for the acts or omissions of such third parties</strong>, nor for the availability, accuracy, security or legality of their services. If a provider changes or discontinues its interface, the corresponding integration may stop working, with no liability on our part. The user may revoke the permissions granted to an integration at any time, from within the application or from the provider itself.</p>
+
+<h2 id="s11-en">11. Plans, subscriptions and payments</h2>
+<p>The service may be offered under a free plan with usage limits and under one or more <strong>paid subscription plans</strong>. The features, limits and current prices of each plan are displayed in the application and on the website before purchase.</p>
+<ul>
+<li><strong>Renewal.</strong> Unless otherwise stated, subscriptions renew automatically for periods equal to the one purchased, until the user cancels before the start of the next period.</li>
+<li><strong>Prices and taxes.</strong> Prices are stated in <strong>Mexican pesos (MXN)</strong> and include or add applicable taxes, as indicated at the time of purchase. We may change prices with prior notice; changes take effect from the following renewal period.</li>
+<li><strong>Failed payment.</strong> If a charge cannot be processed, we may suspend access to paid features until the outstanding amount is settled.</li>
+</ul>
+<p><strong>Purchases made within the app are processed and additionally governed by the App Store or Google Play terms, as applicable, including their refund policies; in that case, refunds are requested directly from the corresponding store</strong> and not from Unifractal. For purchases contracted directly with us, the user may write to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>. None of the foregoing limits the rights granted to the user by Mexican consumer protection law.</p>
+
+<h2 id="s12-en">12. Cancellation and termination</h2>
+<p><strong>By the user.</strong> The user may cancel their subscription or delete their account <strong>at any time and without stating a reason</strong>, from the application settings. Cancelling a subscription takes effect at the end of the period already paid for, during which the user retains access to the contracted features.</p>
+<p><strong>By Unifractal.</strong> We may suspend or terminate a user's access in the event of a <strong>breach of these Terms</strong>, in particular section 6. Except where there is a security risk, imminent harm to third parties, or a legal or regulatory requirement demanding immediate action, we will give the user prior notice and, where reasonable, an opportunity to cure the breach.</p>
+<p><strong>Effects of termination.</strong> Upon termination, the right to use the service ceases immediately and connected integrations are disabled. User content is deleted or anonymized in accordance with the timeframes and procedure described at <a href="/data-deletion">/data-deletion</a> and in the <a href="/privacy">Privacy Policy</a>. Sections 8 (as to ownership), 9, 14, 15, 16 and 18 survive termination.</p>
+
+<h2 id="s13-en">13. Service availability</h2>
+<p>The service is provided <strong>"as is" and "as available"</strong>. To the maximum extent permitted by law, we make no express or implied warranties of merchantability, fitness for a particular purpose, accuracy of results or non-infringement.</p>
+<p><strong>We do not warrant that the service will be available on an uninterrupted, timely, secure or error-free basis.</strong> Scheduled maintenance windows, updates, unplanned outages, failures of infrastructure or model providers, network disruptions and force majeure events may occur. We will endeavour to give reasonable advance notice of scheduled maintenance entailing significant unavailability.</p>
+<p>We may modify, expand, limit or discontinue features of the service. Where a change entails a material reduction of the features contracted under a paid plan, we will notify it with reasonable advance notice and the user may cancel under section 12.</p>
+
+<h2 id="s14-en">14. Limitation of liability</h2>
+<p><strong>To the maximum extent permitted by applicable law</strong>, Unifractal, its partners, officers, employees and suppliers shall not be liable for indirect, incidental, special, punitive or consequential damages, nor for loss of profits, business opportunities, data, reputation or anticipated savings, arising from the use of or inability to use the service, even if advised of the possibility of such damages.</p>
+<p>In any event, Unifractal's total aggregate liability to the user on any ground related to the service is limited to the amount actually paid by the user during the <strong>twelve (12) months</strong> preceding the event giving rise to the claim or, if the user is on the free plan, to <strong>one thousand Mexican pesos (MXN $1,000.00)</strong>.</p>
+<p><strong>Nothing in this section limits or excludes the non-waivable rights granted to the user by Mexican consumer protection law</strong>, nor liability for wilful misconduct, fraud, gross negligence or harm to the life or physical integrity of persons. If any limitation is held invalid under applicable law, the maximum limit permitted by that law shall apply.</p>
+
+<h2 id="s15-en">15. Indemnification</h2>
+<p>The user undertakes to <strong>hold harmless, defend and indemnify</strong> Centro de Innovación en Biotecnología Aplicada, S.C., its partners, officers, employees, representatives and suppliers against any third-party claim, demand, proceeding, penalty, damage, loss, expense or reasonable cost (including attorneys' fees) arising from:</p>
+<ul>
+<li>The user's use of the service or of the content they submit, upload or generate through it.</li>
+<li>Breach of these Terms or of any applicable law or regulation.</li>
+<li>Infringement of third-party rights, including intellectual property, privacy or personality rights.</li>
+</ul>
+<p>Unifractal will promptly notify the user of any claim covered by this clause and may participate in its defence with counsel of its choosing and at its own cost. The user may not enter into any settlement imposing obligations on Unifractal without its prior written consent.</p>
+
+<h2 id="s16-en">16. Apple clause</h2>
+<p>This section applies only where the user obtains the Unifractal application through the Apple App Store, and prevails over any contrary provision of these Terms with respect to that distribution channel:</p>
+<ul>
+<li><strong>Apple is not a party to these Terms and has no responsibility whatsoever with respect to the application</strong> or its content. These Terms are entered into solely between the user and Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+<li><strong>Apple has no obligation whatsoever to furnish any maintenance or support services with respect to the application.</strong> Any maintenance or support need is the sole responsibility of Unifractal.</li>
+<li><strong>Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against the user</strong>, who acknowledges that Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms as a third-party beneficiary.</li>
+</ul>
+<p>Accordingly, <strong>any claim, complaint or request relating to the application —including product liability, failure to conform to applicable regulation, or claims of intellectual property infringement— is to be directed to Unifractal and not to Apple</strong>, at <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>. The user further represents that they are not located in a country subject to a United States government embargo and are not listed on any United States restricted-party list.</p>
+
+<h2 id="s17-en">17. Changes to these terms</h2>
+<p>We may amend these Terms to reflect changes in the service, in our practices or in applicable law. The current version will always be published at this same address, with its "Last updated" date at the top of the document.</p>
+<p>Where changes are <strong>material</strong> —for example, if they affect the user's rights, the scope of the licenses granted or the commercial conditions— we will additionally notify them <strong>by an in-app notice</strong> and, where appropriate, by email, with reasonable advance notice before they take effect.</p>
+<p><strong>Continued use of the service after the changes take effect constitutes acceptance of them.</strong> If the user does not agree with the new version, they may cancel their account under section 12 before that date.</p>
+
+<h2 id="s18-en">18. Governing law and jurisdiction</h2>
+<p>These Terms, and any dispute arising from their interpretation, performance or enforcement, are governed by the <strong>laws of the United Mexican States</strong>.</p>
+<p>For the resolution of any dispute, the parties expressly submit to the jurisdiction of the <strong>competent courts of the city of Guadalajara, Jalisco, Mexico</strong>, waiving any other venue that might correspond to them by reason of their present or future domicile or on any other ground.</p>
+<p>The foregoing applies <strong>without prejudice to the non-waivable rights granted to the user by consumer protection law</strong>, including the right to bring the matter before the Mexican Federal Consumer Protection Agency (PROFECO) or the consumer protection authority of their place of residence. Before starting any proceeding, we invite the user to contact us so that we can seek a good-faith resolution.</p>
+
+<h2 id="s19-en">19. Contact</h2>
+<p>For questions, clarifications, requests or notices relating to these Terms, you may contact us at:</p>
+<ul>
+<li><strong>Legal entity:</strong> Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+<li><strong>Trade name:</strong> Unifractal</li>
+<li><strong>Address:</strong> Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, Mexico</li>
+<li><strong>Email:</strong> <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a></li>
+</ul>
+<p>We will respond to your communication within a reasonable timeframe. For data deletion requests, please also see <a href="/data-deletion">/data-deletion</a>.</p>
+</div>
+
 </main>
 
 <footer class="footer">
 <div class="footer-inner">
-  <div class="footer-left">
-    <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
-    <span>Unifractal</span>
+  <div class="footer-top">
+    <div class="footer-left">
+      <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+      <span>Unifractal</span>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy" data-es="Aviso de Privacidad" data-en="Privacy Policy">Aviso de Privacidad</a>
+      <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
+      <a href="/data-deletion" data-es="Eliminación de datos" data-en="Data Deletion">Eliminación de datos</a>
+      <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
+      <a href="https://app.unifractal.ai">app.unifractal.ai</a>
+    </div>
   </div>
-  <div class="footer-links">
-    <a href="/privacy" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</a>
-    <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
-    <a href="/data-deletion" data-es="Eliminar Datos" data-en="Data Deletion">Eliminar Datos</a>
-    <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
-  </div>
-  <div class="footer-copy" data-es="Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal" data-en="Made in Guadalajara, Mexico 🇲🇽 · © 2026 Unifractal">Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal</div>
+  <div class="footer-copy">© 2026 Unifractal — Operado por Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México.</div>
 </div>
 </footer>
 
 <script>
+/* ═══ LANGUAGE ═══ */
+let currentLang = 'es';
 function setLang(lang) {
-  document.querySelectorAll('[data-es]').forEach(el => { const v = el.getAttribute('data-'+lang); if(v!==null) el.innerHTML=v; });
-  document.getElementById('lang-es').classList.toggle('active', lang==='es');
-  document.getElementById('lang-en').classList.toggle('active', lang==='en');
+  currentLang = lang;
+  document.querySelectorAll('[data-es]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val !== null) el.innerHTML = val;
+  });
+  document.querySelectorAll('[data-es-placeholder]').forEach(el => {
+    const val = el.getAttribute('data-' + lang + '-placeholder');
+    if (val !== null) el.placeholder = val;
+  });
+  const bodyEs = document.getElementById('body-es');
+  const bodyEn = document.getElementById('body-en');
+  if (bodyEs && bodyEn) {
+    bodyEs.style.display = (lang === 'es') ? 'block' : 'none';
+    bodyEn.style.display = (lang === 'en') ? 'block' : 'none';
+  }
+  document.documentElement.lang = lang;
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
   localStorage.setItem('lang', lang);
+  syncHash();
 }
-document.addEventListener('DOMContentLoaded', () => setLang(localStorage.getItem('lang') || 'es'));
+
+/* Las anclas canónicas viven en el bloque ES; el bloque EN usa el sufijo -en.
+   Esto mantiene vivo un enlace externo como /privacy#anexo-google en ambos idiomas. */
+let hashTimer = null;
+function syncHash() {
+  if (!location.hash) return;
+  // Coalesce: un cambio de hash y un cambio de idioma pueden dispararse juntos.
+  // Se resuelve el destino al EJECUTAR, no al programar, y despues del scroll
+  // nativo del navegador, para que gane siempre el idioma vigente.
+  clearTimeout(hashTimer);
+  hashTimer = setTimeout(() => {
+    const raw = location.hash.slice(1);
+    if (!raw) return;
+    const base = raw.endsWith('-en') ? raw.slice(0, -3) : raw;
+    const target = (currentLang === 'en') ? base + '-en' : base;
+    const el = document.getElementById(target);
+    if (el) el.scrollIntoView({ behavior: 'auto' });
+  }, 0);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setLang(localStorage.getItem('lang') || 'es');
+});
+window.addEventListener('hashchange', syncHash);
 </script>
 </body>
 </html>

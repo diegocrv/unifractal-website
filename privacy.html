@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Unifractal</title>
-<meta name="description" content="Unifractal Privacy Policy. How we collect, use, and protect your data.">
-<meta property="og:title" content="Privacy Policy — Unifractal">
+<title>Aviso de Privacidad — Unifractal</title>
+<meta name="description" content="Aviso de Privacidad Integral de Unifractal. Qué datos recabamos, para qué, y cómo ejercer tus derechos.">
+<meta property="og:title" content="Aviso de Privacidad — Unifractal">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,27 +31,60 @@ a:hover{opacity:.85}
 .lang-btn.active{background:var(--teal);color:var(--bg)}
 .btn-sm{display:inline-flex;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;background:var(--teal);color:var(--bg)}
 
-/* Content */
-.content{max-width:800px;margin:0 auto;padding:60px 24px 100px}
+/* Content — documento largo */
+.content{max-width:760px;margin:0 auto;padding:60px 24px 100px}
 .content h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:8px}
-.content .updated{color:var(--gray);font-size:14px;margin-bottom:40px}
-.content h2{font-size:1.3rem;color:var(--teal);margin-top:40px;margin-bottom:12px}
+.content .updated{color:var(--gray);font-size:14px;margin-bottom:8px}
+.content .entity{color:var(--gray);font-size:14px;margin-bottom:36px}
+.content h2{font-size:1.25rem;color:var(--teal);margin-top:48px;margin-bottom:14px;scroll-margin-top:88px}
+.content h3{font-size:1.02rem;color:var(--white);margin-top:28px;margin-bottom:10px;scroll-margin-top:88px}
 .content p,.content li{color:var(--gray);font-size:15px;margin-bottom:12px}
-.content ul{padding-left:20px;margin-bottom:16px}
-.content li{margin-bottom:6px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{margin-bottom:7px}
 .content strong{color:var(--white)}
+.content hr{border:none;border-top:1px solid var(--card-border);margin:56px 0 8px}
+
+/* Índice */
+.toc{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:22px 26px;margin-bottom:44px}
+.toc h2{font-size:.78rem;color:var(--gray);text-transform:uppercase;letter-spacing:.09em;margin:0 0 14px;font-family:'DM Sans',sans-serif;font-weight:700}
+.toc ol{list-style:none;padding:0;margin:0;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;font-size:14px;break-inside:avoid}
+.toc a{color:var(--slate)}
+.toc a:hover{color:var(--teal)}
+@media(max-width:640px){.toc ol{columns:1}}
+
+/* Tabla de subprocesadores */
+.table-wrap{overflow-x:auto;margin-bottom:20px;-webkit-overflow-scrolling:touch}
+.content table{border-collapse:collapse;width:100%;min-width:480px;font-size:14px}
+.content th,.content td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--card-border);color:var(--gray);vertical-align:top}
+.content th{color:var(--white);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.content tbody tr:last-child td{border-bottom:none}
+
+/* Aviso destacado */
+.notice{background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--teal);border-radius:10px;padding:20px 24px;margin:20px 0 24px}
+.notice p:last-child,.notice ul:last-child{margin-bottom:0}
+.notice h3{margin-top:0}
+
+/* Bloques de idioma */
+.legal-body{display:none}
+
+/* Formulario */
+.form-input{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--card-border);background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;font-size:15px;margin-bottom:12px}
+.form-input:focus{outline:none;border-color:var(--teal)}
+.btn{display:inline-flex;padding:12px 22px;border-radius:8px;font-size:14px;font-weight:600;background:var(--teal);color:var(--bg);border:none;cursor:pointer;font-family:'DM Sans',sans-serif}
 
 /* Footer */
 .footer{border-top:1px solid var(--card-border);padding:40px 0}
-.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .footer-left{display:flex;align-items:center;gap:10px}
 .footer-left svg{width:24px;height:24px}
 .footer-left span{font-family:'Syne',sans-serif;font-weight:700;font-size:16px}
 .footer-links{display:flex;gap:20px;flex-wrap:wrap}
-.footer-links a{color:var(--gray);font-size:13px}
+.footer-links a{color:var(--gray);font-size:13px;transition:color .2s}
 .footer-links a:hover{color:var(--white)}
-.footer-copy{color:var(--gray);font-size:13px}
-@media(max-width:768px){.footer-inner{flex-direction:column;text-align:center}}
+.footer-copy{color:var(--gray);font-size:13px;margin-top:20px;line-height:1.6}
+@media(max-width:768px){.footer-top{flex-direction:column;text-align:center}.footer-copy{text-align:center}}
 </style>
 </head>
 <body>
@@ -73,116 +106,567 @@ a:hover{opacity:.85}
 </header>
 
 <main class="content">
-<h1 data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</h1>
-<p class="updated" data-es="Última actualización: 24 de marzo de 2026" data-en="Last updated: March 24, 2026">Última actualización: 24 de marzo de 2026</p>
 
-<p data-es="En Unifractal (\"nosotros\"), operamos la plataforma Life Assistant y CoMind. Esta política explica qué datos recopilamos, cómo los usamos y tus derechos."
-   data-en="At Unifractal (\"we\"), we operate the Life Assistant and CoMind platform. This policy explains what data we collect, how we use it, and your rights.">
-  En Unifractal ("nosotros"), operamos la plataforma Life Assistant y CoMind. Esta política explica qué datos recopilamos, cómo los usamos y tus derechos.</p>
+<div class="legal-body" id="body-es">
+<h1>Aviso de Privacidad Integral</h1>
+<p class="updated">Última actualización: 22 de julio de 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México</p>
 
-<h2 data-es="1. Datos que recopilamos" data-en="1. Data We Collect">1. Datos que recopilamos</h2>
-<p data-es="<strong>Datos de cuenta:</strong> nombre, dirección de email y contraseña (hash seguro). Si te registras con Google, recibimos tu nombre y email de tu perfil de Google."
-   data-en="<strong>Account data:</strong> name, email address, and password (securely hashed). If you sign up with Google, we receive your name and email from your Google profile.">
-  <strong>Datos de cuenta:</strong> nombre, dirección de email y contraseña (hash seguro). Si te registras con Google, recibimos tu nombre y email de tu perfil de Google.</p>
-<p data-es="<strong>Datos de uso:</strong> mensajes enviados al asistente, archivos generados, historial de conversaciones. Estos datos son necesarios para brindarte el servicio."
-   data-en="<strong>Usage data:</strong> messages sent to the assistant, generated files, conversation history. This data is necessary to provide you the service.">
-  <strong>Datos de uso:</strong> mensajes enviados al asistente, archivos generados, historial de conversaciones. Estos datos son necesarios para brindarte el servicio.</p>
-<p data-es="<strong>Datos de Google (con tu permiso explícito):</strong> Si conectas tu cuenta de Google, podemos acceder a:"
-   data-en="<strong>Google data (with your explicit permission):</strong> If you connect your Google account, we may access:">
-  <strong>Datos de Google (con tu permiso explícito):</strong> Si conectas tu cuenta de Google, podemos acceder a:</p>
+<nav class="toc">
+<h2>Contenido</h2>
+<ol>
+<li><a href="#s1">1. Identidad y domicilio del responsable</a></li>
+<li><a href="#s2">2. Alcance de este aviso</a></li>
+<li><a href="#s3">3. Datos personales que recabamos</a></li>
+<li><a href="#s4">4. Finalidades del tratamiento</a></li>
+<li><a href="#s5">5. Base legal, consentimiento y revocación</a></li>
+<li><a href="#salud">6. Datos de salud y actividad física</a></li>
+<li><a href="#s7">7. Servicios conectados por el usuario</a></li>
+<li><a href="#cookies">8. Cookies y tecnologías similares</a></li>
+<li><a href="#subprocesadores">9. Subprocesadores y transferencias internacionales</a></li>
+<li><a href="#s10">10. No venta de datos personales</a></li>
+<li><a href="#s11">11. Medidas de seguridad</a></li>
+<li><a href="#s12">12. Conservación y eliminación</a></li>
+<li><a href="#s13">13. Derechos ARCO</a></li>
+<li><a href="#s14">14. Menores de edad</a></li>
+<li><a href="#s15">15. Cambios al aviso</a></li>
+<li><a href="#s16">16. Contacto</a></li>
+<li><a href="#anexo-google">Anexo A: Servicios de Google</a></li>
+<li><a href="#anexo-meta">Anexo B: Plataformas de Meta</a></li>
+<li><a href="#anexo-apple">Anexo C: Apple</a></li>
+<li><a href="#anexo-microsoft">Anexo D: Microsoft</a></li>
+</ol>
+</nav>
+
+<h2 id="s1">1. Identidad y domicilio del responsable</h2>
+<p>El responsable del tratamiento de sus datos personales es <strong>Centro de Innovación en Biotecnología Aplicada, S.C.</strong>, sociedad civil constituida conforme a las leyes de los Estados Unidos Mexicanos, que opera bajo la marca comercial <strong>Unifractal</strong> y desarrolla el asistente de inteligencia artificial <strong>Bonifacio</strong>.</p>
+<p>Nuestro domicilio para efectos del presente aviso es <strong>Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, México</strong>.</p>
+<p>El área encargada de la protección de datos personales, así como de dar trámite a las solicitudes de ejercicio de derechos, puede ser contactada en el correo electrónico <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>El presente aviso se emite en cumplimiento de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), su Reglamento y los Lineamientos del Aviso de Privacidad.</p>
+
+<h2 id="s2">2. Alcance de este aviso</h2>
+<p>Este aviso de privacidad aplica al tratamiento de datos personales realizado a través de la <strong>aplicación móvil Unifractal</strong> (Android e iOS), de la aplicación web disponible en <strong>app.unifractal.ai</strong> y de los canales de mensajería que el propio usuario decida vincular a su cuenta. En conjunto nos referimos a estos servicios como la «instancia personal».</p>
+<p>La instancia personal es un servicio dirigido a personas físicas que utilizan Unifractal para su organización, productividad y seguimiento personal. Toda referencia a «usted», «el usuario» o «el titular» en este documento se refiere a la persona física que crea y utiliza una cuenta en la instancia personal.</p>
+<p>Las instancias enterprise contratadas por organizaciones se rigen por un contrato de prestación de servicios independiente y no están cubiertas por este aviso.</p>
+<p>Este aviso no cubre los sitios, aplicaciones o servicios de terceros a los que usted pueda acceder desde Unifractal. Cuando usted abandona nuestros servicios y accede a plataformas de terceros, el tratamiento de sus datos se rige por los avisos y políticas de dichos terceros, los cuales le recomendamos revisar.</p>
+
+<h2 id="s3">3. Datos personales que recabamos</h2>
+<p>Recabamos únicamente los datos personales necesarios para prestar el servicio. Salvo los datos técnicos indispensables para operar la aplicación, la mayor parte de la información se origina en acciones voluntarias del usuario. Las categorías son las siguientes:</p>
+
+<h3>Datos de identificación</h3>
+<p>Nombre o nombre de usuario, correo electrónico, y de manera opcional número de teléfono, fotografía de perfil, idioma preferido y zona horaria. Estos datos se utilizan para identificarle dentro del servicio y personalizar su experiencia.</p>
+
+<h3>Datos de cuenta y autenticación</h3>
+<p>Credenciales de acceso (la contraseña se almacena exclusivamente como valor derivado mediante funciones de hash con sal, nunca en texto claro), identificadores de sesión, tokens de acceso, fecha de creación de la cuenta, historial de inicios de sesión y, cuando usted utiliza inicio de sesión social, el identificador que el proveedor correspondiente nos transmite.</p>
+
+<h3>Contenido de las conversaciones</h3>
+<p>Los mensajes de texto, notas de voz y transcripciones que usted intercambia con el asistente Bonifacio, incluidas las instrucciones, preferencias y recordatorios que decide guardar. Este contenido se conserva para mantener la continuidad de sus conversaciones y para que el asistente pueda recordar el contexto que usted le proporciona.</p>
+
+<h3>Archivos que el usuario sube</h3>
+<p>Documentos, imágenes, audios y otros archivos que usted cargue voluntariamente para que el asistente los procese. Estos archivos se almacenan asociados a su cuenta y se procesan únicamente para responder a la solicitud concreta que usted formuló.</p>
+
+<h3>Datos de uso y registros técnicos</h3>
+<p>Registros de fallos de la aplicación, modelo del dispositivo, versión del sistema operativo, versión de la aplicación, dirección IP, marcas de tiempo de las peticiones y telemetría de rendimiento. Estos datos permiten detectar errores, medir la estabilidad del servicio y proteger la infraestructura frente a abusos.</p>
+
+<h3>Datos de salud y actividad de wearables</h3>
+<p>Cuando usted decide conectar un dispositivo o plataforma de bienestar, recabamos métricas como pasos, frecuencia cardíaca, horas y calidad del sueño, calorías y sesiones de actividad física. Esta conexión es opcional, se inicia siempre por acción del usuario y puede revocarse en cualquier momento. El detalle de este tratamiento se describe en la sección 6.</p>
+
+<h3>Datos de servicios conectados que el usuario autorice</h3>
+<p>Si usted vincula servicios externos de correo electrónico, calendario o almacenamiento, accederemos únicamente a la información comprendida en los permisos que usted haya autorizado de forma expresa, y solo en el momento en que solicite una función que la requiera. El detalle se describe en la sección 7.</p>
+
+<h2 id="s4">4. Finalidades del tratamiento</h2>
+<p><strong>Finalidades primarias.</strong> Son aquellas necesarias para la existencia y cumplimiento de la relación jurídica entre usted y el responsable. Sin ellas no es posible prestar el servicio:</p>
 <ul>
-  <li data-es="<strong>Google Calendar:</strong> leer y crear eventos para ayudarte con tu agenda" data-en="<strong>Google Calendar:</strong> read and create events to help manage your schedule"><strong>Google Calendar:</strong> leer y crear eventos para ayudarte con tu agenda</li>
-  <li data-es="<strong>Gmail:</strong> leer y enviar correos en tu nombre cuando lo solicites" data-en="<strong>Gmail:</strong> read and send emails on your behalf when you request it"><strong>Gmail:</strong> leer y enviar correos en tu nombre cuando lo solicites</li>
-  <li data-es="<strong>Google Drive:</strong> crear y acceder a documentos para colaboración" data-en="<strong>Google Drive:</strong> create and access documents for collaboration"><strong>Google Drive:</strong> crear y acceder a documentos para colaboración</li>
+<li>Crear, mantener y administrar su cuenta de usuario.</li>
+<li>Autenticar su identidad y gestionar sesiones seguras.</li>
+<li>Operar las funciones del asistente Bonifacio y ejecutar las instrucciones que usted le da.</li>
+<li>Almacenar y recuperar el historial de sus conversaciones, archivos y preferencias.</li>
+<li>Brindar soporte técnico y atender sus reportes, dudas y solicitudes.</li>
+<li>Detectar, prevenir e investigar fraudes, abusos, accesos no autorizados e incidentes de seguridad.</li>
+<li>Cumplir con obligaciones legales, fiscales y contables aplicables, así como con requerimientos de autoridad competente.</li>
 </ul>
-<p data-es="Solo accedemos a estos datos cuando tú inicias la acción. Nunca escaneamos tu correo, calendario o archivos en segundo plano."
-   data-en="We only access this data when you initiate the action. We never scan your email, calendar, or files in the background.">
-  Solo accedemos a estos datos cuando tú inicias la acción. Nunca escaneamos tu correo, calendario o archivos en segundo plano.</p>
-
-<p data-es="<strong>Datos de wearables:</strong> Si conectas un dispositivo compatible, podemos recibir datos de salud (frecuencia cardíaca, pasos, sueño) para ofrecerte insights personalizados."
-   data-en="<strong>Wearable data:</strong> If you connect a compatible device, we may receive health data (heart rate, steps, sleep) to offer personalized insights.">
-  <strong>Datos de wearables:</strong> Si conectas un dispositivo compatible, podemos recibir datos de salud (frecuencia cardíaca, pasos, sueño) para ofrecerte insights personalizados.</p>
-
-<h2 data-es="2. Cómo usamos tus datos" data-en="2. How We Use Your Data">2. Cómo usamos tus datos</h2>
+<p><strong>Finalidades secundarias.</strong> No son necesarias para prestar el servicio, pero nos permiten mejorarlo:</p>
 <ul>
-  <li data-es="Proveer y mejorar el servicio de asistente de IA" data-en="Provide and improve the AI assistant service">Proveer y mejorar el servicio de asistente de IA</li>
-  <li data-es="Ejecutar las acciones que solicitas (agendar, enviar email, buscar productos, etc.)" data-en="Execute actions you request (scheduling, sending email, product search, etc.)">Ejecutar las acciones que solicitas (agendar, enviar email, buscar productos, etc.)</li>
-  <li data-es="Mantener tu memoria persistente para conversaciones futuras" data-en="Maintain your persistent memory for future conversations">Mantener tu memoria persistente para conversaciones futuras</li>
-  <li data-es="Detectar y responder a emergencias si tienes configurados contactos de emergencia" data-en="Detect and respond to emergencies if you have emergency contacts configured">Detectar y responder a emergencias si tienes configurados contactos de emergencia</li>
+<li>Analizar de forma agregada el uso del producto para mejorar funciones existentes y desarrollar nuevas.</li>
+<li>Enviarle comunicaciones sobre novedades, cambios relevantes del producto y encuestas de satisfacción.</li>
 </ul>
+<div class="notice">
+<p><strong>Cómo negarse a las finalidades secundarias.</strong> Si usted no desea que sus datos personales sean tratados para las finalidades secundarias antes descritas, puede manifestar su negativa enviando un correo electrónico a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> con el asunto «Negativa a finalidades secundarias», indicando su nombre y el correo electrónico asociado a su cuenta. Atenderemos su solicitud en un plazo máximo de <strong>5 días hábiles</strong>. La negativa a las finalidades secundarias <strong>no tendrá efecto alguno</strong> sobre la prestación del servicio ni sobre las funciones disponibles en su cuenta.</p>
+</div>
 
-<h2 data-es="3. Lo que nunca hacemos" data-en="3. What We Never Do">3. Lo que nunca hacemos</h2>
+<h2 id="s5">5. Base legal, consentimiento y revocación</h2>
+<p>El tratamiento de sus datos personales se sustenta en el consentimiento que usted otorga al crear una cuenta y aceptar el presente aviso de privacidad, así como en la necesidad de dar cumplimiento a la relación jurídica que se establece entre usted y el responsable, en términos de los artículos 8, 10 y 17 de la LFPDPPP.</p>
+<p>Tratándose de datos personales sensibles —en particular los datos de salud y actividad física descritos en la sección 6— el tratamiento se realiza únicamente con su <strong>consentimiento expreso</strong>, otorgado mediante una acción afirmativa e inequívoca dentro de la aplicación al momento de conectar la plataforma de bienestar correspondiente.</p>
+<p>Usted puede <strong>revocar su consentimiento</strong> en cualquier momento, sin necesidad de justificar su decisión. Para ello puede: (i) desconectar la integración específica desde los ajustes de la aplicación; (ii) eliminar su cuenta a través de <a href="/data-deletion">/data-deletion</a>; o (iii) enviar una solicitud a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>La revocación del consentimiento no tiene efectos retroactivos y no afecta la licitud del tratamiento realizado con anterioridad. En ciertos casos la revocación puede implicar que dejemos de prestar determinadas funciones o la totalidad del servicio, lo cual le será informado.</p>
+
+<h2 id="salud">6. Datos de salud y actividad física</h2>
+<p>Unifractal puede integrarse, siempre por decisión del usuario, con las siguientes plataformas de bienestar: <strong>Health Connect</strong> en dispositivos Android, <strong>HealthKit</strong> en dispositivos iOS y <strong>Spike API</strong> como agregador de dispositivos vestibles de terceros.</p>
+<p><strong>Qué se recaba.</strong> Según los permisos que usted conceda, podemos leer métricas como conteo de pasos, frecuencia cardíaca y frecuencia cardíaca en reposo, duración y fases del sueño, calorías activas y totales, distancia recorrida, sesiones de ejercicio y peso corporal.</p>
+<p><strong>Para qué se usa.</strong> Estos datos se utilizan exclusivamente para las funciones que usted solicita dentro de la aplicación: mostrarle resúmenes y tendencias de su actividad, permitir que el asistente Bonifacio responda preguntas sobre sus propias métricas, y generar recordatorios o sugerencias de hábitos que usted haya configurado.</p>
+<p><strong>Conexión iniciada por el usuario y revocable.</strong> Ninguna integración de bienestar se activa de manera automática. La conexión requiere que usted la inicie de forma expresa y que otorgue los permisos correspondientes en el sistema operativo de su dispositivo. Puede desconectarla en cualquier momento desde los ajustes de Unifractal, desde los ajustes de Health Connect o HealthKit en su dispositivo, o solicitando la eliminación de estos datos a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<div class="notice">
+<p><strong>Compromisos expresos sobre sus datos de salud y actividad:</strong></p>
 <ul>
-  <li data-es="<strong>Nunca vendemos tus datos a terceros.</strong>" data-en="<strong>We never sell your data to third parties.</strong>"><strong>Nunca vendemos tus datos a terceros.</strong></li>
-  <li data-es="Nunca usamos tus datos para entrenar modelos de IA generales" data-en="We never use your data to train general AI models">Nunca usamos tus datos para entrenar modelos de IA generales</li>
-  <li data-es="Nunca compartimos datos personales con anunciantes" data-en="We never share personal data with advertisers">Nunca compartimos datos personales con anunciantes</li>
-  <li data-es="Nunca accedemos a datos de Google sin tu autorización activa" data-en="We never access Google data without your active authorization">Nunca accedemos a datos de Google sin tu autorización activa</li>
+<li>Estos datos <strong>no se venden</strong> a ningún tercero, bajo ninguna circunstancia.</li>
+<li>Estos datos <strong>no se utilizan para publicidad</strong> de ningún tipo, propia o de terceros.</li>
+<li>Estos datos <strong>no se comparten con terceros con fines publicitarios</strong>, de mercadotecnia ni de elaboración de perfiles comerciales.</li>
 </ul>
+</div>
+<p>Unifractal no es un dispositivo médico y no sustituye la valoración de un profesional de la salud. Esta información se presenta únicamente en términos de bienestar y condición física general, nunca como valoración médica. Ante cualquier duda sobre su salud, consulte a un profesional debidamente calificado.</p>
 
-<h2 data-es="4. Almacenamiento y seguridad" data-en="4. Storage & Security">4. Almacenamiento y seguridad</h2>
-<p data-es="Tus datos se almacenan en servidores seguros. Las contraseñas se almacenan con hash (bcrypt). Las comunicaciones se cifran con TLS. Las instancias enterprise tienen bases de datos completamente aisladas."
-   data-en="Your data is stored on secure servers. Passwords are stored with hash (bcrypt). Communications are encrypted with TLS. Enterprise instances have fully isolated databases.">
-  Tus datos se almacenan en servidores seguros. Las contraseñas se almacenan con hash (bcrypt). Las comunicaciones se cifran con TLS. Las instancias enterprise tienen bases de datos completamente aisladas.</p>
-
-<h2 data-es="5. Retención de datos" data-en="5. Data Retention">5. Retención de datos</h2>
-<p data-es="Conservamos tus datos mientras tu cuenta esté activa. Si solicitas la eliminación de tu cuenta, todos tus datos se eliminarán en un plazo de <strong>30 días hábiles</strong>."
-   data-en="We retain your data while your account is active. If you request account deletion, all your data will be deleted within <strong>30 business days</strong>.">
-  Conservamos tus datos mientras tu cuenta esté activa. Si solicitas la eliminación de tu cuenta, todos tus datos se eliminarán en un plazo de <strong>30 días hábiles</strong>.</p>
-
-<h2 data-es="6. Tus derechos" data-en="6. Your Rights">6. Tus derechos</h2>
+<h2 id="s7">7. Servicios conectados por el usuario</h2>
+<p>Unifractal permite vincular servicios externos de correo electrónico, calendario y almacenamiento en la nube para que el asistente pueda ejecutar tareas por instrucción suya, como redactar un borrador, consultar su agenda o localizar un documento.</p>
 <ul>
-  <li data-es="Acceder a tus datos personales" data-en="Access your personal data">Acceder a tus datos personales</li>
-  <li data-es="Solicitar la corrección de datos incorrectos" data-en="Request correction of incorrect data">Solicitar la corrección de datos incorrectos</li>
-  <li data-es="Solicitar la eliminación de tus datos (<a href='/data-deletion'>instrucciones aquí</a>)" data-en="Request deletion of your data (<a href='/data-deletion'>instructions here</a>)">Solicitar la eliminación de tus datos (<a href="/data-deletion">instrucciones aquí</a>)</li>
-  <li data-es="Revocar acceso a tus cuentas de Google en cualquier momento desde la configuración de tu cuenta Google" data-en="Revoke access to your Google accounts at any time from your Google account settings">Revocar acceso a tus cuentas de Google en cualquier momento desde la configuración de tu cuenta Google</li>
-  <li data-es="Exportar tus datos en formato legible" data-en="Export your data in a readable format">Exportar tus datos en formato legible</li>
+<li><strong>Autorización expresa.</strong> El acceso se concede únicamente mediante los flujos de autorización oficiales del proveedor correspondiente, en los que usted revisa y aprueba los permisos solicitados.</li>
+<li><strong>Alcance mínimo.</strong> Solicitamos el conjunto de permisos más reducido que permita ejecutar la función ofrecida. No solicitamos permisos que no correspondan a una función visible del producto.</li>
+<li><strong>Uso limitado a la petición.</strong> La información obtenida de estos servicios se utiliza únicamente para responder a la solicitud concreta que usted formuló en ese momento.</li>
+<li><strong>Sin rastreo en segundo plano.</strong> No realizamos escaneos, indexaciones ni análisis en segundo plano del contenido de su correo, calendario o almacenamiento.</li>
+<li><strong>Revocable en todo momento.</strong> Puede retirar el acceso desde los ajustes de Unifractal o directamente desde el panel de seguridad de la cuenta del proveedor. Al revocar, dejamos de tener acceso de manera inmediata y eliminamos los tokens correspondientes.</li>
 </ul>
 
-<h2 data-es="7. Cookies" data-en="7. Cookies">7. Cookies</h2>
-<p data-es="Usamos cookies mínimas para autenticación y preferencias (idioma, tema). No usamos cookies de rastreo ni publicidad."
-   data-en="We use minimal cookies for authentication and preferences (language, theme). We do not use tracking or advertising cookies.">
-  Usamos cookies mínimas para autenticación y preferencias (idioma, tema). No usamos cookies de rastreo ni publicidad.</p>
+<h2 id="cookies">8. Cookies y tecnologías similares</h2>
+<p>La aplicación web disponible en app.unifractal.ai utiliza un conjunto mínimo de cookies y tecnologías de almacenamiento local:</p>
+<ul>
+<li><strong>Cookies de sesión y autenticación:</strong> estrictamente necesarias para mantener su sesión iniciada de forma segura y para proteger el servicio frente a peticiones fraudulentas. Sin ellas no es posible utilizar la aplicación web.</li>
+<li><strong>Preferencias en almacenamiento local (localStorage):</strong> guardamos su idioma preferido y ajustes de interfaz para que el sitio se muestre como usted lo dejó. Esta información permanece en su navegador y no se transmite con fines de identificación.</li>
+</ul>
+<p><strong>No utilizamos cookies publicitarias ni tecnologías de rastreo entre sitios.</strong> No colocamos píxeles de seguimiento de redes publicitarias ni compartimos identificadores con redes de anuncios.</p>
+<p>Usted puede deshabilitar o eliminar las cookies desde la configuración de su navegador (habitualmente en las secciones «Privacidad y seguridad», «Cookies y otros datos de sitios» o equivalentes). También puede utilizar el modo de navegación privada. Tenga en cuenta que si deshabilita las cookies estrictamente necesarias no será posible iniciar sesión ni utilizar la aplicación web.</p>
 
-<h2 data-es="8. Cambios a esta política" data-en="8. Changes to This Policy">8. Cambios a esta política</h2>
-<p data-es="Podemos actualizar esta política ocasionalmente. Notificaremos cambios significativos por email o dentro de la aplicación."
-   data-en="We may update this policy occasionally. We will notify significant changes by email or within the application.">
-  Podemos actualizar esta política ocasionalmente. Notificaremos cambios significativos por email o dentro de la aplicación.</p>
+<h2 id="subprocesadores">9. Subprocesadores y transferencias internacionales</h2>
+<p>Para prestar el servicio nos apoyamos en proveedores tecnológicos que actúan como encargados o subprocesadores, con acceso limitado a los datos estrictamente necesarios para la función que desempeñan y bajo obligaciones contractuales de confidencialidad y seguridad:</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Proveedor</th><th>Finalidad</th><th>País</th></tr>
+</thead>
+<tbody>
+<tr><td>Anthropic</td><td>Modelos de lenguaje</td><td>EE.UU.</td></tr>
+<tr><td>OpenAI</td><td>Transcripción y voz</td><td>EE.UU.</td></tr>
+<tr><td>ElevenLabs</td><td>Síntesis de voz</td><td>EE.UU.</td></tr>
+<tr><td>Groq</td><td>Inferencia</td><td>EE.UU.</td></tr>
+<tr><td>Cloudflare</td><td>Red y entrega</td><td>Global</td></tr>
+<tr><td>LiveKit</td><td>Videollamadas</td><td>EE.UU.</td></tr>
+<tr><td>Spike API</td><td>Wearables</td><td>EE.UU.</td></tr>
+<tr><td>Google Cloud</td><td>Mapas y servicios de ubicación</td><td>EE.UU.</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Alojamiento principal.</strong> La infraestructura principal de Unifractal y las bases de datos que contienen su información se encuentran alojadas en <strong>Guadalajara, Jalisco, México</strong>.</p>
+<p><strong>Transferencias internacionales.</strong> Existen transferencias internacionales de datos personales hacia los subprocesadores listados en la tabla anterior, ubicados fuera del territorio nacional. Dichas transferencias se realizan conforme al <strong>artículo 37 de la LFPDPPP</strong>, al ser necesarias para el mantenimiento y cumplimiento de la relación jurídica entre usted y el responsable, y se encuentran amparadas por instrumentos contractuales que obligan a los receptores a observar los mismos principios y deberes de protección previstos en este aviso. Al aceptar el presente aviso, usted queda informado de dichas transferencias.</p>
 
-<h2 data-es="9. Contacto" data-en="9. Contact">9. Contacto</h2>
-<p data-es="Para cualquier pregunta sobre privacidad, escríbenos a: <a href='mailto:hi@unifractal.ai'>hi@unifractal.ai</a>"
-   data-en="For any privacy questions, write to us at: <a href='mailto:hi@unifractal.ai'>hi@unifractal.ai</a>">
-  Para cualquier pregunta sobre privacidad, escríbenos a: <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a></p>
-<p style="margin-top:24px">
-  <strong>Unifractal</strong><br>
-  Guadalajara, Jalisco, México<br>
-  <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
-</p>
+<h2 id="s10">10. No venta de datos personales</h2>
+<p>Declaramos de manera expresa e inequívoca que:</p>
+<ul>
+<li><strong>No vendemos ni rentamos</strong> sus datos personales a ningún tercero, ni a cambio de dinero ni de ninguna otra contraprestación.</li>
+<li><strong>No utilizamos sus datos personales para publicidad dirigida</strong>, ni construimos perfiles con fines publicitarios, ni participamos en redes de intercambio de audiencias.</li>
+<li><strong>No utilizamos su contenido para entrenar modelos de terceros.</strong> El contenido de sus conversaciones y archivos no se aporta a procesos de entrenamiento de modelos de inteligencia artificial de proveedores externos.</li>
+</ul>
+<p>Los proveedores listados en la sección 9 procesan datos únicamente por instrucción nuestra y para las finalidades descritas, sin autorización para utilizarlos con fines propios.</p>
+
+<h2 id="s11">11. Medidas de seguridad</h2>
+<p>Hemos implementado medidas de seguridad administrativas, técnicas y físicas razonables para proteger sus datos personales contra daño, pérdida, alteración, destrucción o uso, acceso o tratamiento no autorizado. Entre ellas:</p>
+<ul>
+<li><strong>Cifrado en tránsito:</strong> toda la comunicación entre sus dispositivos y nuestros servidores viaja sobre TLS.</li>
+<li><strong>Credenciales cifradas en reposo:</strong> los tokens de servicios conectados y las claves de integración se almacenan cifrados.</li>
+<li><strong>Contraseñas con hash:</strong> las contraseñas se almacenan mediante funciones de derivación con sal y nunca se guardan ni se transmiten en texto claro.</li>
+<li><strong>Control de acceso por roles:</strong> el personal accede únicamente a la información indispensable para su función, bajo el principio de mínimo privilegio, con registro de accesos.</li>
+<li><strong>Aislamiento por instancia:</strong> los datos de cada instancia se mantienen en entornos lógicamente aislados, de forma que la información de una instancia no es accesible desde otra.</li>
+</ul>
+<p>Ningún sistema es completamente invulnerable. En caso de que ocurra una vulneración de seguridad que afecte de forma significativa sus derechos patrimoniales o morales, se lo comunicaremos sin dilación para que pueda tomar las medidas correspondientes, conforme al artículo 20 de la LFPDPPP.</p>
+
+<h2 id="s12">12. Conservación y eliminación</h2>
+<p>Conservamos sus datos personales mientras su cuenta permanezca activa y durante el tiempo necesario para cumplir las finalidades descritas en este aviso, así como los plazos de conservación que impongan las obligaciones legales, fiscales o contables aplicables.</p>
+<p>Cuando usted solicita la eliminación de su cuenta, la cuenta se desactiva de inmediato y sus datos entran en un periodo de retención de <strong>30 días naturales</strong>. Este periodo existe para permitir la recuperación en caso de solicitud errónea o de acceso no autorizado a su cuenta. Transcurridos los 30 días naturales, los datos se eliminan de forma permanente de los sistemas de producción y quedan sujetos únicamente a los ciclos de expiración de los respaldos, tras lo cual desaparecen por completo.</p>
+<p>Puede iniciar el proceso de eliminación en cualquier momento desde <a href="/data-deletion">/data-deletion</a> o escribiendo a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>Podremos conservar, de manera excepcional y por el tiempo estrictamente necesario, información bloqueada para atender responsabilidades derivadas del tratamiento, cumplir requerimientos de autoridad competente o defender un derecho en juicio.</p>
+
+<h2 id="s13">13. Derechos ARCO</h2>
+<p>Usted, o su representante legal debidamente acreditado, tiene derecho a:</p>
+<ul>
+<li><strong>Acceso:</strong> conocer qué datos personales tenemos sobre usted, para qué los utilizamos y las condiciones del tratamiento.</li>
+<li><strong>Rectificación:</strong> solicitar la corrección de sus datos cuando sean inexactos, incompletos o estén desactualizados.</li>
+<li><strong>Cancelación:</strong> solicitar la supresión de sus datos cuando considere que no están siendo tratados conforme a los principios y deberes de la ley.</li>
+<li><strong>Oposición:</strong> oponerse al tratamiento de sus datos para finalidades específicas cuando exista causa legítima.</li>
+<li><strong>Revocación del consentimiento:</strong> retirar el consentimiento otorgado para el tratamiento, en los términos de la sección 5.</li>
+</ul>
+<p><strong>Procedimiento.</strong> Para ejercer cualquiera de estos derechos, envíe una solicitud por escrito al correo <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>. La solicitud debe contener, como mínimo:</p>
+<ol>
+<li>El nombre del titular y el correo electrónico asociado a la cuenta.</li>
+<li>El medio o domicilio para comunicarle la respuesta a su solicitud.</li>
+<li>Los documentos que acrediten la identidad del titular o, en su caso, la representación legal de quien actúe en su nombre.</li>
+<li>Una descripción clara y precisa de los datos personales respecto de los que se busca ejercer el derecho, así como el derecho concreto que se ejerce.</li>
+<li>Cualquier otro elemento o documento que facilite la localización de los datos personales.</li>
+</ol>
+<p><strong>Plazo de respuesta.</strong> Comunicaremos la determinación adoptada en un plazo máximo de <strong>20 días hábiles</strong> contados desde la recepción de la solicitud. De resultar procedente, se hará efectiva dentro de los 15 días hábiles siguientes a la comunicación. Los plazos podrán ampliarse una sola vez por un periodo igual cuando las circunstancias del caso lo justifiquen, lo cual le será notificado.</p>
+<p>El ejercicio de estos derechos es gratuito; únicamente deberán cubrirse, en su caso, los gastos justificados de envío o reproducción en medios distintos al correo electrónico. Si considera que su derecho a la protección de datos personales ha sido vulnerado, puede acudir ante la autoridad competente en materia de protección de datos personales en México.</p>
+
+<h2 id="s14">14. Menores de edad</h2>
+<p>Unifractal no está dirigido a personas menores de 13 años y no recabamos deliberadamente datos personales de menores de esa edad. Al crear una cuenta, el usuario manifiesta que cuenta con la edad mínima requerida.</p>
+<p>Los usuarios de entre 13 y 17 años únicamente pueden utilizar el servicio bajo la supervisión y con el consentimiento de quien ejerza la patria potestad o tutela.</p>
+<p>Si detectamos o se nos notifica que hemos recabado datos personales de una persona menor de 13 años sin el consentimiento correspondiente, procederemos a suspender la cuenta y a eliminar dicha información de nuestros sistemas a la brevedad. Si usted es madre, padre o tutor y considera que un menor bajo su cuidado nos ha proporcionado datos personales, escríbanos a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> y atenderemos su solicitud de forma prioritaria.</p>
+
+<h2 id="s15">15. Cambios al aviso</h2>
+<p>El presente aviso de privacidad puede modificarse para reflejar cambios en la legislación aplicable, en nuestras prácticas internas, en los medios de contacto o en el modelo de negocio.</p>
+<p>Cualquier versión actualizada se publicará en esta misma dirección (<strong>/privacy</strong>), indicando de forma visible la fecha de última actualización. Le recomendamos consultar esta página periódicamente.</p>
+<p>Cuando se trate de cambios sustanciales —por ejemplo, nuevas finalidades del tratamiento, nuevas categorías de datos o nuevos destinatarios de transferencias— se lo notificaremos adicionalmente mediante un aviso dentro de la aplicación y, cuando corresponda, por correo electrónico a la dirección asociada a su cuenta, antes de que dichos cambios surtan efecto.</p>
+
+<h2 id="s16">16. Contacto</h2>
+<p>Para cualquier duda, aclaración o solicitud relacionada con este aviso de privacidad o con el tratamiento de sus datos personales:</p>
+<ul>
+<li><strong>Razón social:</strong> Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+<li><strong>Marca comercial:</strong> Unifractal</li>
+<li><strong>Domicilio:</strong> Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, México</li>
+<li><strong>Correo electrónico:</strong> <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a></li>
+</ul>
+<p>Este aviso se rige por las leyes de los Estados Unidos Mexicanos. Para su interpretación y cumplimiento, las partes se someten a la jurisdicción de los tribunales competentes de Guadalajara, Jalisco, renunciando a cualquier otro fuero que pudiera corresponderles.</p>
+
+<hr>
+
+<h2 id="anexo-google">Anexo A: Servicios de Google</h2>
+<p>Unifractal utiliza las API de Google cuando usted decide iniciar sesión con su cuenta de Google o conectar servicios de Google como correo, calendario o almacenamiento. El acceso se limita a los permisos que usted apruebe de forma expresa en la pantalla de consentimiento de Google, y la información obtenida se emplea únicamente para ejecutar la función que usted solicita.</p>
+<p><strong>Uso limitado.</strong> El uso y la transferencia por parte de Unifractal de la información recibida de las API de Google hacia cualquier otra aplicación se apegará a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+<p><strong>Texto original en inglés:</strong></p>
+<p>Unifractal's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p><strong>Health Connect.</strong> Los datos obtenidos a través de Health Connect no se transfieren a terceros con fines publicitarios, no se venden bajo ninguna circunstancia, y su uso se limita estrictamente a las funciones que el usuario solicita dentro de la aplicación. Al desconectar Health Connect o revocar los permisos desde el sistema operativo, dejamos de acceder a dichos datos de inmediato.</p>
+
+<h2 id="anexo-meta">Anexo B: Plataformas de Meta</h2>
+<p>Unifractal puede operar como canal de mensajería a través de <strong>WhatsApp Business Platform</strong>, <strong>Instagram</strong> y <strong>Messenger</strong>, cuando el usuario decide comunicarse con el asistente por esos medios.</p>
+<p><strong>Datos tratados en esos canales:</strong></p>
+<ul>
+<li>El número de teléfono o el identificador de usuario que la plataforma correspondiente nos transmite.</li>
+<li>El contenido de los mensajes que usted envía y recibe, incluidos archivos adjuntos y notas de voz.</li>
+<li>Las marcas de tiempo de envío, entrega y lectura, así como metadatos técnicos de la conversación.</li>
+</ul>
+<p><strong>Inicio de la conversación.</strong> La conversación siempre se inicia por acción del usuario. No enviamos mensajes no solicitados ni utilizamos estos canales con fines publicitarios. El uso de cada plataforma está sujeto adicionalmente a las políticas y condiciones de Meta.</p>
+<p><strong>Eliminación de estos datos.</strong> Para solicitar la eliminación de los datos tratados a través de estos canales, escriba a <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> desde el correo asociado a su cuenta, o siga el procedimiento descrito en <a href="/data-deletion">/data-deletion</a>. Aplican los mismos plazos indicados en la sección 12.</p>
+
+<h2 id="anexo-apple">Anexo C: Apple</h2>
+<p><strong>HealthKit.</strong> Cuando usted autoriza a Unifractal a leer datos de HealthKit, dichos datos de salud y actividad no se utilizan para publicidad, mercadotecnia ni minería de datos, y no se comparten con terceros sin su consentimiento. El acceso se limita a los tipos de datos que usted haya autorizado y puede revocarse en cualquier momento desde los ajustes de privacidad de su dispositivo.</p>
+<p><strong>Iniciar sesión con Apple.</strong> Si utiliza «Iniciar sesión con Apple», recibimos únicamente su dirección de correo electrónico —que puede ser una dirección de retransmisión anónima proporcionada por Apple— y, si usted así lo decide, su nombre. Esta información se emplea exclusivamente para crear y autenticar su cuenta, y no se utiliza con fines publicitarios.</p>
+<p><strong>Compras dentro de la aplicación.</strong> Las compras y suscripciones realizadas dentro de la aplicación iOS se procesan por Apple y se rigen adicionalmente por los términos y las políticas de privacidad de Apple. Unifractal no recibe ni almacena los datos completos de su medio de pago.</p>
+
+<h2 id="anexo-microsoft">Anexo D: Microsoft</h2>
+<p>Si usted decide conectar una cuenta de Microsoft o servicios de Microsoft Graph —como correo electrónico, calendario o almacenamiento— el acceso se otorga mediante el flujo de autorización oficial de Microsoft y queda limitado al alcance de permisos que usted apruebe de forma expresa.</p>
+<p>La información obtenida se utiliza únicamente para ejecutar la función que usted solicita en el momento en que la solicita. No realizamos escaneos ni análisis en segundo plano de su buzón, agenda o archivos.</p>
+<p>Puede revocar este acceso en cualquier momento, ya sea desde los ajustes de Unifractal o directamente desde el panel de privacidad y seguridad de su cuenta de Microsoft. Al revocarlo, los tokens correspondientes se invalidan y dejamos de tener acceso de forma inmediata.</p>
+</div>
+
+<div class="legal-body" id="body-en">
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: July 22, 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, Mexico</p>
+
+<nav class="toc">
+<h2>Contents</h2>
+<ol>
+<li><a href="#s1-en">1. Identity and address of the controller</a></li>
+<li><a href="#s2-en">2. Scope of this policy</a></li>
+<li><a href="#s3-en">3. Personal data we collect</a></li>
+<li><a href="#s4-en">4. Purposes of processing</a></li>
+<li><a href="#s5-en">5. Legal basis, consent and withdrawal</a></li>
+<li><a href="#salud-en">6. Health and physical activity data</a></li>
+<li><a href="#s7-en">7. Services connected by the user</a></li>
+<li><a href="#cookies-en">8. Cookies and similar technologies</a></li>
+<li><a href="#subprocesadores-en">9. Subprocessors and international transfers</a></li>
+<li><a href="#s10-en">10. No sale of personal data</a></li>
+<li><a href="#s11-en">11. Security measures</a></li>
+<li><a href="#s12-en">12. Retention and deletion</a></li>
+<li><a href="#s13-en">13. Your rights</a></li>
+<li><a href="#s14-en">14. Minors</a></li>
+<li><a href="#s15-en">15. Changes to this policy</a></li>
+<li><a href="#s16-en">16. Contact</a></li>
+<li><a href="#anexo-google-en">Annex A: Google Services</a></li>
+<li><a href="#anexo-meta-en">Annex B: Meta Platforms</a></li>
+<li><a href="#anexo-apple-en">Annex C: Apple</a></li>
+<li><a href="#anexo-microsoft-en">Annex D: Microsoft</a></li>
+</ol>
+</nav>
+
+<h2 id="s1-en">1. Identity and address of the controller</h2>
+<p>The controller responsible for the processing of your personal data is <strong>Centro de Innovación en Biotecnología Aplicada, S.C.</strong>, a civil company incorporated under the laws of the United Mexican States, operating under the commercial brand <strong>Unifractal</strong> and developing the artificial intelligence assistant <strong>Bonifacio</strong>.</p>
+<p>Our address for the purposes of this policy is <strong>Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, Mexico</strong>.</p>
+<p>The area in charge of personal data protection, and of handling requests to exercise your rights, can be reached at <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>This policy is issued in compliance with the Mexican Federal Law on Protection of Personal Data Held by Private Parties (LFPDPPP), its Regulations, and the Privacy Notice Guidelines.</p>
+
+<h2 id="s2-en">2. Scope of this policy</h2>
+<p>This privacy policy applies to the processing of personal data carried out through the <strong>Unifractal mobile app</strong> (Android and iOS), the web application available at <strong>app.unifractal.ai</strong>, and the messaging channels that the user chooses to link to their account. Together we refer to these services as the "personal instance".</p>
+<p>The personal instance is a service intended for individuals who use Unifractal for their own organization, productivity and personal tracking. Any reference to "you", "the user" or "the data subject" in this document refers to the individual who creates and uses an account on the personal instance.</p>
+<p>Enterprise instances contracted by organizations are governed by a separate service agreement and are not covered by this policy.</p>
+<p>This policy does not cover third-party sites, applications or services you may reach from Unifractal. When you leave our services and access third-party platforms, the processing of your data is governed by those third parties' own notices and policies, which we recommend you review.</p>
+
+<h2 id="s3-en">3. Personal data we collect</h2>
+<p>We collect only the personal data necessary to provide the service. Other than the technical data required to operate the application, most information originates from voluntary user actions. The categories are as follows:</p>
+
+<h3>Identification data</h3>
+<p>Name or username, email address, and optionally phone number, profile picture, preferred language and time zone. This data is used to identify you within the service and to personalize your experience.</p>
+
+<h3>Account and authentication data</h3>
+<p>Access credentials (passwords are stored exclusively as salted hash values, never in plain text), session identifiers, access tokens, account creation date, sign-in history and, when you use social sign-in, the identifier that the corresponding provider transmits to us.</p>
+
+<h3>Conversation content</h3>
+<p>The text messages, voice notes and transcripts you exchange with the Bonifacio assistant, including the instructions, preferences and reminders you choose to save. This content is retained so that your conversations remain continuous and so the assistant can recall the context you have provided.</p>
+
+<h3>Files uploaded by the user</h3>
+<p>Documents, images, audio and other files you voluntarily upload for the assistant to process. These files are stored in association with your account and are processed solely to answer the specific request you made.</p>
+
+<h3>Usage and technical logs</h3>
+<p>Crash logs, device model, operating system version, application version, IP address, request timestamps and performance telemetry. This data allows us to detect errors, measure service stability and protect the infrastructure against abuse.</p>
+
+<h3>Health and wearable activity data</h3>
+<p>When you choose to connect a wellness device or platform, we collect metrics such as steps, heart rate, sleep duration and quality, calories and physical activity sessions. This connection is optional, is always initiated by the user, and can be revoked at any time. Details of this processing are described in section 6.</p>
+
+<h3>Data from services the user authorizes</h3>
+<p>If you link external email, calendar or storage services, we will access only the information covered by the permissions you have expressly authorized, and only at the moment you request a feature that requires it. Details are described in section 7.</p>
+
+<h2 id="s4-en">4. Purposes of processing</h2>
+<p><strong>Primary purposes.</strong> These are necessary for the existence and performance of the legal relationship between you and the controller. Without them the service cannot be provided:</p>
+<ul>
+<li>Creating, maintaining and administering your user account.</li>
+<li>Authenticating your identity and managing secure sessions.</li>
+<li>Operating the features of the Bonifacio assistant and carrying out the instructions you give it.</li>
+<li>Storing and retrieving your conversation history, files and preferences.</li>
+<li>Providing technical support and handling your reports, questions and requests.</li>
+<li>Detecting, preventing and investigating fraud, abuse, unauthorized access and security incidents.</li>
+<li>Complying with applicable legal, tax and accounting obligations, as well as with requirements from competent authorities.</li>
+</ul>
+<p><strong>Secondary purposes.</strong> These are not necessary to provide the service, but they allow us to improve it:</p>
+<ul>
+<li>Analyzing product usage in aggregate form to improve existing features and develop new ones.</li>
+<li>Sending you communications about news, relevant product changes and satisfaction surveys.</li>
+</ul>
+<div class="notice">
+<p><strong>How to opt out of secondary purposes.</strong> If you do not wish your personal data to be processed for the secondary purposes described above, you may state your refusal by sending an email to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> with the subject line "Refusal of secondary purposes", indicating your name and the email address associated with your account. We will process your request within a maximum of <strong>5 business days</strong>. Refusing the secondary purposes will have <strong>no effect whatsoever</strong> on the provision of the service or on the features available in your account.</p>
+</div>
+
+<h2 id="s5-en">5. Legal basis, consent and withdrawal</h2>
+<p>The processing of your personal data is based on the consent you give when creating an account and accepting this privacy policy, as well as on the need to perform the legal relationship established between you and the controller, under articles 8, 10 and 17 of the LFPDPPP.</p>
+<p>For sensitive personal data — in particular the health and physical activity data described in section 6 — processing is carried out solely with your <strong>express consent</strong>, given through an affirmative and unambiguous action within the app at the moment you connect the corresponding wellness platform.</p>
+<p>You may <strong>withdraw your consent</strong> at any time, without having to justify your decision. To do so you may: (i) disconnect the specific integration from the app settings; (ii) delete your account through <a href="/data-deletion">/data-deletion</a>; or (iii) send a request to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>Withdrawal of consent has no retroactive effect and does not affect the lawfulness of processing carried out beforehand. In certain cases withdrawal may mean that we stop providing specific features or the service as a whole, which will be communicated to you.</p>
+
+<h2 id="salud-en">6. Health and physical activity data</h2>
+<p>Unifractal can integrate, always at the user's decision, with the following wellness platforms: <strong>Health Connect</strong> on Android devices, <strong>HealthKit</strong> on iOS devices, and <strong>Spike API</strong> as an aggregator of third-party wearable devices.</p>
+<p><strong>What is collected.</strong> Depending on the permissions you grant, we may read metrics such as step count, heart rate and resting heart rate, sleep duration and stages, active and total calories, distance travelled, workout sessions and body weight.</p>
+<p><strong>What it is used for.</strong> This data is used exclusively for the features you request within the app: showing you summaries and trends of your activity, allowing the Bonifacio assistant to answer questions about your own metrics, and generating reminders or habit suggestions that you have configured.</p>
+<p><strong>User-initiated and revocable connection.</strong> No wellness integration is activated automatically. The connection requires you to initiate it expressly and to grant the corresponding permissions in your device's operating system. You may disconnect it at any time from Unifractal's settings, from the Health Connect or HealthKit settings on your device, or by requesting the deletion of this data at <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<div class="notice">
+<p><strong>Express commitments regarding your health and activity data:</strong></p>
+<ul>
+<li>This data is <strong>never sold</strong> to any third party, under any circumstances.</li>
+<li>This data is <strong>never used for advertising</strong> of any kind, whether our own or a third party's.</li>
+<li>This data is <strong>never shared with third parties for advertising purposes</strong>, marketing, or the construction of commercial profiles.</li>
+</ul>
+</div>
+<p>Unifractal is not a medical device and does not replace assessment by a health professional. This information is presented solely in terms of general wellness and physical condition, never as medical assessment. If you have any concern about your health, consult a duly qualified professional.</p>
+
+<h2 id="s7-en">7. Services connected by the user</h2>
+<p>Unifractal allows you to link external email, calendar and cloud storage services so that the assistant can carry out tasks at your instruction, such as drafting a message, checking your agenda or locating a document.</p>
+<ul>
+<li><strong>Express authorization.</strong> Access is granted solely through the corresponding provider's official authorization flows, in which you review and approve the permissions requested.</li>
+<li><strong>Minimum scope.</strong> We request the narrowest set of permissions that allows the offered feature to work. We do not request permissions that do not correspond to a visible product feature.</li>
+<li><strong>Use limited to the request.</strong> Information obtained from these services is used solely to fulfil the specific request you made at that moment.</li>
+<li><strong>No background scanning.</strong> We do not perform background scanning, indexing or analysis of the content of your mail, calendar or storage.</li>
+<li><strong>Revocable at any time.</strong> You may withdraw access from Unifractal's settings or directly from the security panel of your provider account. Upon revocation, our access ceases immediately and the corresponding tokens are deleted.</li>
+</ul>
+
+<h2 id="cookies-en">8. Cookies and similar technologies</h2>
+<p>The web application at app.unifractal.ai uses a minimal set of cookies and local storage technologies:</p>
+<ul>
+<li><strong>Session and authentication cookies:</strong> strictly necessary to keep your session signed in securely and to protect the service against fraudulent requests. Without them the web application cannot be used.</li>
+<li><strong>Preferences in local storage (localStorage):</strong> we store your preferred language and interface settings so the site appears as you left it. This information stays in your browser and is not transmitted for identification purposes.</li>
+</ul>
+<p><strong>We do not use advertising cookies or cross-site tracking technologies.</strong> We do not place advertising network tracking pixels and we do not share identifiers with ad networks.</p>
+<p>You may disable or delete cookies from your browser settings (usually under "Privacy and security", "Cookies and other site data" or equivalent sections). You may also use private browsing mode. Please note that if you disable strictly necessary cookies, you will not be able to sign in or use the web application.</p>
+
+<h2 id="subprocesadores-en">9. Subprocessors and international transfers</h2>
+<p>To provide the service we rely on technology providers acting as processors or subprocessors, with access limited to the data strictly necessary for the function they perform and under contractual confidentiality and security obligations:</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Provider</th><th>Purpose</th><th>Country</th></tr>
+</thead>
+<tbody>
+<tr><td>Anthropic</td><td>Language models</td><td>USA</td></tr>
+<tr><td>OpenAI</td><td>Transcription and voice</td><td>USA</td></tr>
+<tr><td>ElevenLabs</td><td>Voice synthesis</td><td>USA</td></tr>
+<tr><td>Groq</td><td>Inference</td><td>USA</td></tr>
+<tr><td>Cloudflare</td><td>Network and delivery</td><td>Global</td></tr>
+<tr><td>LiveKit</td><td>Video calls</td><td>USA</td></tr>
+<tr><td>Spike API</td><td>Wearables</td><td>USA</td></tr>
+<tr><td>Google Cloud</td><td>Maps and location services</td><td>USA</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Primary hosting.</strong> Unifractal's primary infrastructure and the databases holding your information are hosted in <strong>Guadalajara, Jalisco, Mexico</strong>.</p>
+<p><strong>International transfers.</strong> International transfers of personal data do take place towards the subprocessors listed in the table above, which are located outside Mexican territory. Such transfers are carried out in accordance with <strong>article 37 of the LFPDPPP</strong>, as they are necessary for the maintenance and performance of the legal relationship between you and the controller, and are covered by contractual instruments requiring recipients to observe the same protection principles and duties set out in this policy. By accepting this policy, you are informed of such transfers.</p>
+
+<h2 id="s10-en">10. No sale of personal data</h2>
+<p>We expressly and unambiguously declare that:</p>
+<ul>
+<li>We <strong>do not sell or rent</strong> your personal data to any third party, whether for money or any other consideration.</li>
+<li>We <strong>do not use your personal data for targeted advertising</strong>, we do not build profiles for advertising purposes, and we do not participate in audience-exchange networks.</li>
+<li>We <strong>do not use your content to train third-party models.</strong> The content of your conversations and files is not contributed to the training processes of external providers' artificial intelligence models.</li>
+</ul>
+<p>The providers listed in section 9 process data solely on our instructions and for the purposes described, with no authorization to use it for their own purposes.</p>
+
+<h2 id="s11-en">11. Security measures</h2>
+<p>We have implemented reasonable administrative, technical and physical security measures to protect your personal data against damage, loss, alteration, destruction, or unauthorized use, access or processing. These include:</p>
+<ul>
+<li><strong>Encryption in transit:</strong> all communication between your devices and our servers travels over TLS.</li>
+<li><strong>Credentials encrypted at rest:</strong> tokens for connected services and integration keys are stored encrypted.</li>
+<li><strong>Hashed passwords:</strong> passwords are stored using salted derivation functions and are never stored or transmitted in plain text.</li>
+<li><strong>Role-based access control:</strong> personnel access only the information indispensable to their function, under the principle of least privilege, with access logging.</li>
+<li><strong>Per-instance isolation:</strong> each instance's data is kept in logically isolated environments, so that information from one instance is not accessible from another.</li>
+</ul>
+<p>No system is entirely invulnerable. Should a security breach occur that significantly affects your economic or moral rights, we will notify you without delay so that you can take appropriate action, in accordance with article 20 of the LFPDPPP.</p>
+
+<h2 id="s12-en">12. Retention and deletion</h2>
+<p>We retain your personal data for as long as your account remains active and for the time necessary to fulfil the purposes described in this policy, as well as any retention periods imposed by applicable legal, tax or accounting obligations.</p>
+<p>When you request deletion of your account, the account is deactivated immediately and your data enters a retention period of <strong>30 calendar days</strong>. This period exists to allow recovery in the event of a mistaken request or unauthorized access to your account. After those 30 calendar days, the data is permanently deleted from production systems and remains subject only to backup expiry cycles, after which it disappears entirely.</p>
+<p>You may start the deletion process at any time from <a href="/data-deletion">/data-deletion</a> or by writing to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>.</p>
+<p>Exceptionally, and only for as long as strictly necessary, we may retain blocked information in order to address liabilities arising from the processing, to comply with requirements from competent authorities, or to defend a right in legal proceedings.</p>
+
+<h2 id="s13-en">13. Your rights</h2>
+<p>You, or your duly accredited legal representative, have the right to:</p>
+<ul>
+<li><strong>Access:</strong> know what personal data we hold about you, what we use it for, and the conditions of the processing.</li>
+<li><strong>Rectification:</strong> request correction of your data when it is inaccurate, incomplete or out of date.</li>
+<li><strong>Erasure:</strong> request deletion of your data when you consider it is not being processed in accordance with the principles and duties of the law.</li>
+<li><strong>Objection:</strong> object to the processing of your data for specific purposes where there is legitimate cause.</li>
+<li><strong>Withdrawal of consent:</strong> withdraw the consent given for processing, under the terms of section 5.</li>
+</ul>
+<p><strong>Procedure.</strong> To exercise any of these rights, send a written request to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>. The request must contain at least:</p>
+<ol>
+<li>The name of the data subject and the email address associated with the account.</li>
+<li>The means or address through which the response to your request should be communicated.</li>
+<li>Documents proving the identity of the data subject or, where applicable, the legal representation of whoever acts on their behalf.</li>
+<li>A clear and precise description of the personal data in respect of which the right is being exercised, and the specific right being exercised.</li>
+<li>Any other element or document that helps locate the personal data.</li>
+</ol>
+<p><strong>Response time.</strong> We will communicate our determination within a maximum of <strong>20 business days</strong> from receipt of the request. Where the request is well founded, it will be given effect within the following 15 business days after that communication. These periods may be extended once for an equal period when the circumstances of the case justify it, which will be notified to you.</p>
+<p>Exercising these rights is free of charge; only justified shipping or reproduction costs in media other than email must be covered, where applicable. If you consider that your right to personal data protection has been infringed, you may turn to the competent personal data protection authority in Mexico.</p>
+
+<h2 id="s14-en">14. Minors</h2>
+<p>Unifractal is not directed at persons under 13 years of age, and we do not knowingly collect personal data from anyone under that age. By creating an account, the user represents that they meet the minimum age requirement.</p>
+<p>Users between 13 and 17 years of age may use the service only under the supervision and with the consent of the person holding parental authority or guardianship.</p>
+<p>If we detect, or are notified, that we have collected personal data from a person under 13 without the corresponding consent, we will suspend the account and delete that information from our systems as soon as possible. If you are a parent or guardian and believe that a minor in your care has provided us with personal data, write to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> and we will handle your request as a priority.</p>
+
+<h2 id="s15-en">15. Changes to this policy</h2>
+<p>This privacy policy may be amended to reflect changes in applicable legislation, in our internal practices, in our contact details or in our business model.</p>
+<p>Any updated version will be published at this same address (<strong>/privacy</strong>), clearly indicating the date of last update. We recommend that you review this page periodically.</p>
+<p>Where changes are substantial — for example, new processing purposes, new categories of data or new transfer recipients — we will additionally notify you through an in-app notice and, where appropriate, by email to the address associated with your account, before those changes take effect.</p>
+
+<h2 id="s16-en">16. Contact</h2>
+<p>For any question, clarification or request relating to this privacy policy or to the processing of your personal data:</p>
+<ul>
+<li><strong>Legal entity:</strong> Centro de Innovación en Biotecnología Aplicada, S.C.</li>
+<li><strong>Commercial brand:</strong> Unifractal</li>
+<li><strong>Address:</strong> Tucídides 66A, Col. Vallarta San Jorge, C.P. 44690, Guadalajara, Jalisco, Mexico</li>
+<li><strong>Email:</strong> <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a></li>
+</ul>
+<p>This policy is governed by the laws of the United Mexican States. For its interpretation and performance, the parties submit to the jurisdiction of the competent courts of Guadalajara, Jalisco, waiving any other venue that might correspond to them.</p>
+
+<hr>
+
+<h2 id="anexo-google-en">Annex A: Google Services</h2>
+<p>Unifractal uses Google APIs when you choose to sign in with your Google account or to connect Google services such as mail, calendar or storage. Access is limited to the permissions you expressly approve on Google's consent screen, and the information obtained is used solely to carry out the feature you request.</p>
+<p><strong>Limited Use.</strong> Unifractal's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p><strong>Health Connect.</strong> Data obtained through Health Connect is not transferred to third parties for advertising purposes, is not sold under any circumstances, and its use is strictly limited to the features the user requests within the app. When you disconnect Health Connect or revoke permissions from the operating system, we immediately cease accessing that data.</p>
+
+<h2 id="anexo-meta-en">Annex B: Meta Platforms</h2>
+<p>Unifractal may operate as a messaging channel through <strong>WhatsApp Business Platform</strong>, <strong>Instagram</strong> and <strong>Messenger</strong>, when the user chooses to communicate with the assistant through those means.</p>
+<p><strong>Data processed on those channels:</strong></p>
+<ul>
+<li>The phone number or platform user identifier that the corresponding platform transmits to us.</li>
+<li>The content of the messages you send and receive, including attachments and voice notes.</li>
+<li>Send, delivery and read timestamps, as well as technical metadata of the conversation.</li>
+</ul>
+<p><strong>Conversation initiation.</strong> The conversation is always initiated by the user. We do not send unsolicited messages and we do not use these channels for advertising purposes. Use of each platform is additionally subject to Meta's own policies and terms.</p>
+<p><strong>Deletion of this data.</strong> To request deletion of the data processed through these channels, write to <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a> from the email address associated with your account, or follow the procedure described at <a href="/data-deletion">/data-deletion</a>. The same time frames indicated in section 12 apply.</p>
+
+<h2 id="anexo-apple-en">Annex C: Apple</h2>
+<p><strong>HealthKit.</strong> When you authorize Unifractal to read HealthKit data, that health and activity data is not used for advertising, marketing or data mining, and is not shared with third parties without your consent. Access is limited to the data types you have authorized and can be revoked at any time from your device's privacy settings.</p>
+<p><strong>Sign in with Apple.</strong> If you use "Sign in with Apple", we receive only your email address — which may be an anonymous relay address provided by Apple — and, if you so choose, your name. This information is used exclusively to create and authenticate your account, and is not used for advertising purposes.</p>
+<p><strong>In-app purchases.</strong> Purchases and subscriptions made within the iOS app are processed by Apple and are additionally governed by Apple's terms and privacy policies. Unifractal neither receives nor stores your full payment method details.</p>
+
+<h2 id="anexo-microsoft-en">Annex D: Microsoft</h2>
+<p>If you choose to connect a Microsoft account or Microsoft Graph services — such as email, calendar or storage — access is granted through Microsoft's official authorization flow and is limited to the scope of permissions you expressly approve.</p>
+<p>The information obtained is used solely to carry out the feature you request at the moment you request it. We do not perform background scanning or analysis of your mailbox, agenda or files.</p>
+<p>You may revoke this access at any time, either from Unifractal's settings or directly from the privacy and security panel of your Microsoft account. Upon revocation, the corresponding tokens are invalidated and our access ceases immediately.</p>
+</div>
+
 </main>
 
 <footer class="footer">
 <div class="footer-inner">
-  <div class="footer-left">
-    <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
-    <span>Unifractal</span>
+  <div class="footer-top">
+    <div class="footer-left">
+      <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+      <span>Unifractal</span>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy" data-es="Aviso de Privacidad" data-en="Privacy Policy">Aviso de Privacidad</a>
+      <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
+      <a href="/data-deletion" data-es="Eliminación de datos" data-en="Data Deletion">Eliminación de datos</a>
+      <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
+      <a href="https://app.unifractal.ai">app.unifractal.ai</a>
+    </div>
   </div>
-  <div class="footer-links">
-    <a href="/privacy" data-es="Política de Privacidad" data-en="Privacy Policy">Política de Privacidad</a>
-    <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
-    <a href="/data-deletion" data-es="Eliminar Datos" data-en="Data Deletion">Eliminar Datos</a>
-    <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
-  </div>
-  <div class="footer-copy" data-es="Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal" data-en="Made in Guadalajara, Mexico 🇲🇽 · © 2026 Unifractal">Hecho en Guadalajara, México 🇲🇽 · © 2026 Unifractal</div>
+  <div class="footer-copy">© 2026 Unifractal — Operado por Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México.</div>
 </div>
 </footer>
 
 <script>
+/* ═══ LANGUAGE ═══ */
+let currentLang = 'es';
 function setLang(lang) {
-  document.querySelectorAll('[data-es]').forEach(el => { const v = el.getAttribute('data-'+lang); if(v!==null) el.innerHTML=v; });
-  document.getElementById('lang-es').classList.toggle('active', lang==='es');
-  document.getElementById('lang-en').classList.toggle('active', lang==='en');
+  currentLang = lang;
+  document.querySelectorAll('[data-es]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val !== null) el.innerHTML = val;
+  });
+  document.querySelectorAll('[data-es-placeholder]').forEach(el => {
+    const val = el.getAttribute('data-' + lang + '-placeholder');
+    if (val !== null) el.placeholder = val;
+  });
+  const bodyEs = document.getElementById('body-es');
+  const bodyEn = document.getElementById('body-en');
+  if (bodyEs && bodyEn) {
+    bodyEs.style.display = (lang === 'es') ? 'block' : 'none';
+    bodyEn.style.display = (lang === 'en') ? 'block' : 'none';
+  }
+  document.documentElement.lang = lang;
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
   localStorage.setItem('lang', lang);
+  syncHash();
 }
-document.addEventListener('DOMContentLoaded', () => setLang(localStorage.getItem('lang') || 'es'));
+
+/* Las anclas canónicas viven en el bloque ES; el bloque EN usa el sufijo -en.
+   Esto mantiene vivo un enlace externo como /privacy#anexo-google en ambos idiomas. */
+let hashTimer = null;
+function syncHash() {
+  if (!location.hash) return;
+  // Coalesce: un cambio de hash y un cambio de idioma pueden dispararse juntos.
+  // Se resuelve el destino al EJECUTAR, no al programar, y despues del scroll
+  // nativo del navegador, para que gane siempre el idioma vigente.
+  clearTimeout(hashTimer);
+  hashTimer = setTimeout(() => {
+    const raw = location.hash.slice(1);
+    if (!raw) return;
+    const base = raw.endsWith('-en') ? raw.slice(0, -3) : raw;
+    const target = (currentLang === 'en') ? base + '-en' : base;
+    const el = document.getElementById(target);
+    if (el) el.scrollIntoView({ behavior: 'auto' });
+  }, 0);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setLang(localStorage.getItem('lang') || 'es');
+});
+window.addEventListener('hashchange', syncHash);
 </script>
 </body>
 </html>
