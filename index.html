@@ -518,7 +518,7 @@ function renderPrices(prices) {
 function renderPricesFallback() {
   const fallback = [
     { tier:'free', display_name:'Free', price_mxn:0, messages_per_day:20, features:['TTS 5/' + (currentLang==='es'?'día':'day'), 'Research 1/' + (currentLang==='es'?'semana':'week')], is_popular:false },
-    { tier:'pro', display_name:'Pro', price_mxn:499, messages_per_day:120, features:['TTS 30/' + (currentLang==='es'?'día':'day'), 'Wearables', '50 docs RAG'], is_popular:true },
+    { tier:'pro', display_name:'Pro', price_mxn:399, messages_per_day:120, features:['TTS 30/' + (currentLang==='es'?'día':'day'), 'Wearables', '50 docs RAG'], is_popular:true },
     { tier:'max', display_name:'Max', price_mxn:799, messages_per_day:350, features:[currentLang==='es'?'Todo sin restricciones':'Unlimited', 'Research 20/' + (currentLang==='es'?'día':'day')], is_popular:false },
     { tier:'max_x2', display_name:'Max x2', price_mxn:1499, messages_per_day:700, features:['700 ' + (currentLang==='es'?'mensajes/día':'messages/day')], is_popular:false },
   ];
