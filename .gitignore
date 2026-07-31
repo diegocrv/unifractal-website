@@ -1,2 +1,25 @@
+# Estado local de wrangler (caché de cuenta, sesiones, build).
+# La regla ya existía (duplicada, por una edición a mano) pero DOS archivos
+# habían quedado trackeados desde antes — gitignore no des-trackea lo ya
+# versionado. Se sacan del índice en este mismo commit con
+# `git rm --cached`; siguen en disco, que es donde wrangler los quiere.
+#
+# Qué contenían: `.wrangler/cache/wrangler-account.json` trae el account.id
+# de Cloudflare (32 chars) y el nombre de la cuenta. NO es una credencial —
+# no permite autenticarse, para eso hace falta el API token, que no está en
+# el repo — pero es infraestructura que no aporta nada estando versionada.
+# Audit del 2026-07-30.
 .wrangler/
-.wrangler/
+
+# Secretos de entorno — NEVER commit.
+# Hoy no existe ninguno de estos archivos, que es exactamente el momento de
+# añadir la regla: sin ella, el primero que alguien cree entra a git.
+# `.dev.vars` es el archivo de secretos de Cloudflare Workers/Pages.
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# Node
+node_modules/
