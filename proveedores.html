@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proveedores de inferencia vigentes — Unifractal</title>
+<meta name="description" content="Los proveedores cuyos modelos de inteligencia artificial generan las respuestas del asistente de Unifractal, qué hace cada uno con los datos, y cuándo se verificó.">
+<meta property="og:title" content="Proveedores de inferencia vigentes — Unifractal">
+<meta property="og:type" content="website">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0A0E1A;--bg-alt:#0D1220;--slate:#6B8BA4;--teal:#4ECDC4;--white:#F8F9FA;--gray:#8892A4;--card:#111827;--card-border:#1E293B}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--white);line-height:1.7}
+h1,h2,h3{font-family:'Syne',sans-serif;font-weight:700;line-height:1.3}
+a{color:var(--teal);text-decoration:none}
+a:hover{opacity:.85}
+
+/* Header */
+.header{position:sticky;top:0;z-index:100;background:rgba(10,14,26,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--card-border);padding:16px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
+.header-logo{display:flex;align-items:center;gap:10px;color:var(--white);text-decoration:none}
+.header-logo svg{width:28px;height:28px}
+.header-logo span{font-family:'Syne',sans-serif;font-weight:700;font-size:18px}
+.header-right{display:flex;align-items:center;gap:12px}
+.lang-toggle{display:flex;gap:4px;background:var(--card);border-radius:8px;padding:3px}
+.lang-btn{background:none;border:none;color:var(--gray);font-size:13px;font-weight:600;padding:5px 10px;border-radius:6px;cursor:pointer;transition:all .2s;font-family:'DM Sans',sans-serif}
+.lang-btn.active{background:var(--teal);color:var(--bg)}
+.btn-sm{display:inline-flex;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;background:var(--teal);color:var(--bg)}
+
+/* Content — documento largo */
+.content{max-width:760px;margin:0 auto;padding:60px 24px 100px}
+.content h1{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:8px}
+.content .updated{color:var(--gray);font-size:14px;margin-bottom:8px}
+.content .entity{color:var(--gray);font-size:14px;margin-bottom:36px}
+.content h2{font-size:1.25rem;color:var(--teal);margin-top:48px;margin-bottom:14px;scroll-margin-top:88px}
+.content h3{font-size:1.02rem;color:var(--white);margin-top:28px;margin-bottom:10px;scroll-margin-top:88px}
+.content p,.content li{color:var(--gray);font-size:15px;margin-bottom:12px}
+.content ul,.content ol{padding-left:22px;margin-bottom:16px}
+.content li{margin-bottom:7px}
+.content strong{color:var(--white)}
+.content hr{border:none;border-top:1px solid var(--card-border);margin:56px 0 8px}
+
+/* Índice */
+.toc{background:var(--card);border:1px solid var(--card-border);border-radius:12px;padding:22px 26px;margin-bottom:44px}
+.toc h2{font-size:.78rem;color:var(--gray);text-transform:uppercase;letter-spacing:.09em;margin:0 0 14px;font-family:'DM Sans',sans-serif;font-weight:700}
+.toc ol{list-style:none;padding:0;margin:0;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;font-size:14px;break-inside:avoid}
+.toc a{color:var(--slate)}
+.toc a:hover{color:var(--teal)}
+@media(max-width:640px){.toc ol{columns:1}}
+
+/* Tabla de subprocesadores */
+.table-wrap{overflow-x:auto;margin-bottom:20px;-webkit-overflow-scrolling:touch}
+.content table{border-collapse:collapse;width:100%;min-width:480px;font-size:14px}
+.content th,.content td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--card-border);color:var(--gray);vertical-align:top}
+.content th{color:var(--white);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+.content tbody tr:last-child td{border-bottom:none}
+
+/* Aviso destacado */
+.notice{background:var(--card);border:1px solid var(--card-border);border-left:3px solid var(--teal);border-radius:10px;padding:20px 24px;margin:20px 0 24px}
+.notice p:last-child,.notice ul:last-child{margin-bottom:0}
+.notice h3{margin-top:0}
+
+/* Bloques de idioma */
+.legal-body{display:none}
+
+/* Formulario */
+.form-input{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--card-border);background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;font-size:15px;margin-bottom:12px}
+.form-input:focus{outline:none;border-color:var(--teal)}
+.btn{display:inline-flex;padding:12px 22px;border-radius:8px;font-size:14px;font-weight:600;background:var(--teal);color:var(--bg);border:none;cursor:pointer;font-family:'DM Sans',sans-serif}
+
+/* Footer */
+.footer{border-top:1px solid var(--card-border);padding:40px 0}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.footer-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.footer-left{display:flex;align-items:center;gap:10px}
+.footer-left svg{width:24px;height:24px}
+.footer-left span{font-family:'Syne',sans-serif;font-weight:700;font-size:16px}
+.footer-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-links a{color:var(--gray);font-size:13px;transition:color .2s}
+.footer-links a:hover{color:var(--white)}
+.footer-copy{color:var(--gray);font-size:13px;margin-top:20px;line-height:1.6}
+@media(max-width:768px){.footer-top{flex-direction:column;text-align:center}.footer-copy{text-align:center}}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="header-inner">
+  <a href="/" class="header-logo">
+    <svg viewBox="0 0 32 32" fill="none"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+    <span>Unifractal</span>
+  </a>
+  <div class="header-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('es')" id="lang-es">ES</button>
+      <button class="lang-btn" onclick="setLang('en')" id="lang-en">EN</button>
+    </div>
+    <a href="https://app.unifractal.ai" class="btn-sm" data-es="Empieza gratis" data-en="Start free">Empieza gratis</a>
+  </div>
+</div>
+</header>
+
+<main class="content">
+
+<div class="legal-body" id="body-es">
+<h1>Proveedores de inferencia vigentes</h1>
+<p class="updated">Última actualización: 26 de septiembre de 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México</p>
+
+<p>Esta página acompaña al <a href="/privacy#subprocesadores">Aviso de Privacidad</a>. Lista los proveedores cuyos modelos de lenguaje generan las respuestas del asistente, qué hace cada uno con lo que les enviamos y cuándo lo verificamos. Cuando un proveedor entra, sale o cambia su política, se actualiza aquí, con la fecha.</p>
+
+<h2 id="criterio">Cuándo un proveedor puede recibir datos de salud</h2>
+<p>Sólo enviamos datos de salud a un modelo de lenguaje cuyo proveedor cumple las cuatro condiciones:</p>
+<ol>
+<li>no entrena modelos con lo que recibe;</li>
+<li>no conserva el contenido más allá de la solicitud, salvo para prevenir abusos o por obligación legal;</li>
+<li>está nombrado en el Aviso de Privacidad y en esta página;</li>
+<li>lo contratamos directamente o, si hay un intermediario, con el destino fijado de antemano.</li>
+</ol>
+
+<h2 id="vigentes">Proveedores vigentes</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Proveedor</th><th>Para qué</th><th>¿Entrena con los datos?</th><th>¿Conserva el contenido?</th><th>País</th><th>Verificado</th></tr>
+</thead>
+<tbody>
+<tr><td>Anthropic (API)</td><td>Modelos de lenguaje que generan las respuestas del asistente</td><td>No, sin permiso expreso</td><td>No por defecto; sí cuando la ley lo exige o sus sistemas de seguridad marcan una conversación (hasta 2 años)</td><td>EE.UU.</td><td>26-sep-2026</td></tr>
+<tr><td>Google — API de Gemini (servicio de pago)</td><td>Modelo de lenguaje secundario: consolidación de memoria, clasificación de correo y tareas en segundo plano</td><td>No</td><td>Registra solicitudes y respuestas por un periodo limitado, sólo para detectar abusos y por obligación legal</td><td>EE.UU.</td><td>26-sep-2026</td></tr>
+<tr><td>DeepInfra</td><td>Modelos de lenguaje de pesos abiertos que pueden generar respuestas del asistente</td><td>No</td><td>No: procesa en memoria lo que recibe, no lo guarda en disco y no registra su contenido</td><td>EE.UU.</td><td>26-sep-2026</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Precisiones.</strong> En Google, estas condiciones son las del servicio de pago de la API de Gemini, que es el que usamos; en el nivel gratuito Google sí usa los datos para mejorar sus productos. En DeepInfra sólo usamos modelos que DeepInfra hospeda: los modelos de otros fabricantes que DeepInfra revende sí envían los datos a esos fabricantes.</p>
+
+<h2 id="fuentes">Fuentes</h2>
+<ul>
+<li>Anthropic: <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" target="_blank" rel="noopener">API and data retention</a> (consultada el 25-sep-2026).</li>
+<li>Google: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms of Service</a> (consultados el 26-sep-2026).</li>
+<li>DeepInfra: <a href="https://docs.deepinfra.com/account/data-privacy" target="_blank" rel="noopener">Data privacy</a> y <a href="https://deepinfra.com/terms" target="_blank" rel="noopener">Terms of Service</a>, versión del 17-ago-2026 (consultados el 26-sep-2026).</li>
+</ul>
+</div>
+
+<div class="legal-body" id="body-en">
+<h1>Current inference providers</h1>
+<p class="updated">Last updated: September 26, 2026</p>
+<p class="entity">Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, Mexico</p>
+
+<p>This page accompanies the <a href="/privacy#subprocesadores">Privacy Policy</a>. It lists the providers whose language models generate the assistant's replies, what each one does with what we send them, and when we verified it. When a provider is added, removed, or changes its policy, this page is updated, with the date.</p>
+
+<h2 id="criterio-en">When a provider may receive health data</h2>
+<p>We only send health data to a language model whose provider meets all four conditions:</p>
+<ol>
+<li>it does not train models on what it receives;</li>
+<li>it does not retain the content beyond the request, except to prevent abuse or when required by law;</li>
+<li>it is named in the Privacy Policy and on this page;</li>
+<li>we contract with it directly or, if there is an intermediary, with the destination fixed in advance.</li>
+</ol>
+
+<h2 id="vigentes-en">Current providers</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>Provider</th><th>Used for</th><th>Trains on the data?</th><th>Retains the content?</th><th>Country</th><th>Verified</th></tr>
+</thead>
+<tbody>
+<tr><td>Anthropic (API)</td><td>Language models that generate the assistant's replies</td><td>No, without express permission</td><td>Not by default; yes when required by law or when its safety systems flag a conversation (up to 2 years)</td><td>USA</td><td>Sep 26, 2026</td></tr>
+<tr><td>Google — Gemini API (paid service)</td><td>Secondary language model: memory consolidation, email classification and background tasks</td><td>No</td><td>Logs prompts and responses for a limited period, solely to detect abuse and for legal obligations</td><td>USA</td><td>Sep 26, 2026</td></tr>
+<tr><td>DeepInfra</td><td>Open-weight language models that may generate the assistant's replies</td><td>No</td><td>No: it processes what it receives in memory, does not store it on disk, and does not log its content</td><td>USA</td><td>Sep 26, 2026</td></tr>
+</tbody>
+</table>
+</div>
+<p><strong>Clarifications.</strong> For Google, these conditions are those of the Gemini API paid service, which is the one we use; on the free tier, Google does use the data to improve its products. At DeepInfra we only use models that DeepInfra hosts: other makers' models that DeepInfra resells do send the data to those makers.</p>
+
+<h2 id="fuentes-en">Sources</h2>
+<ul>
+<li>Anthropic: <a href="https://platform.claude.com/docs/en/manage-claude/api-and-data-retention" target="_blank" rel="noopener">API and data retention</a> (consulted on Sep 25, 2026).</li>
+<li>Google: <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Gemini API Additional Terms of Service</a> (consulted on Sep 26, 2026).</li>
+<li>DeepInfra: <a href="https://docs.deepinfra.com/account/data-privacy" target="_blank" rel="noopener">Data privacy</a> and <a href="https://deepinfra.com/terms" target="_blank" rel="noopener">Terms of Service</a>, version of Aug 17, 2026 (consulted on Sep 26, 2026).</li>
+</ul>
+</div>
+
+</main>
+
+<footer class="footer">
+<div class="footer-inner">
+  <div class="footer-top">
+    <div class="footer-left">
+      <svg viewBox="0 0 32 32" fill="none" width="24" height="24"><path d="M8 4L16 4L12 16L4 16Z" fill="#6B8BA4" opacity="0.7"/><path d="M16 4L24 4L20 16L12 16Z" fill="#6B8BA4"/><path d="M20 16L28 16L24 28L16 28Z" fill="#6B8BA4" opacity="0.85"/><path d="M12 16L20 16L16 28L8 28Z" fill="#6B8BA4" opacity="0.6"/></svg>
+      <span>Unifractal</span>
+    </div>
+    <div class="footer-links">
+      <a href="/privacy" data-es="Aviso de Privacidad" data-en="Privacy Policy">Aviso de Privacidad</a>
+      <a href="/terms" data-es="Términos de Servicio" data-en="Terms of Service">Términos de Servicio</a>
+      <a href="/data-deletion" data-es="Eliminación de datos" data-en="Data Deletion">Eliminación de datos</a>
+      <a href="mailto:hi@unifractal.ai">hi@unifractal.ai</a>
+      <a href="https://app.unifractal.ai">app.unifractal.ai</a>
+    </div>
+  </div>
+  <div class="footer-copy">© 2026 Unifractal — Operado por Centro de Innovación en Biotecnología Aplicada, S.C. — Guadalajara, Jalisco, México.</div>
+</div>
+</footer>
+
+<script>
+/* ═══ LANGUAGE ═══ */
+let currentLang = 'es';
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-es]').forEach(el => {
+    const val = el.getAttribute('data-' + lang);
+    if (val !== null) el.innerHTML = val;
+  });
+  document.querySelectorAll('[data-es-placeholder]').forEach(el => {
+    const val = el.getAttribute('data-' + lang + '-placeholder');
+    if (val !== null) el.placeholder = val;
+  });
+  const bodyEs = document.getElementById('body-es');
+  const bodyEn = document.getElementById('body-en');
+  if (bodyEs && bodyEn) {
+    bodyEs.style.display = (lang === 'es') ? 'block' : 'none';
+    bodyEn.style.display = (lang === 'en') ? 'block' : 'none';
+  }
+  document.documentElement.lang = lang;
+  document.getElementById('lang-es').classList.toggle('active', lang === 'es');
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  localStorage.setItem('lang', lang);
+  syncHash();
+}
+
+/* Las anclas canónicas viven en el bloque ES; el bloque EN usa el sufijo -en.
+   Esto mantiene vivo un enlace externo como /privacy#anexo-google en ambos idiomas. */
+let hashTimer = null;
+function syncHash() {
+  if (!location.hash) return;
+  // Coalesce: un cambio de hash y un cambio de idioma pueden dispararse juntos.
+  // Se resuelve el destino al EJECUTAR, no al programar, y despues del scroll
+  // nativo del navegador, para que gane siempre el idioma vigente.
+  clearTimeout(hashTimer);
+  hashTimer = setTimeout(() => {
+    const raw = location.hash.slice(1);
+    if (!raw) return;
+    const base = raw.endsWith('-en') ? raw.slice(0, -3) : raw;
+    const target = (currentLang === 'en') ? base + '-en' : base;
+    const el = document.getElementById(target);
+    if (el) el.scrollIntoView({ behavior: 'auto' });
+  }, 0);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setLang(localStorage.getItem('lang') || 'es');
+});
+window.addEventListener('hashchange', syncHash);
+</script>
+</body>
+</html>
