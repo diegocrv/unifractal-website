@@ -246,8 +246,8 @@ a:hover{opacity:.85}
 </thead>
 <tbody>
 <tr><td>Anthropic</td><td>Modelos de lenguaje que generan las respuestas del asistente, y búsqueda web ejecutada del lado del proveedor</td><td>EE.UU.</td></tr>
-<tr><td>Google (Gemini)</td><td>Modelo de lenguaje secundario, consolidación de memoria, clasificación de correo, generación y edición de imágenes, generación de video, síntesis de voz de las respuestas habladas y, sólo cuando el servicio propio no está disponible, transcripción de audio que no es clínico</td><td>EE.UU.</td></tr>
-<tr><td>Google (Firebase Cloud Messaging)</td><td>Envío de notificaciones push; procesa el identificador del dispositivo</td><td>EE.UU.</td></tr>
+<tr><td>Google (Gemini)</td><td>Modelo de lenguaje secundario, consolidación de memoria, clasificación de correo, generación y edición de imágenes, generación de video, síntesis de voz de las respuestas habladas y, sólo cuando el servicio propio no está disponible, transcripción de audio que no es clínico; nunca recibe contenido de los servicios de salud</td><td>EE.UU.</td></tr>
+<tr><td>Google (Firebase Cloud Messaging)</td><td>Envío de notificaciones push; procesa el identificador del dispositivo y el texto de la notificación, salvo en los servicios de salud, donde la notificación no lleva el texto del mensaje</td><td>EE.UU.</td></tr>
 <tr><td>Google Workspace (Gmail, Calendar, Drive, Fotos)</td><td>Acceso a los servicios que usted conecte, únicamente con su autorización</td><td>EE.UU.</td></tr>
 <tr><td>Google (Maps, Places, Rutas y datos del entorno)</td><td>Búsqueda de lugares, cálculo de rutas y datos ambientales de su zona</td><td>EE.UU.</td></tr>
 <tr><td>Google (envío de correo transaccional)</td><td>Entrega de los correos que le enviamos: alta, credenciales y notificaciones de cuenta</td><td>EE.UU.</td></tr>
@@ -267,6 +267,7 @@ a:hover{opacity:.85}
 </div>
 <p><strong>Alojamiento principal.</strong> La infraestructura principal de Unifractal y las bases de datos que contienen su información se encuentran alojadas en <strong>Guadalajara, Jalisco, México</strong>.</p>
 <p><strong>Transcripción de audio.</strong> Las notas de voz y el dictado se transcriben en servidores propios. Sólo el audio que no es clínico puede transcribirse con Google, y únicamente cuando el servicio propio no está disponible. El audio de pacientes y el dictado clínico no se envían a ningún proveedor de inteligencia artificial.</p>
+<p><strong>Servicios de salud.</strong> En los servicios que Unifractal presta a clínicas y profesionales de la salud, los modelos de Google no reciben ningún contenido —ni texto, ni voz, ni audio, ni imágenes, ni videos—: el asistente usa sólo los modelos de Anthropic y servidores propios, también para la voz y la transcripción; ahí no se generan imágenes ni videos, y las notificaciones push no llevan el texto del mensaje. Las cuentas de Google que una persona conecte (su correo, su calendario, sus archivos) siguen funcionando con su autorización.</p>
 <p>Las entradas marcadas como «Por confirmar» corresponden a proveedores cuya jurisdicción de tratamiento se encuentra en proceso de verificación documental; esta tabla se actualizará en cuanto quede determinada.</p>
 <p><strong>Transferencias internacionales.</strong> Existen transferencias internacionales de datos personales hacia los subprocesadores listados en la tabla anterior, ubicados fuera del territorio nacional. Dichas transferencias se realizan conforme al <strong>artículo 37 de la LFPDPPP</strong>, al ser necesarias para el mantenimiento y cumplimiento de la relación jurídica entre usted y el responsable, y se encuentran amparadas por instrumentos contractuales que obligan a los receptores a observar los mismos principios y deberes de protección previstos en este aviso. Al aceptar el presente aviso, usted queda informado de dichas transferencias.</p>
 
@@ -535,8 +536,8 @@ a:hover{opacity:.85}
 </thead>
 <tbody>
 <tr><td>Anthropic</td><td>Language models that generate the assistant's replies, and web search executed on the provider's side</td><td>USA</td></tr>
-<tr><td>Google (Gemini)</td><td>Secondary language model, memory consolidation, email classification, image generation and editing, video generation, voice synthesis for spoken replies and, only when our own service is unavailable, transcription of non-clinical audio</td><td>USA</td></tr>
-<tr><td>Google (Firebase Cloud Messaging)</td><td>Delivery of push notifications; processes the device identifier</td><td>USA</td></tr>
+<tr><td>Google (Gemini)</td><td>Secondary language model, memory consolidation, email classification, image generation and editing, video generation, voice synthesis for spoken replies and, only when our own service is unavailable, transcription of non-clinical audio; it never receives content from health services</td><td>USA</td></tr>
+<tr><td>Google (Firebase Cloud Messaging)</td><td>Delivery of push notifications; processes the device identifier and the notification text, except in health services, where the notification does not carry the message text</td><td>USA</td></tr>
 <tr><td>Google Workspace (Gmail, Calendar, Drive, Photos)</td><td>Access to the services you connect, solely with your authorization</td><td>USA</td></tr>
 <tr><td>Google (Maps, Places, Routes and environmental data)</td><td>Place search, route calculation and environmental data for your area</td><td>USA</td></tr>
 <tr><td>Google (transactional email delivery)</td><td>Delivery of the emails we send you: sign-up, credentials and account notifications</td><td>USA</td></tr>
@@ -556,6 +557,7 @@ a:hover{opacity:.85}
 </div>
 <p><strong>Primary hosting.</strong> Unifractal's primary infrastructure and the databases holding your information are hosted in <strong>Guadalajara, Jalisco, Mexico</strong>.</p>
 <p><strong>Audio transcription.</strong> Voice notes and dictation are transcribed on our own servers. Only non-clinical audio may be transcribed by Google, and only when our own service is unavailable. Patient audio and clinical dictation are never sent to any artificial intelligence provider.</p>
+<p><strong>Health services.</strong> In the services Unifractal provides to clinics and health professionals, Google's models receive no content at all —no text, voice, audio, images or videos—: the assistant uses only Anthropic's models and our own servers, also for voice and transcription; images and videos are not generated there, and push notifications do not carry the message text. The Google accounts a person connects (their mail, calendar and files) keep working with their authorization.</p>
 <p>Entries marked "To be confirmed" correspond to providers whose processing jurisdiction is undergoing documentary verification; this table will be updated as soon as it is determined.</p>
 <p><strong>International transfers.</strong> International transfers of personal data do take place towards the subprocessors listed in the table above, which are located outside Mexican territory. Such transfers are carried out in accordance with <strong>article 37 of the LFPDPPP</strong>, as they are necessary for the maintenance and performance of the legal relationship between you and the controller, and are covered by contractual instruments requiring recipients to observe the same protection principles and duties set out in this policy. By accepting this policy, you are informed of such transfers.</p>
 
